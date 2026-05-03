@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="login_style.css">
+</head>
+
+</head>
+<body>
+    <section class="login-section">
+        <form action="login.php" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <br>
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"  required >
+            <br>
+            <br>
+            <a href="#">Forgot password?</a>
+            <br>
+            <br>
+            <input type="submit" value="Login">
+            <br>
+            <br>
+            <label for="remember">Remember me:</label>
+            <input type="checkbox" id="remember" name="remember">
+        </form> 
+            <div class="icon"></div>
+                <p>Or login with:</p>
+                <br>
+                <i class="fa-brands fa-google"></i>
+            <br>
+                <i class="fa-brands fa-facebook"></i>
+            </div>
+        <br>
+        <p>don't have an account? <a href="#create.html">Register here</a></p>
+    </section>
+</body>
+</html>

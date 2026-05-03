@@ -1,0 +1,115 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+body{
+    font-family: 'Arial', sans-serif;
+    background-color: #115793;
+    color: #333;
+}
+header{
+    text-align: center;
+    background-image: url(./image/1777332026777.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    font-size: xx-large;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: right;
+}
+h1{
+    margin-bottom:30px;
+    color: #fff;
+    text-align: right;
+    margin: 20px 30px 10px 0;
+
+}
+p{
+    margin-bottom: 20px;
+    color: #fff;
+    text-align: right;
+    margin: 20px 30px 10px 0;
+}
+a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;;
+    height: 50px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+    text-align: left;
+    margin-left: 50px;
+}
+.cards-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 75%;
+    margin-top: 20px;
+    position: relative;
+}
+.cards{
+    background-color: #0a254b;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 220px;
+    text-align: center;
+    margin-bottom: 30px;
+    height: auto;
+}
+.cards img{
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.cards h3{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.cards p{
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    margin: 0;
+}
+.rating{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.photo-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 25%;
+    margin-top: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.photo{
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 220px;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-right: 5px;
+}
+.photo img{
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.all{
+    position: relative;
+}
