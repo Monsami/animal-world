@@ -1,0 +1,95 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: linear-gradient(rgba(218, 217, 217, 0.75), rgba(0, 0, 0, 0.75)), url('../image/1777332026777.png') no-repeat center center fixed;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+header {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+header h1 {
+    font-size: 3.5rem;
+    color: #f1c40f;
+    text-transform: uppercase;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.animal-section {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 25px;
+    padding: 30px;
+    margin-bottom: 50px;
+}
+
+.album-title {
+    color: #f1c40f;
+    border-right: 6px solid #f1c40f;
+    padding-right: 15px;
+    margin-bottom: 25px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    position: relative;
+    height: 250px;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.card img, .card video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.card:hover img { transform: scale(1.1); }
+
+.overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.4);
+    display: flex; justify-content: center; align-items: center;
+    opacity: 0; transition: 0.3s; font-weight: bold;
+}
+
+.card:hover .overlay { opacity: 1; }
+
+
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.9);
+    justify-content: center; align-items: center;
+}
+
+.lightbox img {
+    max-width: 90%; max-height: 80%;
+    border: 3px solid #f1c40f; border-radius: 10px;
+}
+
+.close-btn {
+    position: absolute; top: 20px; right: 30px;
+    color: #f1c40f; font-size: 50px; cursor: pointer;
+}
