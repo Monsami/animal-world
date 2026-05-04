@@ -152,4 +152,37 @@ html{
     scroll-behavior: smooth;
 }
 
+:root {
+    --nav-bg: #3d2b1f;       
+    --nav-text: #ffffff;    
+    --body-bg: #ffffff;      
+    --accent-color: #d35400; 
+    --logo-color: #e67e22;  
+}
+
+[data-theme="dark"] {
+    --nav-bg: #fdf2e9;       
+    --nav-text: #3d2b1f;     
+    --body-bg: #1a1a1a;      
+    --accent-color: #e67e22; 
+    --logo-color: #3d2b1f;
+}
+.nav-bar {
+    background-color: var(--nav-bg) !important;
+    border-bottom: 2px solid var(--accent-color);
+    transition: 0.4s; 
+}
+nav ul li a {
+    color: var(--nav-text) !important;
+    font-weight: 500; 
+}
+
+.logo {
+    color: var(--logo-color);
+}
+
+body {
+    background-color: var(--body-bg);
+    transition: 0.4s;
+}
 
