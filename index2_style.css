@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap');
 
 body {
     font-family: sans-serif;
@@ -6,8 +7,7 @@ body {
     color: #333;
 }
 
-
-. container nav-bar {
+.container nav-bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -16,7 +16,18 @@ body {
     border-bottom:2px solid #d35400;
     direction: rtl;
 }
-
+.logo {
+  font-family: 'Cairo', sans-serif;
+  font-weight: 700; 
+  font-size: 28px;   
+  color: #e67e22; 
+  letter-spacing: -0.5px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  direction: rtl;
+}
  nav ul {
     display: flex;
     list-style: none;
