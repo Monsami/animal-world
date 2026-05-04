@@ -37,21 +37,25 @@ body {
     box-shadow: 0 0 0 2px rgba(255,255,255,0.18) inset;
 } */
 
-/* nav ul {
+ nav ul {
     display: flex;
     list-style: none;
+     gap: 30px;
+     margin:0;
+     padding:0;
 }
 
 nav ul li {
     margin: 0 10px;
-} */
+} 
 
 nav ul li a {
     display:flex;
-    color: #333;
+    color: #ffffff;
     text-decoration: none;
     font-size: 0.9rem;
-    opacity: 0.95;
+    font-weight:500px;
+    transition:0.3s;
 }
 
 nav ul li a:hover {
