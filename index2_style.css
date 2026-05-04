@@ -5,21 +5,19 @@ body {
     background-color: #f4f4f4;
     color: #333;
 }
-header {
-    background: linear-gradient(180deg, rgba(14, 32, 23, 0.95), rgba(14, 32, 23, 0.58));
-    position: absolute;
-    width: 100%;
-    z-index: 100;
-    padding: 14px 0 12px;
-}
+
 
 .nav-bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color:#3d2b1f;
+    padding: 15px;
+    border-bottom:2px solid #d35400;
+    direction: rtl;
 }
 
-.logo {
+/* .logo {
     display: flex;
     align-items: center;
     color: white;
@@ -37,28 +35,27 @@ header {
         radial-gradient(circle at 56% 56%, #0f4c2e 0 28%, transparent 29%),
         linear-gradient(145deg, #cfd9b0, #8dbf4a);
     box-shadow: 0 0 0 2px rgba(255,255,255,0.18) inset;
-}
+} */
 
-nav ul {
+/* nav ul {
     display: flex;
     list-style: none;
 }
 
 nav ul li {
     margin: 0 10px;
-}
+} */
 
 nav ul li a {
-    color: #f0f5eb;
+    display:flex;
+    color: #333;
     text-decoration: none;
     font-size: 0.9rem;
     opacity: 0.95;
 }
 
-nav ul li a.active {
-    color: #a8d04f;
-    border-bottom: 2px solid #a8d04f;
-    padding-bottom: 4px;
+nav ul li a:hover {
+    color:#e67e22;
 }
 
 .nav-icons {
