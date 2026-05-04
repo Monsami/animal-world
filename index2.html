@@ -14,7 +14,7 @@
           <span>عالم الحيوان</span>
         </div>
         <nav>
-            <button id="theme-toggle" style="cursor:pointer; padding: 5px 10px;">تغيير الوضع</button>
+            <!-- <button id="theme-toggle" style="cursor:pointer; padding: 5px 10px;">تغيير الوضع</button> -->
           <ul>
             <li><a href="./main.html" class="active" target="_blank">الرئيسية</a></li>
             <li><a href="./login.html" target="_blank">الثدييات</a></li>
@@ -24,9 +24,14 @@
             <li><a href="./julina/julina.html" target="_blank">المعرض</a></li>
             <li><a href="./blog.html" target="_blank">المدونة</a></li>
             <li><a href="./contact.html" target="_blank">اتصل بنا</a></li>
-          </ul>
-            
+          </ul>   
         </nav>
+<div class="mode-switch">
+     <label class="switch">
+        <input type="checkbox" id="theme-toggle">
+        <span class="slider round"></span>
+    </label>
+</div>
     </header>
 
     <section class="header">
@@ -103,25 +108,26 @@
         class="cards-button">أقرأ المزيد</a>
     </div>
     </section>
-     <script>
-         const toggleBtn = document.getElementById('theme-toggle');
-const currentTheme = localStorage.getItem('theme');
 
-if (currentTheme === 'dark') {
-    document.documentElement.setAttribute('data-theme', 'dark');
-}
+         <script>
+    const toggleInput = document.getElementById('theme-toggle');
+    const htmlElement = document.documentElement;
 
-toggleBtn.addEventListener('click', () => {
-    let theme = document.documentElement.getAttribute('data-theme');
-    
-    if (theme === 'dark') {
-        document.documentElement.setAttribute('data-theme', 'light');
-        localStorage.setItem('theme', 'light');
-    } else {
-        document.documentElement.setAttribute('data-theme', 'dark');
-        localStorage.setItem('theme', 'dark');
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+        htmlElement.setAttribute('data-theme', 'dark');
+        toggleInput.checked = true;
     }
-});
-     </script>
+    toggleInput.addEventListener('change', () => {
+        if (toggleInput.checked) {
+            htmlElement.setAttribute('data-theme', 'dark');
+            localStorage.setItem('theme', 'dark');
+        } else {
+            htmlElement.setAttribute('data-theme', 'light');
+            localStorage.setItem('theme', 'light');
+        }
+    });
+</script>
+    
 </body>
 </html>
