@@ -5,53 +5,79 @@
     <title>عجائب الطيور</title>
     <link rel="stylesheet" href="malak_style.css">
 </head>
-<div class="container">
     <section class="hero-section">    
     <h1>عجائب الطيور</h1>
     <p>متع نظرك بأجمل الطيور واغربها في عالمنا المذهل</p>
+    <a href="#">استكشف المزيد</a>
     </section>
-    <section id="birds-grid" class="bird-cards-container">
-    </section>
-    </div>
-    <div class="info-section">
-    <div class="info-content">
-        <div class="map-image">
-            <img src="../image/1777332026777.png" alt="migration map" class="mig-map">
-        </div>
+
+        <div class="info-content">
+            <img src="../image/1777898010766.png" alt="misr">
             <div class="info-text">
-            <h3>مقالات عن هجرة الطيور</h3>
-            <p>هِجْرَة الطّيُور هي حركةٌ موسميةٌ مُنتظمة، عادةً ما تكون باتجاه الشمال والجنوب على طول مسار الطائِر، وتكون بين مناطق التكاثر ومناطق التشتية (إمضاء الشتاء). تُهاجر أنواعٌ عديدة من الطيور، وذلك على الرغم من أنَّ هجرة الحيوانات عمومًا تنطوي على مخاطر عاليةٍ من الافتراس والوفاة، خصوصًا الناجمة عن الصيد البشري لها والذي يرتبطُ بالحاجة الأساسية لتوفير الطعام. تحدث هجرة الطيور غالبًا في نصف الأرض الشمالي، حيثُ تُجبر الطُيور على سلك مساراتٍ مُحددة بحواجز طبيعية مثل البحر الأبيض المتوسط أو البحر الكاريبي.
-</p>
+                
+            <h3>هل تعلم؟</h3>
+            <p>الطيور من أكثر الكائنات تنوعاَ على كوكب الارض توجد أكثر من 10,000 نوع مختلف , و تمميز بقدرات مذهلة فى الطيران و الهجره و التكيف مع البيئة.</p>            
             </div>
         </div>
+
+    <section class="animals-grid" id="animals-section">
+        <div class="card" >
+            <img src="../image/1777332026777.png" alt="الباندا">
+            <h3>الباندا العملاق</h3>
+            <p>التصنيف: ثدييات</p>
+            <p>الموطن: الصين</p> 
+            <button>أقرأ المزيد</button> 
+        </div>
+        <div class="card" >
+        <img src="../image/1777332026777.png" alt="وحيد القرن">
+        <h3>وحيد القرن</h3>
+        <p>التصنيف: ثدييات</p>
+        <p>الموطن: أفريقيا</p>
+        <button>أقرأ المزيد</button> 
     </div>
-        <div class="sounds-conainer">
-            <h2 class="section-title">اغرب اصوات الطيور</h2>
-            <div class="sounds-grid">
-                <div class="sound-item">                    
-                <audio id="Crow-audio" src="Crow.mp3"></audio>                
-                <div class="sound-info">
-                    <span>Crow</span>
-                    <p> صوت الغراب</p>
-                </div>
-                <button class="circle-btn" onclick="let =document.getElementById('Crow-audio');a.paused ? a.play(): a.pause()">&#9654/||</button>
-                </div>
-                <div class="sound-item">                    
-                <audio id="lyre-audio" src="sound3.mp3"></audio>                
-                <div class="sound-info">
-                    <span>lyrebird</span>
-                    <p>طائر القيثارة</p>
-                </div>
-                <button class="circle-btn" onclick="let a=document.getElementById('lyre-audio');a.paused ? a.play(): a.pause()">&#9654/||</button>
-                </div>
-                <div class="sound-item">                    
-                <audio id="kooka-audio" src="sound2.mp3"></audio>                
-                <div class="sound-info">
-                    <span>kookaburra</span>
-                    <p>ضحكة الكوكابورا</p>
-                </div>
-                <button class="circle-btn" onclick="let =document.getElementById('kooka-audio');a.paused ? a.play(): a.pause()">&#9654/||</button>
-                </div>
-            </div>  <script src="main.js"></script>
+    <div class="card" >
+        <img src="../image/1777332026777.png" alt="نمر">
+        <h3>النمر السيبيري</h3>
+        <p>التصنيف: الثدييات</p>
+        <p>الموطن: اسيا</p>
+        <button>أقرأ المزيد</button> 
+    </div>
+    
+    <div class="card" >
+        <img src="../image/1777332026777.png" alt="سلحفاة منقار الصقر">
+        <h3>سلحفاة منقار الصقر </h3>
+        <p>التصنيف: زواحف بحرية</p>
+        <p>الموطن: المحيط الأطلسي</p>
+        <button>أقرأ المزيد</button> 
+    </div>
+    <div class="card" >
+        <img src="../image/1777332026777.png" alt="فيل">
+        <h3> فيل سومطرة</h3>
+        <p>التصنيف: الثدييات</p>
+        <p>الموطن: جزيرة سومطرة بأندونسيا</p>
+        <button>أقرأ المزيد</button> 
+    </div>
+    <div class="card" >
+        <img src="../image/1777332026777.png" alt="انسان الغاب">
+        <h3>انسان الغاب السومطري </h3>
+        <p>التصنيف: الثدييات</p>
+        <p>الموطن: جزيرة سومطرة باندونسيا</p>
+        <button>أقرأ المزيد</button> 
+    </div>
+    <div class="card" >
+        <img src="../image/1777332026777.png" alt="حيوان البنغول">
+        <h3> حيوان البنغول</h3>
+        <p>التصنيف: الثدييات</p>
+        <p>الموطن: أفريقيا وجنوب شرق اسيا</p>
+        <button>أقرأ المزيد</button> 
+    </div>
+    <div class="card" >
+        <img src="../image/1777332026777.png" alt="غوريلا">
+        <h3>غوريلا الانهار المتقطعة </h3>
+        <p>التصنيف: الثدييات</p>
+        <p>الموطن: نيجيريا و الكاميرون</p>
+        <button>أقرأ المزيد</button> 
+    </div>
+    <script src="main.js"></script>
 </body>
 </html>

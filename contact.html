@@ -1,41 +1,98 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>contact</title>
+    <title>WildLife - اتصل بنا</title>
     <link rel="stylesheet" href="contact_style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <section class="contact-section">
-    <form action="#" method="post">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-        <br><br>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <br><br>
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-        <br><br>
-        <input type="submit" value="Send Message">
-    </form>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">WildLife <span>Explore. Learn. Protect</span></div>
+            <ul>
+                <li><a href="#">الرئيسية</a></li>
+                <li><a href="#">عالم الثدييات</a></li>
+                <li><a href="#">عجائب الطيور</a></li>
+                <li><a href="#">أعماق البحار</a></li>
+                <li><a href="#" class="active">اتصل بنا</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>تواصل معنا</h1>
+            <h3>معاً من أجل كوكب مليء بالحياة</h3>
+            <p>نحن نؤمن أن كل صوت يحدث فرقاً، سواء كان سؤالاً، فكرة، أو رغبة في المساهمة. لا تتردد في التواصل معنا!</p>
+        </div>
+        <div class="hero-image">
+            <img src="c:\Users\DELL\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanygm\LocalState\sessions\7BE193C8D4E7D3BB739C8B6D9E096A9F3808A726\transfers\2026-18\WhatsApp Image 2026-05-04 at 12.48.21 AM.jpeg" alt="Leopard">
+        </div>
     </section>
-    <div class="contact-us">
-    <h2>Contact Us</h2>
-    <p>Email: info@company.com</p>
-    <p>Phone: +1 234 567 890</p>
-    <p>Address: 123 Main Street, City, Country</p>
-    <map name="company-map">
-    <area shape="rect" coords="34,44,270,350" alt="Company Location" href="https://www.google.com/maps/place/123+Main+Street,+City,+Country" target="_blank">
-    </map>
-    <h3>Follow Us</h3>
-    <p>
-        <a href="https://www.facebook.com/company" target="_blank">Facebook</a> |
-        <a href="https://www.twitter.com/company" target="_blank">Twitter</a> |
-        <a href="https://www.linkedin.com/company" target="_blank">LinkedIn</a>
-    </p>
-</div>
+
+    <!-- Contact Section -->
+    <section class="contact-container">
+        <div class="contact-card">
+            <!-- Form Side -->
+            <div class="form-side">
+                <h2><i class="fas fa-paper-plane"></i> أرسل لنا رسالة</h2>
+                <p>نحن هنا للإجابة على استفساراتك وملاحظاتك.</p>
+                <form>
+                    <div class="input-group">
+                        <input type="text" placeholder="الاسم الكامل">
+                        <input type="email" placeholder="البريد الإلكتروني">
+                    </div>
+                    <select>
+                        <option>اختر موضوع الرسالة</option>
+                    </select>
+                    <textarea placeholder="اكتب رسالتك هنا..."></textarea>
+                    <button type="submit">إرسال الرسالة <i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+
+            <!-- Info Side -->
+            <div class="info-side">
+                <div class="social-links">
+                    <h3><i class="fas fa-comments"></i> تواصل معنا عبر</h3>
+                    <div class="icons">
+                        <div class="icon-item"><i class="fab fa-instagram"></i><span>Instagram</span></div>
+                        <div class="icon-item"><i class="fab fa-youtube"></i><span>YouTube</span></div>
+                        <div class="icon-item"><i class="fab fa-facebook"></i><span>Facebook</span></div>
+                        <div class="icon-item"><i class="fab fa-x-twitter"></i><span>X (Twitter)</span></div>
+                    </div>
+                </div>
+                <hr>
+                <div class="contact-info">
+                    <h3><i class="fas fa-phone"></i> معلومات التواصل</h3>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> info@wildlifeexplore.com</li>
+                        <li><i class="fas fa-phone"></i> +20 123 456 7890</li>
+                        <li><i class="fas fa-location-dot"></i> القاهرة، مصر</li>
+                        <li><i class="fas fa-clock"></i> الأحد - الخميس: 9:00 ص - 6:00 م</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Newsletter -->
+    <section class="newsletter">
+        <div class="newsletter-content">
+            <div class="text">
+                <h3><i class="fas fa-envelope-open-text"></i> انضم إلى مجتمعنا</h3>
+                <p>اشترك في قائمتنا البريدية لتصلك آخر الأخبار والفعاليات الخاصة بعالم الحيوان.</p>
+            </div>
+            <div class="subscribe-form">
+                <input type="email" placeholder="بريدك الإلكتروني">
+                <button>اشترك الآن <i class="fas fa-bell"></i></button>
+            </div>
+        </div>
+    </section>
+
 </body>
 </html>
