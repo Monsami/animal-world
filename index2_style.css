@@ -40,20 +40,20 @@ body {
     }
 
 .main-button {
-    background-color: white;
-    color:black;
-    border: none;
-    padding: 12px 30px;
-    font-size: 1.1rem;
-    cursor: pointer;
-    transition: 0.3s;
-    border-radius: 5px;
-    margin-top: 15px;
-    margin-right: 150px;
+  font-weight: bold;
+  color: white;
+  background-color: #e67e22;
+  padding: 10px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  border-bottom: 4px solid #d35400; 
+  transition: 0.2s;
 }
 .main-button:hover{
-    background-color:black;
-    color: white;
+  background-color: #d35400;
+  border-bottom: 2px solid #a04000;
+  transform: translateY(2px);
+  color:white;
 }
 .animals-grid {
     display: grid;
@@ -79,45 +79,28 @@ body {
 .card img { width: 100%; height: 200px; object-fit: cover; }
 
 .card h3 { margin: 15px 0; color: #2c3e50; }
-/* .help-section {
-    padding: 50px 20px;
-    text-align: center;
+.cards-button{
+  display: inline-block;
+  font-weight: bold;
+  color: white;
+  background-color: #e67e22;
+  padding: 10px 25px;
+  border-radius: 50px;
+  text-decoration: none;
+  border-bottom: 4px solid #d35400; 
+  transition: 0.2s;
 }
-
-.help-options {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-top: 30px;
-} */
-
+.cards-button:hover{
+  background-color: #d35400;
+  border-bottom: 2px solid #a04000;
+  transform: translateY(2px);
+  color:white;
+}
 .option { flex: 1; min-width: 200px; padding: 20px; }
 .option span { font-size: 3rem; }
-a{
-    display: inline;
-    background-color: white;
-    color: black;
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: bold;
-    padding: 10px 25px;
-    transition: 0.3s;
-}
-a:hover{
-    background-color: black;
-    color: white;
-}
+
 html{
     scroll-behavior: smooth;
 }
-button{
-    padding: 5px;
-    border-radius: 15px;
-    background-color: white;
-    color: black;
-    cursor: pointer;
-}
-/* button:hover{
-    background-color: black;
-    color: white;
-} */
+
+
