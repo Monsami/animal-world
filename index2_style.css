@@ -17,26 +17,6 @@ body {
     direction: rtl;
 }
 
-/* .logo {
-    display: flex;
-    align-items: center;
-    color: white;
-    font-weight: bold;
-    font-size: 1.2rem;
-    gap: 10px;
-}
-
-.logo-mark {
-    width: 38px;
-    height: 38px;
-    border-radius: 50%;
-    background:
-        radial-gradient(circle at 38% 38%, #f3f7eb 0 14%, transparent 15%),
-        radial-gradient(circle at 56% 56%, #0f4c2e 0 28%, transparent 29%),
-        linear-gradient(145deg, #cfd9b0, #8dbf4a);
-    box-shadow: 0 0 0 2px rgba(255,255,255,0.18) inset;
-} */
-
  nav ul {
     display: flex;
     list-style: none;
@@ -46,16 +26,17 @@ body {
 }
 
 nav ul li {
+    display:flex;
     margin: 0 10px;
 } 
 
 nav ul li a {
-    display:flex;
+    
     color: #ffffff;
     text-decoration: none;
     font-size: 0.9rem;
-    font-weight:500px;
-    transition:0.3s;
+    font-weight:500;
+    transition: 0.3s;
 }
 
 nav ul li a:hover {
