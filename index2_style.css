@@ -12,9 +12,11 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color:#3d2b1f;
+    height: 80px;
     padding: 15px 5%;
     border-bottom:2px solid #d35400;
     direction: rtl;
+    overflow: hidden;
 }
 .logo {
   font-family: 'Cairo', sans-serif;
@@ -33,6 +35,7 @@ body {
      gap: 30px;
      margin:0;
      padding:0;
+     align-items: center;
 }
 
 nav ul li {
