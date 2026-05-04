@@ -1,83 +1,109 @@
 <!DOCTYPE html>
-<html lang="Ar" dir="rtl">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <title>عجائب الطيور</title>
+    <title>Bird Wonders - عجائب الطيور</title>
     <link rel="stylesheet" href="malak_style.css">
 </head>
-    <section class="hero-section">    
-    <h1>عجائب الطيور</h1>
-    <p>متع نظرك بأجمل الطيور واغربها في عالمنا المذهل</p>
-    <a href="#">استكشف المزيد</a>
-    </section>
+<body>
 
-        <div class="info-content">
-            <img src="../image/1777898010766.png" alt="misr">
-            <div class="info-text">
-                
-            <h3>هل تعلم؟</h3>
-            <p>الطيور من أكثر الكائنات تنوعاَ على كوكب الارض توجد أكثر من 10,000 نوع مختلف , و تمميز بقدرات مذهلة فى الطيران و الهجره و التكيف مع البيئة.</p>            
+    <!-- Header & Navigation -->
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="" alt="logo" class="icon-img"> Bird Wonders
+            </div>
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="#" class="active">الرئيسية</a></li>
+                    <li><a href="#">أنواع الطيور</a></li>
+                    <li><a href="#">عجائب وغرائب</a></li>
+                    <li><a href="#">معرض الصور</a></li>
+                    <li><a href="#">تواصل</a></li>
+                </ul>
+            </nav>
+            <div class="clear"></div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>اكتشف أسرار وعجائب <span>عالم الطيور</span></h1>
+                <p>عالم مذهل مليء بالألوان، الذكاء، والقدرات التي ستدهشك!</p>
+                <a href="#about" class="btn">اكتشف المزيد</a>
             </div>
         </div>
+    </section>
 
-    <section class="animals-grid" id="animals-section">
-        <div class="card" >
-            <img src="../image/1777332026777.png" alt="الباندا">
-            <h3>الباندا العملاق</h3>
-            <p>التصنيف: ثدييات</p>
-            <p>الموطن: الصين</p> 
-            <button>أقرأ المزيد</button> 
+    <!-- About Section (Start Scroll Point) -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-text">
+                <h2>هل تعلم؟</h2>
+                <p>الطيور من أكثر الكائنات تنوعاً على كوكب الأرض، توجد أكثر من 10,000 نوع مختلف، وتتميز بقدرات مذهلة في الطيران، والهجرة، والتكيف مع البيئة.</p>
+                <a href="#" class="btn-outline">اقرأ المزيد</a>
+            </div>
+            <div class="about-image">
+                <img src="../image/panda.jpg" alt="Kingfisher">
+            </div>
+            <div class="clear"></div>
         </div>
-        <div class="card" >
-        <img src="../image/1777332026777.png" alt="وحيد القرن">
-        <h3>وحيد القرن</h3>
-        <p>التصنيف: ثدييات</p>
-        <p>الموطن: أفريقيا</p>
-        <button>أقرأ المزيد</button> 
-    </div>
-    <div class="card" >
-        <img src="../image/1777332026777.png" alt="نمر">
-        <h3>النمر السيبيري</h3>
-        <p>التصنيف: الثدييات</p>
-        <p>الموطن: اسيا</p>
-        <button>أقرأ المزيد</button> 
-    </div>
-    
-    <div class="card" >
-        <img src="../image/1777332026777.png" alt="سلحفاة منقار الصقر">
-        <h3>سلحفاة منقار الصقر </h3>
-        <p>التصنيف: زواحف بحرية</p>
-        <p>الموطن: المحيط الأطلسي</p>
-        <button>أقرأ المزيد</button> 
-    </div>
-    <div class="card" >
-        <img src="../image/1777332026777.png" alt="فيل">
-        <h3> فيل سومطرة</h3>
-        <p>التصنيف: الثدييات</p>
-        <p>الموطن: جزيرة سومطرة بأندونسيا</p>
-        <button>أقرأ المزيد</button> 
-    </div>
-    <div class="card" >
-        <img src="../image/1777332026777.png" alt="انسان الغاب">
-        <h3>انسان الغاب السومطري </h3>
-        <p>التصنيف: الثدييات</p>
-        <p>الموطن: جزيرة سومطرة باندونسيا</p>
-        <button>أقرأ المزيد</button> 
-    </div>
-    <div class="card" >
-        <img src="../image/1777332026777.png" alt="حيوان البنغول">
-        <h3> حيوان البنغول</h3>
-        <p>التصنيف: الثدييات</p>
-        <p>الموطن: أفريقيا وجنوب شرق اسيا</p>
-        <button>أقرأ المزيد</button> 
-    </div>
-    <div class="card" >
-        <img src="../image/1777332026777.png" alt="غوريلا">
-        <h3>غوريلا الانهار المتقطعة </h3>
-        <p>التصنيف: الثدييات</p>
-        <p>الموطن: نيجيريا و الكاميرون</p>
-        <button>أقرأ المزيد</button> 
-    </div>
-    <script src="main.js"></script>
+    </section>
+
+    <!-- Cards Section -->
+    <section class="cards-section">
+        <div class="container">
+            <h2 class="section-title">عجائب الطيور</h2>
+            
+            <div class="card">
+                <img src="../image/panda.jpg" alt="Falcon">
+                <div class="card-info">
+                    <h3>أسرع طائر</h3>
+                    <p>الصقر الجوال: سرعته تصل إلى 390 كم/س</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="../image/panda.jpg" alt="Crow">
+                <div class="card-info">
+                    <h3>أذكى طائر</h3>
+                    <p>الغراب: يحل مشاكل ويستخدم أدوات!</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="../image/panda.jpg" alt="Parrot">
+                <div class="card-info">
+                    <h3>أكثر طائر ملون</h3>
+                    <p>الببغاء: يتميز بريش بألوان زاهية جداً</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="../image/panda.jpg" alt="Penguin">
+                <div class="card-info">
+                    <h3>أقوى طائر في البرد</h3>
+                    <p>البطريق: يعيش في القطب المتجمد</p>
+                </div>
+            </div>
+
+            <div class="clear"></div>
+        </div>
+    </section>
+
+    <!-- Footer / Newsletter -->
+    <footer class="footer">
+        <div class="container">
+            <h3>هل أنت من عشاق الطيور؟</h3>
+            <p>اشترك الآن وتلقى كل جديد عن عالم الطيور!</p>
+            <div class="subscribe-box">
+                <input type="email" placeholder="أدخل بريدك الإلكتروني">
+                <button type="button">اشترك الآن</button>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
