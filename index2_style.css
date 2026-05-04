@@ -12,7 +12,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color:var(--bg-nav) !important;
+    background-color: var(--bg-nav) !important;
     height: 80px;
     padding: 10px 5%;
      border-bottom:2px solid var(--accent);
@@ -186,7 +186,7 @@ html{
 
 :root {
     --bg-body: #fdf2e9;
-    --bg-nav: #ffffff;       
+    --bg-nav: #e67e22;       
     --nav-text: #ffffff;    
     --text-main:#3d2b1f;      
     --accent: #d35400; 
@@ -203,7 +203,7 @@ html{
     --logo-color: #3d2b1f;
 }
 .nav-bar {
-    background-color: var(--nav-bg) !important;
+    background-color: var(--bg-nav) !important;
     border-bottom: 2px solid var(--accent-color);
     transition: 0.4s; 
 }
@@ -217,7 +217,7 @@ nav ul li a {
 }
 
 body {
-    background-color: var(--body-bg);
+    background-color: var(--bg-body);
     transition: 0.4s;
 }
 
