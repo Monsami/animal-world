@@ -7,13 +7,13 @@ body {
     color: #333;
 }
 
-.container nav-bar {
+.nav-bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color:#3d2b1f;
+    background-color:#3d2b1f !important;
     height: 80px;
-    padding: 15px 5%;
+    padding: 10px 5%;
     border-bottom:2px solid #d35400;
     direction: rtl;
     overflow: hidden;
@@ -39,12 +39,11 @@ body {
 }
 
 nav ul li {
-    display:flex;
     margin: 0 10px;
 } 
 
 nav ul li a {
-    
+    display: flex;
     color: #ffffff;
     text-decoration: none;
     font-size: 0.9rem;
