@@ -1,0 +1,265 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>عالم الثدييات | Mammals World</title>
+    <!-- External CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="malk_style.css">
+    <style>
+    </style>
+</head>
+<body>
+    <!-- الهيدر (Header) -->
+    <header> 
+        <div class="container nav-bar">
+            <div class="logo">
+                <div class="logo-mark" aria-hidden="true"></div>
+                    <span>عالم الحيوان</span>
+                </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html" class="active" target="_self">الرئيسية</a></li>
+                    <li><a href="../malk/malk.html" target="contentFrame">الثدييات</a></li>
+                    <li><a href="../nada/nada.html" target="contentFrame">الطيور</a></li>
+                    <li><a href="../mina.html" target="contentFrame">أعماق البحار</a></li>
+                    <li><a href="../index2.html" target="contentFrame">المهددة بالانقراض</a></li>
+                    <li><a href="../julina/julina.html" target="contentFrame">المعرض</a></li>
+                    <li><a href="../blog.html" target="contentFrame">المدونة</a></li>
+                    <li><a href="../contact.html" target="contentFrame">اتصل بنا</a></li>
+                </ul>
+            </nav>
+            <button class="theme-toggle" id="darkmodeToggle" aria-label="التبديل بين الوضع المظلم والفاتح">
+                <i class="fas fa-moon"></i> <span id="themeText">الوضع المظلم</span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="hero-section">
+                <h2> معلومات سريعة & سهلة</h2>
+                <p>استعرض بطاقات الثدييات الرائعة، كل بطاقة تحتوي على نبذة مختصرة بالعربية ورابط للموسوعة الحرة (ويكيبيديا) لمعرفة المزيد.</p>
+            </div>
+
+            <!-- شبكة البطاقات:  9 حيوانات  -->
+            <div class="cards-grid">
+                <!-- الأسد -->
+                <div class="animal-card">
+                    <div class="card-img">
+                        <img src="images/lion.jpg" alt="أسد">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="animal-name"> الأسد</h3>
+                        <p class="description">الأسد  هو قط كبير يعيش في إفريقيا وأجزاء من الهند. يتميز بجسم عضلي قوي وذكاء اجتماعي، ويعيش ضمن مجموعات تُسمى "الزمر". يعد قمة السلسلة الغذائية.</p>
+                        <a href="https://ar.wikipedia.org/wiki/%D8%A3%D8%B3%D8%AF" target="_blank" rel="noopener noreferrer" class="read-more">اقرأ المزيد على ويكيبيديا <i class="fas fa-arrow-left"></i></a>
+                    </div>
+                </div>
+                <!-- الفيل -->
+                <div class="animal-card">
+                    <div class="card-img">
+                        <img src="images/elephant.jpg" alt="فيل">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="animal-name"> الفيل الأفريقي</h3>
+                        <p class="description">أضخم حيوان بري على الأرض، يتميز بآذانه الكبيرة وخرطومه الطويل. يتمتع بذكاء حاد وروابط عائلية قوية ويساهم في توازن النظام البيئي.</p>
+                        <a href="https://ar.wikipedia.org/wiki/%D9%81%D9%8A%D9%84_%D8%A3%D9%81%D8%B1%D9%8A%D9%82%D9%8A" target="_blank" rel="noopener noreferrer" class="read-more">اقرأ المزيد على ويكيبيديا <i class="fas fa-arrow-left"></i></a>
+                    </div>
+                </div>
+                <!-- الدلفين -->
+                <div class="animal-card">
+                    <div class="card-img">
+                        <img src="images/dolphin.jpg" alt="دلفين">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="animal-name"> الدلفين</h3>
+                        <p class="description">الدلفين قاروري الأنف من أذكى الثدييات البحرية، يشتهر بسلوكه المرح وقدرته على تحديد المواقع بالصدى. يعيش في مجموعات اجتماعية متعاونة.</p>
+                        <a href="https://ar.wikipedia.org/wiki/%D8%AF%D9%84%D9%81%D9%8A%D9%86%D9%8A%D8%A7%D8%AA" target="_blank" rel="noopener noreferrer" class="read-more">اقرأ المزيد على ويكيبيديا <i class="fas fa-arrow-left"></i></a>
+                    </div>
+                </div>
+                <!-- النمر البنغالي -->
+                <div class="animal-card">
+                    <div class="card-img">
+                        <img src="images/tiger.jpg" alt="نمر">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="animal-name"> النمر البنغالي</h3>
+                        <p class="description">أكبر السنوريات حجماً، يتميز بخطوطه السوداء على فرائه البرتقالي. يعيش في غابات آسيا وهو حيوان مفترس ماهر، لكنه مهدد بالانقراض.</p>
+                        <a href="https://ar.wikipedia.org/wiki/%D9%86%D9%85%D8%B1_%D8%A8%D9%86%D8%BA%D8%A7%D9%84%D9%8A" target="_blank" rel="noopener noreferrer" class="read-more">اقرأ المزيد على ويكيبيديا <i class="fas fa-arrow-left"></i></a>
+                    </div>
+                </div>
+                <!-- الزرافة -->
+                <div class="animal-card">
+                    <div class="card-img">
+                        <img src="images/giraffe.jpg" alt="زرافة">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="animal-name"> الزرافة</h3>
+                        <p class="description">أطول الثدييات على وجه الأرض، رقبتها الطويلة تساعدها على تناول أوراق الأشجار العالية. لكل زرافة نمط فريد من البقع.</p>
+                        <a href="https://ar.wikipedia.org/wiki/%D8%B2%D8%B1%D8%A7%D9%81%D8%A9" target="_blank" rel="noopener noreferrer" class="read-more">اقرأ المزيد على ويكيبيديا <i class="fas fa-arrow-left"></i></a>
+                    </div>
+                </div>
+                <!-- الباندا العملاقة -->
+                <div class="animal-card">
+                    <div class="card-img">
+                        <img src="images/panda.jpg" alt="باندا">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="animal-name"> الباندا العملاقة</h3>
+                        <p class="description">نوع من الدببة موطنها الصين، تتغذى بشكل أساسي على الخيزران. وهي رمز عالمي للحفاظ على الطبيعة بعد جهود إنقاذها من الانقراض.</p>
+                        <a href="https://ar.wikipedia.org/wiki/%D8%A8%D8%A7%D9%86%D8%AF%D8%A7_%D8%B9%D9%85%D9%84%D8%A7%D9%82%D8%A9" target="_blank" rel="noopener noreferrer" class="read-more">اقرأ المزيد على ويكيبيديا <i class="fas fa-arrow-left"></i></a>
+                    </div>
+                </div>
+                <!-- حمار الزرد (Zebra) -->
+                <div class="animal-card">
+                    <div class="card-img">
+                        <img src="images/zebra.jpg" alt="حمار وحشي">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="animal-name"> الحمار الوحشي </h3>
+                        <p class="description">الحمار الوحشي المخطط يشتهر بخطوطه الفريدة بالأسود والأبيض، وكل فرد له نمط مختلف. يعيش في قطعان اجتماعية في سهول إفريقيا.</p>
+                        <a href="https://ar.wikipedia.org/wiki/%D8%AD%D9%85%D8%A7%D8%B1_%D9%88%D8%AD%D8%B4%D9%8A" target="_blank" rel="noopener noreferrer" class="read-more">اقرأ المزيد على ويكيبيديا <i class="fas fa-arrow-left"></i></a>
+                    </div>
+                </div>
+                <!-- الخفاش-->
+                <div class="animal-card">
+                    <div class="card-img">
+                        <img src="images/bat.jpg" alt="خفاش">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="animal-name"> الخفاش</h3>
+                        <p class="description">الخفافيش هي الثدييات الوحيدة القادرة على الطيران الحقيقي. تستخدم تحديد المواقع بالصدى للتنقل ليلاً، وتلعب دوراً مهماً في تلقيح النباتات ومكافحة الحشرات.</p>
+                        <a href="https://ar.wikipedia.org/wiki/%D8%AE%D9%81%D8%A7%D8%B4" target="_blank" rel="noopener noreferrer" class="read-more">اقرأ المزيد على ويكيبيديا <i class="fas fa-arrow-left"></i></a>
+                    </div>
+                </div>
+                <!-- الذئب الرمادي  -->
+                <div class="animal-card">
+                    <div class="card-img">
+                        <img src="images/wolf.jpg" alt="ذئب رمادي">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="animal-name"> الذئب الرمادي</h3>
+                        <p class="description">الذئب الرمادي هو أكبر أفراد الكلاب البرية، يعيش في قطعان منظمة. يتميز بقدرته على التحمل وذكائه الجماعي، وله دور حيوي في النظم البيئية.</p>
+                        <a href="https://ar.wikipedia.org/wiki/%D8%B0%D8%A6%D8%A8_%D8%B1%D9%85%D8%A7%D8%AF%D9%8A" target="_blank" rel="noopener noreferrer" class="read-more">اقرأ المزيد على ويكيبيديا <i class="fas fa-arrow-left"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- استطلاع الرأي -->
+            <div class="poll-section">
+                <h3><i class="fas fa-chart-simple"></i> استطلاع رأي</h3>
+                <p>ما هي ثديياتك المفضلة من البطاقات أعلاه؟ شاركنا رأيك!</p>
+                <div class="poll-options" id="pollOptions">
+                    <label><input type="radio" name="favMammal" value="أسد">  الأسد</label>
+                    <label><input type="radio" name="favMammal" value="فيل">  الفيل</label>
+                    <label><input type="radio" name="favMammal" value="دلفين">  الدلفين</label>
+                    <label><input type="radio" name="favMammal" value="نمر">  النمر</label>
+                    <label><input type="radio" name="favMammal" value="زرافة">  الزرافة</label>
+                    <label><input type="radio" name="favMammal" value="باندا">  الباندا</label>
+                    <label><input type="radio" name="favMammal" value="خفاش">  الخفاش</label>
+                    <label><input type="radio" name="favMammal" value="ذئب">  الذئب الرمادي</label>
+                </div>
+                <button class="vote-btn" id="votePollBtn"><i class="fas fa-vote-yea"></i> تصويت</button>
+                <p id="pollFeedback" style="margin-top: 12px; font-size: 0.9rem; color: var(--accent);"></p>
+            </div>
+
+            <!-- حيوان هذا الشهر الأكثر تصويتاً  -->
+            <div class="most-voted">
+                <h4><i class="fas fa-trophy"></i> حيوان هذا الشهر الأكثر تصويتاً <i class="fas fa-star"></i></h4>
+                <p>الباندا العملاقة </p>
+                <small style="display: block; margin-top: 0.7rem;">تم اختياره بناءً على أصوات المجتمع لشهر أبريل 2026</small>
+            </div>
+        </div>
+    </main> 
+
+    <!-- النشرة البريدية -->
+    <section class="newsletter">
+        <div class="container newsletter-content">
+            <div class="newsletter-text">
+                <h3>اشترك لتصلك أحدث الأخبار</h3>
+                <p>كن أول من يعرف عن المقالات الجديدة، الصور المذهلة، وأخبار الحفاظ على الحياة البرية.</p>
+        </div>
+        <form class="newsletter-form">
+            <input type="email" placeholder="أدخل بريدك الإلكتروني" />
+            <button type="submit">اشترك الآن <i class="fas fa-paper-plane"></i></button>
+        </form>
+        </div>
+        <div class="footer">
+            <hr>
+            <p class="footer-note">
+            © 2024 عالم الحيوان. جميع الحقوق محفوظة.
+            </p>
+            <br>
+            <br>
+        </div>
+    </section>
+
+    <script>
+        (function() {
+            const toggleBtn = document.getElementById('darkmodeToggle');
+            const themeTextSpan = document.getElementById('themeText');
+            const rootElement = document.body;
+            const storedTheme = localStorage.getItem('mammalsTheme');
+            if (storedTheme === 'dark') {
+                rootElement.classList.add('dark');
+                if(themeTextSpan) themeTextSpan.innerText = 'الوضع الفاتح';
+                if(toggleBtn) toggleBtn.innerHTML = '<i class="fas fa-sun"></i> <span id="themeText">الوضع الفاتح</span>';
+            } else if (storedTheme === 'light') {
+                rootElement.classList.remove('dark');
+                if(themeTextSpan) themeTextSpan.innerText = 'الوضع المظلم';
+                if(toggleBtn) toggleBtn.innerHTML = '<i class="fas fa-moon"></i> <span id="themeText">الوضع المظلم</span>';
+            } else {
+                const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                if (prefersDark) {
+                    rootElement.classList.add('dark');
+                    if(themeTextSpan) themeTextSpan.innerText = 'الوضع الفاتح';
+                    if(toggleBtn) toggleBtn.innerHTML = '<i class="fas fa-sun"></i> <span id="themeText">الوضع الفاتح</span>';
+                    localStorage.setItem('mammalsTheme', 'dark');
+                } else {
+                    rootElement.classList.remove('dark');
+                    localStorage.setItem('mammalsTheme', 'light');
+                }
+            }
+            if (toggleBtn) {
+                toggleBtn.addEventListener('click', () => {
+                    const isDark = rootElement.classList.contains('dark');
+                    if (isDark) {
+                        rootElement.classList.remove('dark');
+                        localStorage.setItem('mammalsTheme', 'light');
+                        toggleBtn.innerHTML = '<i class="fas fa-moon"></i> <span id="themeText">الوضع المظلم</span>';
+                        if(themeTextSpan) themeTextSpan.innerText = 'الوضع المظلم';
+                    } else {
+                        rootElement.classList.add('dark');
+                        localStorage.setItem('mammalsTheme', 'dark');
+                        toggleBtn.innerHTML = '<i class="fas fa-sun"></i> <span id="themeText">الوضع الفاتح</span>';
+                        if(themeTextSpan) themeTextSpan.innerText = 'الوضع الفاتح';
+                    }
+                });
+            }
+        })();
+
+        const voteBtn = document.getElementById('votePollBtn');
+        const pollFeedback = document.getElementById('pollFeedback');
+        if(voteBtn) {
+            voteBtn.addEventListener('click', () => {
+                const selected = document.querySelector('input[name="favMammal"]:checked');
+                if(selected) {
+                    const animal = selected.value;
+                    pollFeedback.innerHTML = `✅ شكراً لك! ${animal} من أروع الثدييات. 🐾 تم تسجيل تصويتك بنجاح.`;
+                    setTimeout(() => {
+                        if(pollFeedback.innerHTML.includes('شكراً')) pollFeedback.style.opacity = '0.9';
+                    }, 2800);
+                } else {
+                    pollFeedback.innerHTML = `⚠️ الرجاء اختيار الحيوان المفضل لديك من الخيارات أعلاه.`;
+                    setTimeout(() => {
+                        if(pollFeedback.innerHTML.includes('الرجاء')) pollFeedback.innerHTML = '';
+                    }, 2700);
+                }
+            });
+        }
+    </script>
+</body>
+</html>
