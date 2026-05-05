@@ -4,19 +4,18 @@
     --card-bg: #ffffff;
     --nav-bg: #ffffff;
     --logo: #704629;
-    /* --text-shadow:0 0 5px rgba(255,255,255,0.8); */
 }
 
 [data-theme="dark"] {
-    
     --bg-body: #121212;
     --body-text: #ffffff;
     --card-bg: #1e1e1e;
     --nav-bg: #1a1a1a;
-    --logo:#edc9af;
+    --logo: #edc9af;
+}
 
-body{
-    direction:rtl;
+body {
+    direction: rtl;
     font-family: sans-serif;
     background-color: #f4f4f0;
     margin: 0;
@@ -24,6 +23,7 @@ body{
     overflow-x: hidden;
     width: 100%;
 }
+
 .main-header {
     background-color: #ffffff;
     padding: 20px 0;
@@ -31,22 +31,25 @@ body{
     border-bottom: 1px solid #e0e6d6;
     width: 100%;
 }
+
 .header-container {
     max-width: 1200px;
-    margin: 0 auto ;
+    margin: 0 auto;
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    direction: rtl; 
+    direction: rtl;
 }
-.nav-links{
+
+.nav-links {
     display: flex;
     gap: 20px;
     list-style: none;
     margin: 0;
     padding: 0;
 }
+
 .nav-links a {
     text-decoration: none;
     color: #444;
@@ -57,7 +60,7 @@ body{
 }
 
 .nav-links a:hover {
-    color: #8fa173; 
+    color: #8fa173;
 }
 
 .logo {
@@ -65,74 +68,87 @@ body{
     font-weight: bold;
     color: #2d3e26;
 }
-.container{
+
+.container {
     max-width: 1200px;
-    margin:0 auto;
+    margin: 0 auto;
     padding: 20px;
 }
-.hero-section{
-    padding: 50px 0;   
-    width: 100%; 
+
+.hero-section {
+    padding: 50px 0;
+    width: 100%;
     height: 350px !important;
-    background-image: url('toucan.jpeg'); 
-    background-size: cover; 
-    background-position: center; 
-    border-radius:10px ;
-    height: 590px;
+    background-image: url('toucan.jpeg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.3); 
+    background-color: rgba(0, 0, 0, 0.3);
     background-blend-mode: overlay;
 }
+
 .hero-section h1 {
-    color: white; 
+    color: white;
     font-size: 3.5rem;
     margin-bottom: 10px;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
+
 .hero-section p {
     color: #eaeaea;
     font-size: 1.2rem;
     text-shadow: 1px 1px 4px rgba(0,0,0,0.06);
 }
-.hero-section h1{
-    color: #f8f9f5;
-    letter-spacing: 1px;
-    font-size: 3.5rem;
-    font-weight: bold;
-    margin-bottom: 10px;
-    text-shadow: 2px 2px 8px rgba(0,0,0,0.08);
-    text-align: right;
-}
-.bird-cards-container{
+
+.bird-cards-container {
     display: flex;
-    justify-content: space-between;
-    gap: 20px;
+    flex-direction: column;
+    gap: 40px;
 }
-.card{
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
     background: white;
     background-color: #ffffff;
     box-shadow: 0 10px rgba(0,0,0,0.03);
     border: 1px solid #eee;
     padding: 15px;
     border-radius: 15px;
-    flex: 1;
+    flex: 1 1 250px;
+    cursor: pointer;
+    transition: transform 0.2s;
 }
-.card img{
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
     width: 100%;
-    height: 330px;
+    height: 200px;
     object-fit: cover;
     display: block;
     border-radius: 10px;
 }
-.card h3{
+
+.card h3 {
     color: #2d4030;
     margin-top: 15px;
+    text-align: center;
 }
-.sound-row{
+
+.sound-row {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -142,47 +158,52 @@ body{
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
-btn-group{
+
+.btn-group {
     display: flex;
     gap: 10px;
 }
-.play-ptn{
+
+.play-ptn {
     background-color: #2d4030;
     color: white;
     border: none;
     padding: 8px 15px;
-    border-radius:5px ;
+    border-radius: 5px;
     cursor: pointer;
 }
-.stop-ptn{
+
+.stop-ptn {
     background-color: #d9534f;
     color: white;
-    border:none ;
+    border: none;
     padding: 8px 15px;
-    border-radius:5px ;
+    border-radius: 5px;
     cursor: pointer;
-
 }
-.map-image{
+
+.map-image {
     width: 180px !important;
     height: auto;
     overflow: hidden;
     display: flex;
     align-items: center;
 }
-.mig-map{
+
+.mig-map {
     width: 100% !important;
     height: auto !important;
     display: block;
 }
-.info-section{
+
+.info-section {
     display: flex;
     flex-direction: row;
     align-items: center;
     background-color: #e7ebe1;
     border-radius: 20px;
     border: 1px solid #dce8c1 !important;
-    padding:8px 10px;
+    padding: 8px 10px;
     gap: 30px;
     margin: 20px auto;
     overflow: hidden !important;
@@ -190,40 +211,45 @@ btn-group{
     max-width: 1200px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
-.info-text{
+
+.info-text {
     flex: 2;
-    margin-top: 1.5;
+    margin-top: 1.5rem;
     text-align: right;
     direction: rtl;
 }
-.map-image{
+
+.map-image {
     flex: 1.5;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: visible;
 }
-.map-image img{
+
+.map-image img {
     width: 250px !important;
     height: auto;
     transform: scale(1.4);
 }
+
 .sounds-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
-    gap: 20px;                
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
     padding: 20px;
-    direction: rtl;           
+    direction: rtl;
 }
+
 .sound-item {
-    background-color: #f9f9f9; 
-    border-radius: 15px;      
+    background-color: #f9f9f9;
+    border-radius: 15px;
     padding: 20px;
     display: flex;
-    flex-direction: row-reverse; 
+    flex-direction: row-reverse;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.05); 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
     border: 1px solid #eee;
 }
 
@@ -249,7 +275,7 @@ btn-group{
     height: 45px;
     border-radius: 50%;
     border: none;
-    background-color: #2d3e26; 
+    background-color: #2d3e26;
     color: white;
     cursor: pointer;
     font-size: 20px;
@@ -261,45 +287,82 @@ btn-group{
 
 .circle-btn:hover {
     background-color: #3e5435;
-    transform: scale(1.1); 
+    transform: scale(1.1);
 }
 
-.switch input { opacity: 0; width: 0; height: 0; }
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
 
 .slider {
     position: absolute;
     cursor: pointer;
-    top: 0; left: 0; right: 0; bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     background-color: #ccc;
     transition: .4s;
     border-radius: 34px;
 }
 
-footer{
-    background-color:var(--bg-body);
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #edc9af;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+footer {
+    background-color: var(--bg-body);
     color: var(--body-text);
     padding: 60px 20px;
     text-align: center;
     direction: rtl;
 }
-footer p{
+
+footer p {
     font-size: 18px;
     opacity: 0.9;
 }
-.sign{
+
+.sign {
     display: flex;
     justify-content: center;
     gap: 10px;
-    margin: 20px ;
+    margin: 20px;
 }
-.sign input{
+
+.sign input {
     padding: 12px 20px;
     border-radius: 50px;
-
+    border: 1px solid #ccc;
 }
+
 .sign button {
-    background-color:#edc9af;
-    border-bottom: 4px solid #db9f77 ; 
+    background-color: #edc9af;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -307,21 +370,22 @@ footer p{
     cursor: pointer;
     transition: 0.3s;
 }
-.sign button:hover{
+
+.sign button:hover {
     background-color: #c6906c;
     transform: translateY(2px);
-    border-bottom-width: 2px;
 }
-hr{
+
+hr {
     border: none;
     border-top: 1px solid rgba(0, 0, 0, 0.591);
     margin: 24px auto;
     width: 60%;
 }
-h3{
+
+h3 {
     margin-bottom: 10px;
 }
-
 
 header {
     background: linear-gradient(180deg, rgba(180, 213, 181, 0.95), rgb(255, 255, 255));
@@ -337,7 +401,7 @@ header {
     padding: 0 20px;
 }
 
-.logo {
+.logo span {
     display: flex;
     align-items: center;
     color: rgb(25, 44, 27);
@@ -346,20 +410,11 @@ header {
     gap: 10px;
 }
 
-.logo-mark {
-    width: 38px;
-    height: 38px;
-    border-radius: 50%;
-    background:
-        radial-gradient(circle at 38% 38%, #f3f7eb 0 14%, transparent 15%),
-        radial-gradient(circle at 56% 56%, #0f4c2e 0 28%, transparent 29%),
-        linear-gradient(145deg, #cfd9b0, #8dbf4a);
-    box-shadow: 0 0 0 2px rgba(255,255,255,0.18) inset;
-}
-
 nav ul {
     display: flex;
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 nav ul li {
@@ -379,40 +434,40 @@ nav ul li a.active {
     padding-bottom: 4px;
 }
 
-.nav-icons {
+.mode-switch {
+    display: flex;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.details-card {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    z-index: 1000;
+    text-align: center;
+}
+
+.details-card img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.details-card button {
+    margin-top: 15px;
+    padding: 8px 20px;
+    background: #2d3e26;
     color: white;
-}
-
-.nav-icons i {
-    margin-right: 15px;
+    border: none;
+    border-radius: 30px;
     cursor: pointer;
 }
-
-main {
-    margin-top: 20px;
-    padding: 3px;
-}
-
-.switch input { opacity: 0; width: 0; height: 0; }
-
-.slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background-color: #ccc;
-    transition: .4s;
-    border-radius: 34px;
-}
-
-.slider:before {
-    position: absolute;
-    content: "";
-    height: 16px; width: 16px;
-    left: 3px; bottom: 3px;
-    background-color: white;
-    transition: .4s;
-    border-radius: 50%;
-}
-
-input:checked + .slider { background-color: #edc9af; }
-input:checked + .slider:before { transform: translateX(22px); }
