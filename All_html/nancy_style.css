@@ -6,20 +6,26 @@
     padding: 0;
 }
 :root {
-    --bg-body: #ffffff;
-    --body-text: #000000;
+    --bg-body: #fdfaf7;
+    --body-text: #2d241e;
     --card-bg: #ffffff;
     --nav-bg: #ffffff;
     --logo: #704629;
+    --accent:#d4a373;
+    --accent-hover:#bc8a5f;
+    --border-color:#eaddcf;
 }
 
 [data-theme="dark"] {
     
-    --bg-body: #121212;
-    --body-text: #ffffff;
-    --card-bg: #1e1e1e;
-    --nav-bg: #1a1a1a;
+    --bg-body: #1a1a1a;
+    --body-text: #e0e0e0;
+    --card-bg: #262626;
+    --nav-bg: #121212;
     --logo:#edc9af;
+    --accent:#edc9af;
+    --accent-hover:#d4a373;
+    --border-color:#404040;
 }
 
 body {
@@ -110,16 +116,16 @@ nav ul li a:hover{
     display: inline-block;
     font-weight: bold;
     color: var(--body-text);
-    background-color: #edc9af;
+    background-color: var(--accent);
     padding: 12px 30px;
     border-radius: 8px;
     text-decoration: none;
-    border-bottom: 4px solid #db9f77; 
+    border-bottom: 4px solid var(--accent-hover); 
     transition: 0.3s;
 }
 
 .main-button:hover {
-    background-color: #c6906c;
+    background-color: var(--accent-hover);
     transform: translateY(2px);
     border-bottom-width: 2px;
 }
@@ -156,16 +162,16 @@ nav ul li a:hover{
     display: inline-block;
     font-weight: bold;
     color: white;
-    background-color: #edc9af;
+    background-color: var(--accent);
     padding: 8px 20px;
     border-radius: 50px;
     text-decoration: none;
-    border-bottom: 3px solid #db9f77; 
+    border-bottom: 3px solid var(--accent-hover); 
     transition: 0.2s;
 }
 .cards-button:hover{
-  background-color:#c6906c;
-  border-bottom: 2px solid #db9f77;
+  background-color:var(--accent-hover);
+  border-bottom: 2px solid var(--accent-hover);
   transform: translateY(2px);
   color:white;
    }
@@ -218,11 +224,13 @@ footer{
 .sign input{
     padding: 12px 20px;
     border-radius: 50px;
-
+     background-color: var(--card-bg);
+    color: var(--body-text)
+    border-top: 1px solid var(--border-color);
 }
 .sign button {
-    background-color:#edc9af;
-    border-bottom: 4px solid #db9f77 ; 
+    background-color: var(--accent);
+    border-bottom: 4px solid var(--accent-hover) ; 
     color: white;
     border: none;
     padding: 10px 20px;
@@ -231,13 +239,15 @@ footer{
     transition: 0.3s;
 }
 .sign button:hover{
-    background-color: #c6906c;
+    background-color: var(--accent-hover);
     transform: translateY(2px);
     border-bottom-width: 2px;
 }
 hr{
     margin: 24px auto;
     width: 60%;
+    border: 0;
+    border-top: 1px solid var(--border-color);
 }
 h2{
     margin-bottom: 10px;
