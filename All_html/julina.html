@@ -5,15 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>معرض الحياة البرية</title>
     <link rel="stylesheet" href="julina_style.css">
-</head>
 
 <style>
+
+:root {
+    --bg-body: #eef3f1;
+    --card-bg: #ffffff;
+    --text: #1b1b1b;
+    --nav-bg: #ffffff;
+    --logo: #2e7d32;
+    --accent: #66bb6a;
+    --overlay: rgba(0,0,0,0.5);
+    --footer-bg: #e7ecea;
+}
+
+body.dark {
+    --bg-body: #0f1720;
+    --card-bg: #18222e;
+    --text: #e8eef5;
+    --nav-bg: #111a24;
+    --logo: #7bd389;
+    --accent: #4caf50;
+    --overlay: rgba(0,0,0,0.65);
+    --footer-bg: #111a24;
+}
+
 body {
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, sans-serif;
-    background-color: #eef3f1;
-    color: #1b1b1b;
+    background-color: var(--bg-body);
+    color: var(--text);
+    transition: 0.3s;
 }
 
 .nav-bar {
@@ -25,14 +48,9 @@ body {
 }
 
 .logo {
-    font-family: 'Cairo', sans-serif;
-    font-weight: 700; 
-    font-size: 28px;   
-    color: var(--logo); 
-    display: flex;
-    align-items: center;
-    transition: all 0.3s ease;
-    cursor: pointer;
+    font-weight: 700;
+    font-size: 28px;
+    color: var(--logo);
 }
 
 nav ul {
@@ -42,51 +60,15 @@ nav ul {
     padding: 0;
 }
 
-nav ul li { margin: 0 15px; }
+nav ul li {
+    margin: 0 15px;
+}
 
 nav ul li a {
-    color: var(--body-text); 
+    color: var(--text);
     text-decoration: none;
-    font-size: 0.95rem;
     font-weight: bold;
 }
-
-.header{
-     background-image:url(../image/siberian-tiger.jpg); 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 70vh;
-    width: 100%;
-    position: relative; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-}
-
-.header .content{
-    color: var(--body-text);
-    width: 100%;
-    height: 100%;
-    display: flex;
-    text-align: right;
-    align-items: flex-start;
-    flex-direction: column;
-    justify-content: right; 
-    padding-top: 80px;
-    padding-right: 10%;
-    direction: rtl;
-}
-
-.header h1 { 
-    color: var(--body-text);
-    font-size: 3rem;
-    margin-bottom: 10px;
-    font-weight: bold; 
-    }
 
 .container {
     max-width: 1300px;
@@ -95,7 +77,7 @@ nav ul li a {
 }
 
 .animal-section {
-    background: #ffffff;
+    background: var(--card-bg);
     border-radius: 20px;
     padding: 30px;
     margin-bottom: 50px;
@@ -103,8 +85,8 @@ nav ul li a {
 }
 
 .album-title {
-    color: #2e7d32;
-    border-right: 6px solid #66bb6a;
+    color: var(--logo);
+    border-right: 6px solid var(--accent);
     padding-right: 15px;
     margin-bottom: 25px;
 }
@@ -120,147 +102,113 @@ nav ul li a {
     height: 250px;
     border-radius: 15px;
     overflow: hidden;
-    cursor: pointer;
 }
 
 .card img,
 .card iframe {
     width: 100%;
     height: 100%;
-    border: none;
     object-fit: cover;
-    transition: 0.5s;
-}
-
-.card:hover img {
-    transform: scale(1.1);
-}
-
-.card iframe {
-    pointer-events: auto;
+    border: none;
 }
 
 .overlay {
     position: absolute;
     inset: 0;
-    background: rgba(0,0,0,0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background: var(--overlay);
     opacity: 0;
-    transition: 0.3s;
-    color: #fff;
-    font-size: 18px;
 }
 
 .card:hover .overlay {
     opacity: 1;
 }
-footer{
-    background-color:var(--bg-body);
-    color: var(--body-text);
+
+.video-wide {
+    grid-column: 1 / -1;
+    height: 400px;
+}
+
+footer {
+    background-color: var(--footer-bg);
+    color: var(--text);
     padding: 60px 20px;
     text-align: center;
-    direction: rtl;
 }
-footer p{
-    font-size: 18px;
-    opacity: 0.9;
-}
-.sign{
+
+.sign {
     display: flex;
     justify-content: center;
     gap: 10px;
-    margin: 20px ;
+    margin: 20px;
 }
-.sign input{
+
+.sign input {
     padding: 12px 20px;
     border-radius: 50px;
-
 }
+
 .sign button {
-    background-color:#edc9af;
-    border-bottom: 4px solid #db9f77 ; 
-    color: white;
+    background-color: #edc9af;
     border: none;
     padding: 10px 20px;
     border-radius: 50px;
     cursor: pointer;
-    transition: 0.3s;
 }
-.sign button:hover{
-    background-color: #c6906c;
-    transform: translateY(2px);
-    border-bottom-width: 2px;
+
+.classic-btn {
+    padding: 6px 14px;
+    border: 1px solid #333;
+    background-color: #f5f5f5;
+    color: #111;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 6px;
 }
-hr{
-    border: none;
-    border-top: 1px solid rgba(0, 0, 0, 0.591);
-    margin: 24px auto;
-    width: 60%;
+
+body.dark .classic-btn {
+    background-color: #1f2a36;
+    color: #fff;
+    border: 1px solid #aaa;
 }
-h3{
-    margin-bottom: 10px;
-}
+
 </style>
+</head>
 
 <body>
 
-    <header>
-       <div class="nav-bar">
-        <div class="logo">
-          <span>عالم الحيوان</span>
-        </div>
-           <nav>
-          <ul>
-            <li><a href="./index.html" class="active" target="_self">الرئيسية</a></li>
-            <li><a href="./All_html/malk.html" target="contentFrame">الثدييات</a></li>
-            <li><a href="./All_html/nada.html" target="contentFrame">الطيور</a></li>
-            <li><a href="./All_html/mina.html" target="contentFrame">أعماق البحار</a></li>
-            <li><a href="./All_html/nancy.html" target="contentFrame">المهددة بالانقراض</a></li>
-            <li><a href="./All_html/julina.html" target="contentFrame">المعرض</a></li>
-            <li><a href="./All_html/blog.html" target="contentFrame">المدونة</a></li>
-            <li><a href="./All_html/contact.html" target="contentFrame">اتصل بنا</a></li>
-          </ul>
+<header>
+    <div class="nav-bar">
+        <div class="logo">عالم الحيوان</div>
+
+        <nav>
+            <ul>
+                <li><a href="./index.html">الرئيسية</a></li>
+                <li><a href="./malk.html">الثدييات</a></li>
+                <li><a href="./nada.html">الطيور</a></li>
+                <li><a href="./mina.html">أعماق البحار</a></li>
+                <li><a href="./nancy.html">المهددة بالانقراض</a></li>
+                <li><a href="./julina.html">المعرض</a></li>
+                <li><a href="./blog.html">المدونة</a></li>
+                <li><a href="./contact.html">اتصل بنا</a></li>
+            </ul>
         </nav>
-<div class="mode-switch">
-     <label class="switch">
-        <input type="checkbox" id="theme-toggle">
-        <span class="slider round"></span>
-    </label>
-</div>
-    </header>
+
+        <button class="classic-btn" onclick="toggleDark()">تبديل الوضع</button>
+    </div>
+</header>
+
 <main class="container">
 
     <section class="animal-section">
         <h2 class="album-title">ثدييات</h2>
         <div class="gallery-grid">
 
-            <div class="card">
-                <img src="../image/panda.jpg">
-                <div class="overlay"></div>
-            </div>
+            <div class="card"><img src="../image/panda.jpg"><div class="overlay"></div></div>
+            <div class="card"><img src="../image/zebra.jpg"><div class="overlay"></div></div>
+            <div class="card"><img src="../image/lion.jpg"><div class="overlay"></div></div>
 
-            <div class="card">
-                <img src="../image/zebra.jpg">
-                <div class="overlay"></div>
-            </div>
-
-            <div class="card">
-                <img src="../image/lion.jpg">
-                <div class="overlay"></div>
-            </div>
-
-            <div class="card">
+            <div class="card video-wide">
                 <iframe src="https://www.youtube.com/embed/ilS55P22lhE" allowfullscreen></iframe>
-            </div>
-
-            <div class="card">
-                <iframe src="https://www.youtube.com/embed/V6C6nH2c0w8" allowfullscreen></iframe>
-            </div>
-
-            <div class="card">
-                <iframe src="https://www.youtube.com/embed/4n2Ahw52rk0" allowfullscreen></iframe>
             </div>
 
         </div>
@@ -270,31 +218,12 @@ h3{
         <h2 class="album-title">طيور</h2>
         <div class="gallery-grid">
 
-            <div class="card">
-                <img src="../image/929529b1b2d704ff49ee729e9f49b245.jpg">
-                <div class="overlay"></div>
-            </div>
+            <div class="card"><img src="../image/929529b1b2d704ff49ee729e9f49b245.jpg"><div class="overlay"></div></div>
+            <div class="card"><img src="../image/canary.jpeg"><div class="overlay"></div></div>
+            <div class="card"><img src="../image/toucan.jpeg"><div class="overlay"></div></div>
 
-            <div class="card">
-                <img src="../image/canary.jpeg">
-                <div class="overlay"></div>
-            </div>
-
-            <div class="card">
-                <img src="../image/toucan.jpeg">
-                <div class="overlay"></div>
-            </div>
-
-            <div class="card">
-                <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" allowfullscreen></iframe>
-            </div>
-
-            <div class="card">
-                <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" allowfullscreen></iframe>
-            </div>
-
-            <div class="card">
-                <iframe src="https://www.youtube.com/embed/VIDEO_ID_3" allowfullscreen></iframe>
+            <div class="card video-wide">
+                <iframe src="https://www.youtube.com/embed/V6C6nH2c0w8" allowfullscreen></iframe>
             </div>
 
         </div>
@@ -304,53 +233,37 @@ h3{
         <h2 class="album-title">حيوانات الماء</h2>
         <div class="gallery-grid">
 
-            <div class="card">
-                <img src="../image/اخطبوط.jpg">
-                <div class="overlay"></div>
-            </div>
+            <div class="card"><img src="../image/اخطبوط.jpg"><div class="overlay"></div></div>
+            <div class="card"><img src="../image/dolfin.jpg"><div class="overlay"></div></div>
+            <div class="card"><img src="../image/sea turtle.jpeg"><div class="overlay"></div></div>
 
-            <div class="card">
-                <img src="../image/dolfin.jpg">
-                <div class="overlay"></div>
-            </div>
-
-            <div class="card">
-                <img src="../image/sea turtle.jpeg">
-                <div class="overlay"></div>
-            </div>
-
-            <div class="card">
+            <div class="card video-wide">
                 <iframe src="https://www.youtube.com/embed/9UG7F6oplhU" allowfullscreen></iframe>
-            </div>
-
-            <div class="card">
-                <iframe src="https://www.youtube.com/embed/VIDEO_ID_4" allowfullscreen></iframe>
-            </div>
-
-            <div class="card">
-                <iframe src="https://www.youtube.com/embed/VIDEO_ID_5" allowfullscreen></iframe>
             </div>
 
         </div>
     </section>
 
 </main>
-    <footer>
-        <div class="footer">
-            <h3>اشترك لتصلك أحدث الأخبار</h3>
-          <p>
-            كن أول من يعرف عن المقالات الجديدة، الصور المذهلة، وأخبار الحفاظ على
-            الحياة البرية.
-          </p>
-            <form class="sign">
-                <input type="email" placeholder="ادخل بريدك الالكتروني" required>
-                <button type="submit">اشترك الآن</button>
-            </form>
-        </div>
-        <hr>
-        <p class="footer-note">
-            © 2026 عالم الحيوان. جميع الحقوق محفوظة.
-        </p>
-    </footer>
+
+<footer>
+    <h3>اشترك لتصلك أحدث الأخبار</h3>
+
+    <form class="sign">
+        <input type="email" placeholder="ادخل بريدك">
+        <button>اشترك</button>
+    </form>
+
+    <hr>
+
+    <p>© 2026 عالم الحيوان</p>
+</footer>
+
+<script>
+function toggleDark(){
+    document.body.classList.toggle("dark");
+}
+</script>
+
 </body>
 </html>
