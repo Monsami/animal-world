@@ -32,17 +32,74 @@
     </label>
 </div>
     </header>
-  <section class="hero-section">    
+<body><div class="container">
+<header class="main-header">
+    <div class="header-container">
+        <nav class="nav-links">
+        <a href="">الرئيسيه</a>
+        <a href="">عالم الثديات</a>
+        <a href="active">عجائب الطيور</a>
+        <a href="">اعماق البحار</a>
+        <a href="">اتصل بنا</a>
+        </nav>
+        <div class="logo-text">عجائب عالم الطيور </div>
+    </div>
+</header>
+    <section class="hero-section">    
     <h1>عجائب الطيور</h1>
     <p>متع نظرك بأجمل الطيور واغربها في عالمنا المذهل</p>
     </section>
-    <section id="birds-grid" class="bird-cards-container">
-    </section>
+    <section id="birds-grid" class="bird-cards-container"><section>
+      <h2>الطيور الجارحة</h2>
+      <div class="gallery">
+        
+          <div class="card" onclick="openBird(1)">
+            <img src="../image/eagle.jpeg">
+            <h3>الصقر</h3>
+          </div>
+        
+          <div class="card" onclick="openBird(2)">
+            <img src="../image/wo.jpeg">
+            <h3>البومة</h3>
+          </div>
+        
+      </div>
+    </section><section>
+      <h2>الطيور المغردة</h2>
+      <div class="gallery">
+        
+          <div class="card" onclick="openBird(3)">
+            <img src="../image/sprrow.jpeg">
+            <h3>العصافير</h3>
+          </div>
+        
+          <div class="card" onclick="openBird(4)">
+            <img src="../image/canary.jpeg">
+            <h3>الكناري</h3>
+          </div>
+        
+      </div>
+    </section><section>
+      <h2>الطيور المائية</h2>
+      <div class="gallery">
+        
+          <div class="card" onclick="openBird(5)">
+            <img src="duck.jpeg">
+            <h3>البط</h3>
+          </div>
+        
+          <div class="card" onclick="openBird(6)">
+            <img src="seagull.jpeg">
+            <h3>النورس</h3>
+          </div>
+        
+      </div>
+    </section></section>
     </div>
     <div class="info-section">
     <div class="info-content">
         <div class="map-image">
-            <img src="../image/world.jpeg" alt="migration map" class="mig-map">
+            <img src="world.jpeg" alt="migration map" class="mig-map">
         </div>
             <div class="info-text">
             <h3>مقالات عن هجرة الطيور</h3>
@@ -61,7 +118,7 @@
                     <span>Crow</span>
                     <p> صوت الغراب</p>
                 </div>
-                <button class="circle-btn" onclick="let a=document.getElementById('Crow-audio');a.paused ? a.play(): a.pause()">&#9654/||</button>
+                <button class="circle-btn" onclick="let a=document.getElementById('Crow-audio');a.paused ? a.play(): a.pause()">▶/||</button>
                 </div>
                 <div class="sound-item">                    
                 <audio id="lyre-audio" src="sound3.mp3"></audio>                
@@ -69,7 +126,7 @@
                     <span>lyrebird</span>
                     <p>طائر القيثارة</p>
                 </div>
-                <button class="circle-btn" onclick="let a=document.getElementById('lyre-audio');a.paused ? a.play(): a.pause()">&#9654/||</button>
+                <button class="circle-btn" onclick="let a=document.getElementById('lyre-audio');a.paused ? a.play(): a.pause()">▶/||</button>
                 </div>
                 <div class="sound-item">                    
                 <audio id="kooka-audio" src="sound2.mp3"></audio>                
@@ -77,10 +134,8 @@
                     <span>kookaburra</span>
                     <p>ضحكة الكوكابورا</p>
                 </div>
-                <button class="circle-btn" onclick="let a=document.getElementById('kooka-audio');a.paused ? a.play(): a.pause()">&#9654/||</button>
+                <button class="circle-btn" onclick="let a=document.getElementById('kooka-audio');a.paused ? a.play(): a.pause()">▶/||</button>
                 </div>
-            </div>  <script src="main.js"></script>
-
     <footer>
         <div class="footer">
             <h3>اشترك لتصلك أحدث الأخبار</h3>
@@ -98,7 +153,6 @@
             © 2026 عالم الحيوان. جميع الحقوق محفوظة.
         </p>
     </footer>
-</body>
 <script>
     const birdsData = [
   { id: 1, category: "raptors", name: "الصقر", desc: "من أقوى الطيور الجارحة", img: "eagle.jpeg", info: " يتميز ببصر حاد وقوة كبيرة في الصيد" },
@@ -172,6 +226,6 @@ function openBird(id) {
             localStorage.setItem('theme', 'light');
         }
     });
-</script>
+     </script>
 </body>
 </html>
