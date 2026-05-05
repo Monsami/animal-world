@@ -206,17 +206,40 @@ nav ul li a:hover {
     background: var(--hover);
 }
 
-footer {
-    background: var(--nav);
-    color: var(--text);
+ooter{
+    background-color:var(--bg-body);
+    color: var(--body-text);
+    padding: 60px 20px;
+    text-align: center;
+    direction: rtl;
 }
 
-.sign input {
-    background: #ffffff;
+.sign{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px ;
 }
-
-[data-theme="dark"] .sign input {
-    background: #0b2a3a;
-    color: #fff;
-    border: 1px solid #00b4d8;
+.sign input{
+    padding: 12px 20px;
+    border-radius: 50px;
+    background-color: var(--card-bg);
+    color: var(--body-text);
+    border-top: 1px solid var(--border-color);
+}
+.sign button {
+    background-color: var(--accent);
+    border-bottom: 4px solid var(--accent-hover) ; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+     margin-top: 10px;
+}
+.sign button:hover{
+    background-color: var(--accent-hover);
+    transform: translateY(2px);
+    border-bottom-width: 2px;
 }
