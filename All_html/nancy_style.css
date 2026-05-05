@@ -11,7 +11,6 @@
     --card-bg: #ffffff;
     --nav-bg: #ffffff;
     --logo: #704629;
-    /* --text-shadow:0 0 5px rgba(255,255,255,0.8); */
 }
 
 [data-theme="dark"] {
@@ -21,7 +20,6 @@
     --card-bg: #1e1e1e;
     --nav-bg: #1a1a1a;
     --logo:#edc9af;
-    /* --text-shadow: none; */
 }
 
 body {
@@ -72,7 +70,7 @@ nav ul li a:hover{
     color: #edc9af;
 }
 .header{
-    background-image:url(../image/panda.jpg); 
+    background-image:url(../image/background.jpeg); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -106,11 +104,8 @@ nav ul li a:hover{
     font-size: 3rem;
     margin-bottom: 10px;
     font-weight: bold; 
-     /* text-shadow: var(--text-shadow); */
+    
     }
-/* .header p{
-    text-shadow: var(--text-shadow);
-} */
 .main-button {
     display: inline-block;
     font-weight: bold;
