@@ -57,7 +57,7 @@ nav ul li {
 nav ul li a {
     color: rgb(25, 44, 27);
     text-decoration: none;
-    font-size: 14px; /* 0.9rem → 14px */
+    font-size: 14px;
     opacity: 0.95;
 }
 
@@ -179,7 +179,7 @@ nav ul li a.active {
     font-size: 14px;
 }
 
-/**/
+
 .newsletter {
     position: relative;
     background: linear-gradient(180deg, #f5f4ef, #102013);
@@ -199,14 +199,14 @@ nav ul li a.active {
 
 .newsletter-text h3 {
     color: #ffffff;
-    font-size: 32px; /* 2rem → 32px */
+    font-size: 32px; 
     font-weight: 900;
     margin-bottom: 10px;
 }
 
 .newsletter-text p {
     color: rgba(255,255,255,0.82);
-    font-size: 16px; /* 1rem → 16px */
+    font-size: 16px; 
     margin-bottom: 22px;
 }
 
@@ -225,7 +225,7 @@ nav ul li a.active {
     border-radius: 999px 0 0 999px;
     border: none;
     outline: none;
-    font-size: 16px; /* 1rem → 16px */
+    font-size: 16px; 
     color: #44514a;
 }
 
@@ -236,7 +236,7 @@ nav ul li a.active {
     border-radius: 0 999px 999px 0;
     color: white;
     font-weight: 800;
-    font-size: 16px; /* 1rem → 16px */
+    font-size: 16px; 
     min-width: 188px;
     gap: 10px;
 }
@@ -256,7 +256,7 @@ nav ul li a.active {
   </style>
 </head>
 <body>
-  <!-- الهيدر -->
+
   <header>
     <div class="container nav-bar">
       <div class="logo">
@@ -336,7 +336,8 @@ nav ul li a.active {
         </div>
     </section>
   <script>
-    // رسالة تأكيد للفورم
+
+    
     const form = document.querySelector('.right-form');
     const sendBtn = document.querySelector('.send-btn');
     sendBtn.addEventListener('click', function(e) {
@@ -345,7 +346,6 @@ nav ul li a.active {
       form.reset();
     });
 
-    // FAQ تفاعلي
     document.querySelectorAll('.faq-item').forEach(item => {
       item.addEventListener('click', () => {
         const answer = item.querySelector('.faq-answer');
