@@ -61,7 +61,7 @@ nav ul li {
 nav ul li a {
     color: rgb(25, 44, 27);
     text-decoration: none;
-    font-size: 14px; /* 0.9rem → 14px */
+    font-size: 14px;
     opacity: 0.95;
 }
 
