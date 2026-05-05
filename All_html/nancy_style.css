@@ -7,7 +7,7 @@
 }
 :root {
     --bg-body: #fdfaf7;
-    --body-text: #2d241e;
+    --body-text: #f5ebe0;
     --card-bg: #ffffff;
     --nav-bg: #ffffff;
     --logo: #704629;
@@ -122,6 +122,7 @@ nav ul li a:hover{
     text-decoration: none;
     border-bottom: 4px solid var(--accent-hover); 
     transition: 0.3s;
+    margin-top: 10px;
 }
 
 .main-button:hover {
@@ -168,6 +169,7 @@ nav ul li a:hover{
     text-decoration: none;
     border-bottom: 3px solid var(--accent-hover); 
     transition: 0.2s;
+     margin-top: 10px;
 }
 .cards-button:hover{
   background-color:var(--accent-hover);
@@ -237,6 +239,7 @@ footer{
     border-radius: 50px;
     cursor: pointer;
     transition: 0.3s;
+     margin-top: 10px;
 }
 .sign button:hover{
     background-color: var(--accent-hover);
