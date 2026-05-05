@@ -79,7 +79,7 @@ body {
     padding: 50px 0;
     width: 100%;
     height: 350px ;
-    background-image: url('..\image\toucan.jpeg');
+    background-image: url("../image/toucan.jpeg");
     background-size: cover;
     background-position: center;
     border-radius: 10px;
