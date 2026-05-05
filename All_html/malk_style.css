@@ -308,8 +308,8 @@ footer p{
 
 }
 .sign button {
-    background-color:#edc9af;
-    border-bottom: 4px solid #db9f77 ; 
+    background-color:rgb(73, 120, 82);
+    border-bottom: 4px solid rgb(73, 120, 82) ; 
     color: white;
     border: none;
     padding: 10px 20px;
@@ -318,7 +318,7 @@ footer p{
     transition: 0.3s;
 }
 .sign button:hover{
-    background-color: #c6906c;
+    background-color: rgba(73, 120, 82, 0.5);
     transform: translateY(2px);
     border-bottom-width: 2px;
 }
