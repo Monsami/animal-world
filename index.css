@@ -218,6 +218,7 @@ nav ul li a.active {
     cursor: pointer;
     margin-top: 16px;
     box-shadow: 0 6px 14px rgba(97, 138, 40, 0.22);
+    text-decoration: none;
 }
 
 .about-content h2 {
@@ -399,7 +400,7 @@ nav ul li a.active {
 
 .card h3 { font-size: 1.1rem; margin-bottom: 10px; }
 .card p { font-size: 0.85rem; padding: 0 10px; margin-bottom: 15px; color: #666; }
-.card a { color: #689f38; text-decoration: none; font-weight: bold; }
+.card a { color: #ffffff; text-decoration: none; font-weight: bold; }
 
 /* Footer and Subscription Section */
 
@@ -475,3 +476,48 @@ nav ul li a.active {
     text-align: center;
     padding: 0;
 } 
+/**//**/
+.main-button {
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(180deg, #b1d84b, #7aa532);
+  padding: 10px 25px;
+  border-radius: 50px;
+  text-decoration: none;
+  border-bottom: 1px solid #000000; 
+  transition: 0.2s;
+}
+.main-button:hover{
+  background: linear-gradient(180deg, #407231, #2e5a1f);
+  border-bottom: 1px solid #407231;
+  transform: translateY(2px);
+  color:white;
+}
+
+
+/**/
+.section-button{
+    margin-top: 16px    ;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(180deg, #b1d84b, #7aa532);
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    border-bottom: 1px solid #000000; 
+    transition: 0.2s;
+}
+.section-button:hover{
+  background: linear-gradient(180deg, #407231, #2e5a1f);
+  border-bottom: 1px solid #407231;
+  transform: translateY(2px);
+  color:white;
+}
+/**/
+.btn-sec{
+    color: rgb(0, 0, 0);
+    padding: 11px 28px;
+    align-self: center;
+    font-size: 25px;
+    font-weight: bold;
+}
