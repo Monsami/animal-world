@@ -38,7 +38,8 @@
     <h1>عجائب الطيور</h1>
     <p>متع نظرك بأجمل الطيور واغربها في عالمنا المذهل</p>
     </section>
-    <section id="birds-grid" class="bird-cards-container"><section>
+    <section id="birds-grid" class="bird-cards-container">
+      <section>
       <h2>الطيور الجارحة</h2>
       <div class="gallery">
         
@@ -83,8 +84,7 @@
           </div>
         
       </div>
-    </section></section>
-    </div>
+    </section>
     <div class="info-section">
     <div class="info-content">
         <div class="map-image">
@@ -99,7 +99,7 @@
         </div>
     </div>
 
-<div class="sounds-conainer">
+    <div class="sounds-conainer">
     <h2 class="section-title">اغرب اصوات الطيور</h2>
     <div class="sounds-grid">
         <div class="sound-item">                    
@@ -111,7 +111,7 @@
             <button class="circle-btn" onclick="let a=document.getElementById('Crow-audio');a.paused ? a.play(): a.pause()">▶/||</button>
         </div>
         <div class="sound-item">                    
-            <audio id="lyre-audio" src="sound3.mp3"></audio>                
+            <audio id="lyre-audio" src="sound2.mp3"></audio>                
             <div class="sound-info">
                 <span>lyrebird</span>
                 <p>طائر القيثارة</p>
@@ -119,7 +119,7 @@
             <button class="circle-btn" onclick="let a=document.getElementById('lyre-audio');a.paused ? a.play(): a.pause()">▶/||</button>
         </div>
         <div class="sound-item">                    
-            <audio id="kooka-audio" src="sound2.mp3"></audio>                
+            <audio id="kooka-audio" src="sound3.mp3"></audio>                
             <div class="sound-info">
                 <span>kookaburra</span>
                 <p>ضحكة الكوكابورا</p>
@@ -133,15 +133,14 @@
     <div class="footer">
         <h3>اشترك لتصلك أحدث الأخبار</h3>
         <p>كن أول من يعرف عن المقالات الجديدة، الصور المذهلة، وأخبار الحفاظ على الحياة البرية.</p>
-        <form class="sign">
-            <input type="email" placeholder="ادخل بريدك الالكتروني" required>
-            <button type="submit">اشترك الآن</button>
+        <form class=\"sign\">
+            <input type=\"email\" placeholder=\"ادخل بريدك الالكتروني\" required>
+            <button type=\"submit\">اشترك الآن</button>
         </form>
     </div>
     <hr>
-    <p class="footer-note">© 2026 عالم الحيوان. جميع الحقوق محفوظة.</p>
-</footer>
-
+        <p class="footer-note">© 2026 عالم الحيوان. جميع الحقوق محفوظة.</p>
+    </footer>
 <div id="bird-details" class="hidden"></div>
 
 <script>
