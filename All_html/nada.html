@@ -2,212 +2,178 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bird Wonders - عجائب الطيور</title>
     <link rel="stylesheet" href="nada_style.css"> 
 </head>
 <body>
 
-    <header>
-       <div class="nav-bar">
+<header>
+    <div class="nav-bar">
         <div class="logo">
-          <span>عالم الحيوان</span>
+            <span>عالم الحيوان</span>
         </div>
-           <nav>
-         <ul>
-            <li><a href="./index.html" class="active" target="_self">الرئيسية</a></li>
-            <li><a href="./malk.html" target="contentFrame">الثدييات</a></li>
-            <li><a href="./nada.html" target="contentFrame">الطيور</a></li>
-            <li><a href="./mina.html" target="contentFrame">أعماق البحار</a></li>
-            <li><a href="./nancy.html" target="contentFrame">المهددة بالانقراض</a></li>
-            <li><a href="./julina.html" target="contentFrame">المعرض</a></li>
-            <li><a href="./blog.html" target="contentFrame">المدونة</a></li>
-            <li><a href="./contact.html" target="contentFrame">اتصل بنا</a></li>
-          </ul>
+        <nav>
+            <ul>
+                <li><a href="./index.html" class="active" target="_self">الرئيسية</a></li>
+                <li><a href="./malk.html" target="contentFrame">الثدييات</a></li>
+                <li><a href="./nada.html" target="contentFrame">الطيور</a></li>
+                <li><a href="./mina.html" target="contentFrame">أعماق البحار</a></li>
+                <li><a href="./nancy.html" target="contentFrame">المهددة بالانقراض</a></li>
+                <li><a href="./julina.html" target="contentFrame">المعرض</a></li>
+                <li><a href="./blog.html" target="contentFrame">المدونة</a></li>
+                <li><a href="./contact.html" target="contentFrame">اتصل بنا</a></li>
+            </ul>
         </nav>
-<div class="mode-switch">
-     <label class="switch">
-        <input type="checkbox" id="theme-toggle">
-        <span class="slider round"></span>
-    </label>
-</div>
-    </header>
-<div class="container">
-<header class="main-header">
-    <div class="header-container">
-        <nav class="nav-links">
-        <a href="">الرئيسيه</a>
-        <a href="">عالم الثديات</a>
-        <a href="active">عجائب الطيور</a>
-        <a href="">اعماق البحار</a>
-        <a href="">اتصل بنا</a>
-        </nav>
-        <div class="logo-text">عجائب عالم الطيور </div>
+        <div class="mode-switch">
+            <label class="switch">
+                <input type="checkbox" id="theme-toggle">
+                <span class="slider round"></span>
+            </label>
+        </div>
     </div>
 </header>
+
+<div class="container">
+    <header class="main-header">
+        <div class="header-container">
+            <nav class="nav-links">
+                <a href="">الرئيسيه</a>
+                <a href="">عالم الثديات</a>
+                <a href="active">عجائب الطيور</a>
+                <a href="">اعماق البحار</a>
+                <a href="">اتصل بنا</a>
+            </nav>
+            <div class="logo-text">عجائب عالم الطيور</div>
+        </div>
+    </header>
+
     <section class="hero-section">    
-    <h1>عجائب الطيور</h1>
-    <p>متع نظرك بأجمل الطيور واغربها في عالمنا المذهل</p>
+        <h1>عجائب الطيور</h1>
+        <p>متع نظرك بأجمل الطيور واغربها في عالمنا المذهل</p>
     </section>
-    <section id="birds-grid" class="bird-cards-container"><section>
-      <h2>الطيور الجارحة</h2>
-      <div class="gallery">
-        
-          <div class="card" onclick="openBird(1)">
-            <img src="../image/eagle.jpeg">
-            <h3>الصقر</h3>
-          </div>
-        
-          <div class="card" onclick="openBird(2)">
-            <img src="../image/wo.jpeg">
-            <h3>البومة</h3>
-          </div>
-        
-      </div>
-    </section><section>
-      <h2>الطيور المغردة</h2>
-      <div class="gallery">
-        
-          <div class="card" onclick="openBird(3)">
-            <img src="../image/sprrow.jpeg">
-            <h3>العصافير</h3>
-          </div>
-        
-          <div class="card" onclick="openBird(4)">
-            <img src="../image/canary.jpeg">
-            <h3>الكناري</h3>
-          </div>
-        
-      </div>
-    </section><section>
-      <h2>الطيور المائية</h2>
-      <div class="gallery">
-        
-          <div class="card" onclick="openBird(5)">
-            <img src="../image/duck.jpeg">
-            <h3>البط</h3>
-          </div>
-        
-          <div class="card" onclick="openBird(6)">
-            <img src="../image/seagull.jpeg">
-            <h3>النورس</h3>
-          </div>
-        
-      </div>
-    </section></section>
-    </div>
-    <div class="info-section">
+
+    <section id="birds-grid" class="bird-cards-container"></section>
+</div>
+
+<div class="info-section">
     <div class="info-content">
         <div class="map-image">
-            <img src="world.jpeg" alt="migration map" class="mig-map">
+            <img src="../image/world.jpeg" alt="migration map" class="mig-map">
         </div>
-            <div class="info-text">
+        <div class="info-text">
             <h3>مقالات عن هجرة الطيور</h3>
-            <p>هِجْرَة الطّيُور هي حركةٌ موسميةٌ مُنتظمة، عادةً ما تكون باتجاه الشمال والجنوب على طول مسار الطائِر، وتكون بين مناطق التكاثر ومناطق التشتية (إمضاء الشتاء). تُهاجر أنواعٌ عديدة من الطيور، وذلك على الرغم من أنَّ هجرة الحيوانات عمومًا تنطوي على مخاطر عاليةٍ من الافتراس والوفاة، خصوصًا الناجمة عن الصيد البشري لها والذي يرتبطُ بالحاجة الأساسية لتوفير الطعام. تحدث هجرة الطيور غالبًا في نصف الأرض الشمالي، حيثُ تُجبر الطُيور على سلك مساراتٍ مُحددة بحواجز طبيعية مثل البحر الأبيض المتوسط أو البحر الكاريبي.
-
- </p>
-            </div>
+            <p>هِجْرَة الطّيُور هي حركةٌ موسميةٌ مُنتظمة، عادةً ما تكون باتجاه الشمال والجنوب على طول مسار الطائِر، وتكون بين مناطق التكاثر ومناطق التشتية (إمضاء الشتاء). تُهاجر أنواعٌ عديدة من الطيور، وذلك على الرغم من أنَّ هجرة الحيوانات عمومًا تنطوي على مخاطر عاليةٍ من الافتراس والوفاة، خصوصًا الناجمة عن الصيد البشري لها والذي يرتبطُ بالحاجة الأساسية لتوفير الطعام. تحدث هجرة الطيور غالبًا في نصف الأرض الشمالي، حيثُ تُجبر الطُيور على سلك مساراتٍ مُحددة بحواجز طبيعية مثل البحر الأبيض المتوسط أو البحر الكاريبي.</p>
         </div>
     </div>
-        <div class="sounds-conainer">
-            <h2 class="section-title">اغرب اصوات الطيور</h2>
-            <div class="sounds-grid">
-                <div class="sound-item">                    
-                <audio id="Crow-audio" src="Crow.mp3"></audio>                
-                <div class="sound-info">
-                    <span>Crow</span>
-                    <p> صوت الغراب</p>
-                </div>
-                <button class="circle-btn" onclick="let a=document.getElementById('Crow-audio');a.paused ? a.play(): a.pause()">▶/||</button>
-                </div>
-                <div class="sound-item">                    
-                <audio id="lyre-audio" src="sound3.mp3"></audio>                
-                <div class="sound-info">
-                    <span>lyrebird</span>
-                    <p>طائر القيثارة</p>
-                </div>
-                <button class="circle-btn" onclick="let a=document.getElementById('lyre-audio');a.paused ? a.play(): a.pause()">▶/||</button>
-                </div>
-                <div class="sound-item">                    
-                <audio id="kooka-audio" src="sound2.mp3"></audio>                
-                <div class="sound-info">
-                    <span>kookaburra</span>
-                    <p>ضحكة الكوكابورا</p>
-                </div>
-                <button class="circle-btn" onclick="let a=document.getElementById('kooka-audio');a.paused ? a.play(): a.pause()">▶/||</button>
-                </div>
-    <footer>
-        <div class="footer">
-            <h3>اشترك لتصلك أحدث الأخبار</h3>
-          <p>
-            كن أول من يعرف عن المقالات الجديدة، الصور المذهلة، وأخبار الحفاظ على
-            الحياة البرية.
-          </p>
-            <form class="sign">
-                <input type="email" placeholder="ادخل بريدك الالكتروني" required>
-                <button type="submit">اشترك الآن</button>
-            </form>
+</div>
+
+<div class="sounds-conainer">
+    <h2 class="section-title">اغرب اصوات الطيور</h2>
+    <div class="sounds-grid">
+        <div class="sound-item">                    
+            <audio id="Crow-audio" src="Crow.mp3"></audio>                
+            <div class="sound-info">
+                <span>Crow</span>
+                <p>صوت الغراب</p>
+            </div>
+            <button class="circle-btn" onclick="let a=document.getElementById('Crow-audio');a.paused ? a.play(): a.pause()">▶/||</button>
         </div>
-        <hr>
-        <p class="footer-note">
-            © 2026 عالم الحيوان. جميع الحقوق محفوظة.
-        </p>
-    </footer>
+        <div class="sound-item">                    
+            <audio id="lyre-audio" src="sound3.mp3"></audio>                
+            <div class="sound-info">
+                <span>lyrebird</span>
+                <p>طائر القيثارة</p>
+            </div>
+            <button class="circle-btn" onclick="let a=document.getElementById('lyre-audio');a.paused ? a.play(): a.pause()">▶/||</button>
+        </div>
+        <div class="sound-item">                    
+            <audio id="kooka-audio" src="sound2.mp3"></audio>                
+            <div class="sound-info">
+                <span>kookaburra</span>
+                <p>ضحكة الكوكابورا</p>
+            </div>
+            <button class="circle-btn" onclick="let a=document.getElementById('kooka-audio');a.paused ? a.play(): a.pause()">▶/||</button>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="footer">
+        <h3>اشترك لتصلك أحدث الأخبار</h3>
+        <p>كن أول من يعرف عن المقالات الجديدة، الصور المذهلة، وأخبار الحفاظ على الحياة البرية.</p>
+        <form class="sign">
+            <input type="email" placeholder="ادخل بريدك الالكتروني" required>
+            <button type="submit">اشترك الآن</button>
+        </form>
+    </div>
+    <hr>
+    <p class="footer-note">© 2026 عالم الحيوان. جميع الحقوق محفوظة.</p>
+</footer>
+
+<div id="bird-details" class="hidden"></div>
+
 <script>
     const birdsData = [
-  { id: 1, category: "raptors", name: "الصقر", desc: "من أقوى الطيور الجارحة", img: "eagle.jpeg", info: " يتميز ببصر حاد وقوة كبيرة في الصيد" },
+        { id: 1, category: "raptors", name: "الصقر", desc: "من أقوى الطيور الجارحة", img: "../image/eagle.jpeg", info: "يتميز ببصر حاد وقوة كبيرة في الصيد" },
+        { id: 2, category: "raptors", name: "البومة", desc: "طائر ليلي", img: "../image/wo.jpeg", info: "تعيش ليلًا وتتميز بصمت أثناء الطيران" },
+        { id: 3, category: "songbirds", name: "العصافير", desc: "طيور صغيرة جميلة", img: "../image/sprrow.jpeg", info: "معروفة بأصواتها الجميلة" },
+        { id: 4, category: "songbirds", name: "الكناري", desc: "طائر ملون", img: "../image/canary.jpeg", info: "صوته جميل جدًا" },
+        { id: 5, category: "water", name: "البط", desc: "طائر مائي", img: "../image/duck.jpeg", info: "يعيش في الماء ويجيد السباحة" },
+        { id: 6, category: "water", name: "النورس", desc: "طائر أنيق", img: "../image/seagull.jpeg", info: "من أجمل الطيور المائية" }
+    ];
 
-  { id: 2, category: "raptors", name: "البومة", desc: "طائر ليلي", img: "wo.jpeg", info: "تعيش ليلًا وتتميز بصمت أثناء الطيران" },
+    const categories = [
+        { key: "raptors", title: "الطيور الجارحة" },
+        { key: "songbirds", title: "الطيور المغردة" },
+        { key: "water", title: "الطيور المائية" }
+    ];
 
-  { id: 3, category: "songbirds", name: "العصافير", desc: "طيور صغيرة جميلة", img: "sprrow.jpeg", info: "معروفة بأصواتها الجميلة" },
+    const grid = document.getElementById("birds-grid");
 
-  { id: 4, category: "songbirds", name: "الكناري", desc: "طائر ملون", img: "canary.jpeg", info: "صوته جميل جدًا" },
+    function render() {
+        grid.innerHTML = "";
+        categories.forEach(cat => {
+            let section = document.createElement("section");
+            let birds = birdsData.filter(b => b.category === cat.key);
+            section.innerHTML = `
+                <h2>${cat.title}</h2>
+                <div class="gallery">
+                    ${birds.map(bird => `
+                        <div class="card" onclick="openBird(${bird.id})">
+                            <img src="${bird.img}">
+                            <h3>${bird.name}</h3>
+                        </div>
+                    `).join("")}
+                </div>
+            `;
+            grid.appendChild(section);
+        });
+    }
 
-  { id: 5, category: "water", name: "البط", desc: "طائر مائي", img: "duck.jpeg", info: "يعيش في الماء ويجيد السباحة" },
+    function openBird(id) {
+        const bird = birdsData.find(b => b.id === id);
+        const box = document.getElementById("bird-details");
+        box.innerHTML = `
+            <div class="details-card">
+                <img src="${bird.img}">
+                <h2>${bird.name}</h2>
+                <p>${bird.desc}</p>
+                <p>${bird.info}</p>
+                <button onclick="closeBird()">إغلاق</button>
+            </div>
+        `;
+        box.classList.remove("hidden");
+    }
 
-  { id: 6, category: "water", name: "النورس", desc: "طائر أنيق", img: "seagull.jpeg", info: "من أجمل الطيور المائية" }
+    function closeBird() {
+        document.getElementById("bird-details").classList.add("hidden");
+    }
 
-];
-const categories = [
-  { key: "raptors", title: "الطيور الجارحة" },
-  { key: "songbirds", title: "الطيور المغردة" },
-  { key: "water", title: "الطيور المائية" }
-];
-const grid = document.getElementById("birds-grid");
-function render() {
-  grid.innerHTML = "";
-  categories.forEach(cat => {
-    let section = document.createElement("section");
-    let birds = birdsData.filter(b => b.category === cat.key);
-    section.innerHTML = `
-      <h2>${cat.title}</h2>
-      <div class="gallery">
-        ${birds.map(bird => `
-          <div class="card" onclick="openBird(${bird.id})">
-            <img src="${bird.img}">
-            <h3>${bird.name}</h3>
-          </div>
-        `).join("")}
-      </div>
-    `;
-    grid.appendChild(section);
-  });
-}
-render();
-function openBird(id) {
-  const bird = birdsData.find(b => b.id === id);
-  const box = document.getElementById("bird-details");
-  box.innerHTML = `
-    <div class="details-card">
-      <img src="${bird.img}">
-      <h2>${bird.name}</h2>
-      <p>${bird.desc}</p>
-      <p>${bird.info}</p>
-      <button onclick="closeBird()">إغلاق</button>
-    </div>
-  `;
-  box.classList.remove("hidden");
-}
+    render();
+</script>
+
+<script>
     const toggleInput = document.getElementById('theme-toggle');
     const htmlElement = document.documentElement;
 
@@ -225,6 +191,7 @@ function openBird(id) {
             localStorage.setItem('theme', 'light');
         }
     });
-     </script>
+</script>
+
 </body>
 </html>
