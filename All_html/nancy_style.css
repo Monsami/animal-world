@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap');
 *{
+    
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 :root {
+    --text-shadow:0 0 5px rgba(255,255,255,0.8);
     --bg-body: #ffffff;
     --body-text: #000000;
     --card-bg: #ffffff;
@@ -99,8 +101,11 @@ nav ul li a {
     font-size: 3rem;
     margin-bottom: 10px;
     font-weight: bold; 
+     text-shadow: var(--text-shadow);
     }
-
+.header p{
+    text-shadow: var(--text-shadow);
+}
 .main-button {
     display: inline-block;
     font-weight: bold;
