@@ -78,7 +78,6 @@ body, .container, .hero-section, .cards-grid, .card-content, .poll-section, foot
     align-items: center;
     color: var(--text-primary);
     white-space: nowrap;
-    margin: 5px 5px 5px 5px
 }
 
 
@@ -376,6 +375,7 @@ nav ul {
 
 nav ul li {
     margin: 0 10px;
+   
     justify-content: center;
 }
 
@@ -384,6 +384,7 @@ nav ul li a {
     text-decoration: none;
     font-size: 14.4px;
     opacity: 0.95;
+    justify-content: center;
 }
 
 nav ul li a.active {
