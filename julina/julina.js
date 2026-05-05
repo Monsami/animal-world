@@ -19,3 +19,21 @@ document.querySelectorAll('.card').forEach(card => {
         }
     });
 });
+
+    const toggleInput = document.getElementById('theme-toggle');
+    const htmlElement = document.documentElement;
+
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+        htmlElement.setAttribute('data-theme', 'dark');
+        toggleInput.checked = true;
+    }
+    toggleInput.addEventListener('change', () => {
+        if (toggleInput.checked) {
+            htmlElement.setAttribute('data-theme', 'dark');
+            localStorage.setItem('theme', 'dark');
+        } else {
+            htmlElement.setAttribute('data-theme', 'light');
+            localStorage.setItem('theme', 'light');
+        }
+    });
