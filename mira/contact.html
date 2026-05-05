@@ -57,7 +57,7 @@ nav ul li {
 nav ul li a {
     color: rgb(25, 44, 27);
     text-decoration: none;
-    font-size: 14px; /* 0.9rem → 14px */
+    font-size: 14px; 
     opacity: 0.95;
 }
 
@@ -229,7 +229,7 @@ h3{
   </style>
 </head>
 <body>
-  <!-- الهيدر -->
+
   <header>
     <div class="container nav-bar">
       <div class="logo">
@@ -306,7 +306,7 @@ h3{
         </p>
     </footer>
   <script>
-    // رسالة تأكيد للفورم
+
     const form = document.querySelector('.right-form');
     const sendBtn = document.querySelector('.send-btn');
     sendBtn.addEventListener('click', function(e) {
@@ -315,7 +315,7 @@ h3{
       form.reset();
     });
 
-    // FAQ تفاعلي
+
     document.querySelectorAll('.faq-item').forEach(item => {
       item.addEventListener('click', () => {
         const answer = item.querySelector('.faq-answer');

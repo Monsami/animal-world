@@ -199,10 +199,7 @@ footer{
     text-align: center;
     direction: rtl;
 }
-footer p{
-    font-size: 18px;
-    opacity: 0.9;
-}
+
 .sign{
     display: flex;
     justify-content: center;
@@ -230,12 +227,10 @@ footer p{
     border-bottom-width: 2px;
 }
 hr{
-    border: none;
-    border-top: 1px solid rgba(0, 0, 0, 0.591);
     margin: 24px auto;
     width: 60%;
 }
-h3{
+h2{
     margin-bottom: 10px;
 }
 
