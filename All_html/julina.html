@@ -16,16 +16,77 @@ body {
     color: #1b1b1b;
 }
 
-header {
-    text-align: center;
-    padding: 60px 20px;
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+    background-color: var(--nav-bg);
 }
 
-header h1 {
-    font-size: 3.5rem;
-    color: #2e7d32;
-    text-transform: uppercase;
+.logo {
+    font-family: 'Cairo', sans-serif;
+    font-weight: 700; 
+    font-size: 28px;   
+    color: var(--logo); 
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li { margin: 0 15px; }
+
+nav ul li a {
+    color: var(--body-text); 
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: bold;
+}
+
+.header{
+     background-image:url(../image/siberian-tiger.jpg); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70vh;
+    width: 100%;
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.header .content{
+    color: var(--body-text);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    text-align: right;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: right; 
+    padding-top: 80px;
+    padding-right: 10%;
+    direction: rtl;
+}
+
+.header h1 { 
+    color: var(--body-text);
+    font-size: 3rem;
+    margin-bottom: 10px;
+    font-weight: bold; 
+    }
 
 .container {
     max-width: 1300px;
@@ -95,15 +156,80 @@ header h1 {
 .card:hover .overlay {
     opacity: 1;
 }
+footer{
+    background-color:var(--bg-body);
+    color: var(--body-text);
+    padding: 60px 20px;
+    text-align: center;
+    direction: rtl;
+}
+footer p{
+    font-size: 18px;
+    opacity: 0.9;
+}
+.sign{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px ;
+}
+.sign input{
+    padding: 12px 20px;
+    border-radius: 50px;
+
+}
+.sign button {
+    background-color:#edc9af;
+    border-bottom: 4px solid #db9f77 ; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.sign button:hover{
+    background-color: #c6906c;
+    transform: translateY(2px);
+    border-bottom-width: 2px;
+}
+hr{
+    border: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.591);
+    margin: 24px auto;
+    width: 60%;
+}
+h3{
+    margin-bottom: 10px;
+}
 </style>
 
 <body>
 
-<header>
-    <h1>معرض الحياة البرية</h1>
-    <p>رحلة مذهلة عبر أجمل الحياة البرية والطبيعة</p>
-</header>
-
+    <header>
+       <div class="nav-bar">
+        <div class="logo">
+          <span>عالم الحيوان</span>
+        </div>
+           <nav>
+          <ul>
+            <li><a href="./index.html" class="active" target="_self">الرئيسية</a></li>
+            <li><a href="./All_html/malk.html" target="contentFrame">الثدييات</a></li>
+            <li><a href="./All_html/nada.html" target="contentFrame">الطيور</a></li>
+            <li><a href="./All_html/mina.html" target="contentFrame">أعماق البحار</a></li>
+            <li><a href="./All_html/nancy.html" target="contentFrame">المهددة بالانقراض</a></li>
+            <li><a href="./All_html/julina.html" target="contentFrame">المعرض</a></li>
+            <li><a href="./All_html/blog.html" target="contentFrame">المدونة</a></li>
+            <li><a href="./All_html/contact.html" target="contentFrame">اتصل بنا</a></li>
+          </ul>
+        </nav>
+<div class="mode-switch">
+     <label class="switch">
+        <input type="checkbox" id="theme-toggle">
+        <span class="slider round"></span>
+    </label>
+</div>
+    </header>
 <main class="container">
 
     <section class="animal-section">
@@ -209,6 +335,22 @@ header h1 {
     </section>
 
 </main>
-
+    <footer>
+        <div class="footer">
+            <h3>اشترك لتصلك أحدث الأخبار</h3>
+          <p>
+            كن أول من يعرف عن المقالات الجديدة، الصور المذهلة، وأخبار الحفاظ على
+            الحياة البرية.
+          </p>
+            <form class="sign">
+                <input type="email" placeholder="ادخل بريدك الالكتروني" required>
+                <button type="submit">اشترك الآن</button>
+            </form>
+        </div>
+        <hr>
+        <p class="footer-note">
+            © 2026 عالم الحيوان. جميع الحقوق محفوظة.
+        </p>
+    </footer>
 </body>
 </html>
