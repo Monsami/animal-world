@@ -5,15 +5,15 @@
   <title>اتصل بنا - حيواناتي</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f5f5f5;
-    }
-   /* Header */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
 header {
-    background: linear-gradient(180deg, rgba(180, 213, 181, 0.95), rgb(255, 255, 255));
+    background: linear-gradient(180deg, rgba(180, 213, 181, 0.95), #f5f4ef);
     width: 100%;
     z-index: 100;
     padding: 14px 0 12px;
@@ -23,8 +23,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
-    padding: 0 20px;
 }
 
 .logo {
@@ -32,7 +30,7 @@ header {
     align-items: center;
     color: rgb(25, 44, 27);
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 20px;
     gap: 10px;
 }
 
@@ -59,7 +57,7 @@ nav ul li {
 nav ul li a {
     color: rgb(25, 44, 27);
     text-decoration: none;
-    font-size: 0.9rem;
+    font-size: 14px; /* 0.9rem → 14px */
     opacity: 0.95;
 }
 
@@ -78,110 +76,111 @@ nav ul li a.active {
     cursor: pointer;
 }
 
-    .green-banner {
-      background-color: #8fa089;
-      color: white;
-      text-align: center;
-      padding: 45px 0;
-    }
-    .green-banner h1 {
-      margin: 0;
-      font-size: 30px;
-    }
-    .path {
-      font-size: 14px;
-      margin-top: 10px;
-    }
+.green-banner {
+    background-color: #8fa089;
+    color: white;
+    text-align: center;
+    padding: 45px 0;
+}
+.green-banner h1 {
+    margin: 0;
+    font-size: 30px;
+}
+.path {
+    font-size: 14px;
+    margin-top: 10px;
+}
 
-    .main-wrapper {
-      display: flex;
-      max-width: 1100px;
-      margin: 40px auto;
-      background: #fff;
-      padding: 40px;
-      gap: 60px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-    }
-    .right-form {
-      flex: 1.5;
-    }
-    .right-form input, .right-form textarea {
-      width: 100%;
-      padding: 12px;
-      margin-bottom: 20px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      box-sizing: border-box;
-      background-color: #fff;
-    }
-    .send-btn {
-      background-color: #3d6b35;
-      color: white;
-      padding: 14px;
-      border: none;
-      border-radius: 4px;
-      width: 100%;
-      font-size: 18px;
-      cursor: pointer;
-    }
-    .left-info {
-      flex: 1;
-    }
-    .left-info h2 {
-      margin-top: 0;
-      font-size: 24px;
-    }
-    .left-info p {
-      font-size: 14px;
-      color: #666;
-      line-height: 1.8;
-    }
-    .item {
-      margin-bottom: 15px;
-      font-size: 14px;
-    }
-    .socials a {
-      display: inline-block;
-      width: 35px;
-      height: 35px;
-      background: #3d6b35;
-      color: #fff;
-      border-radius: 50%;
-      text-align: center;
-      line-height: 35px;
-      margin-left: 8px;
-      font-size: 16px;
-    }
+.main-wrapper {
+    display: flex;
+    max-width: 1100px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 40px;
+    gap: 60px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+.right-form {
+    flex: 1.5;
+}
+.right-form input, .right-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+.send-btn {
+    background-color: #3d6b35;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 18px;
+    cursor: pointer;
+}
+.left-info {
+    flex: 1;
+}
+.left-info h2 {
+    margin-top: 0;
+    font-size: 24px;
+}
+.left-info p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.8;
+}
+.item {
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+.socials a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background: #3d6b35;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 35px;
+    margin-left: 8px;
+    font-size: 16px;
+}
 
-    .faq-area {
-      max-width: 1100px;
-      margin: 0 auto 60px auto;
-      padding: 0 40px;
-    }
-    .faq-area h3 {
-      font-size: 20px;
-      margin-bottom: 20px;
-    }
-    .faq-item {
-      border: 1px solid #ddd;
-      padding: 18px;
-      background: #fff;
-      border-radius: 4px;
-      margin-bottom: 10px;
-      cursor: pointer;
-      transition: background 0.3s;
-    }
-    .faq-item:hover {
-      background: #f9f9f9;
-    }
-    .faq-answer {
-      display: none;
-      padding: 10px;
-      color: #444;
-      font-size: 14px;
-    }
-    /**/
-    .newsletter {
+.faq-area {
+    max-width: 1100px;
+    margin: 0 auto 60px auto;
+    padding: 0 40px;
+}
+.faq-area h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.faq-item {
+    border: 1px solid #ddd;
+    padding: 18px;
+    background: #fff;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.faq-item:hover {
+    background: #f9f9f9;
+}
+.faq-answer {
+    display: none;
+    padding: 10px;
+    color: #444;
+    font-size: 14px;
+}
+
+/**/
+.newsletter {
     position: relative;
     background: linear-gradient(180deg, #f5f4ef, #102013);
     padding: 0;
@@ -200,14 +199,14 @@ nav ul li a.active {
 
 .newsletter-text h3 {
     color: #ffffff;
-    font-size: 2rem;
+    font-size: 32px; /* 2rem → 32px */
     font-weight: 900;
     margin-bottom: 10px;
 }
 
 .newsletter-text p {
     color: rgba(255,255,255,0.82);
-    font-size: 1rem;
+    font-size: 16px; /* 1rem → 16px */
     margin-bottom: 22px;
 }
 
@@ -218,7 +217,6 @@ nav ul li a.active {
     width: min(720px, 100%);
     overflow: hidden;
     border-radius: 999px;
-    
 }
 
 .newsletter-form input {
@@ -227,7 +225,7 @@ nav ul li a.active {
     border-radius: 999px 0 0 999px;
     border: none;
     outline: none;
-    font-size: 1rem;
+    font-size: 16px; /* 1rem → 16px */
     color: #44514a;
 }
 
@@ -238,11 +236,12 @@ nav ul li a.active {
     border-radius: 0 999px 999px 0;
     color: white;
     font-weight: 800;
-    font-size: 1rem;
+    font-size: 16px; /* 1rem → 16px */
     min-width: 188px;
     gap: 10px;
 }
-.footer hr{
+
+.footer hr {
     border: none;
     border-top: 1px solid rgba(255,255,255,0.12);
     margin: 24px auto;
@@ -252,7 +251,8 @@ nav ul li a.active {
     color: white;
     text-align: center;
     padding: 0;
-} 
+}
+
   </style>
 </head>
 <body>
