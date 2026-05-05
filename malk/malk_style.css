@@ -13,7 +13,7 @@
             padding: 0;
         }
 
-        /* Light Mode */
+       
         :root {
             --bg-primary: #f9fafb;
             --bg-surface: #ffffff;
@@ -46,7 +46,7 @@
 
 
 
-        body, .container, .hero-section, .cards-grid, .card-content, .poll-section, footer {
+        body, .container, .card1, .cards-grid, .card-content, .poll-section, footer {
             text-align: center;
         }
 
@@ -60,9 +60,9 @@
             text-decoration: none;
             color: var(--text-secondary);
             font-weight: 500;
-            font-size: 0.9rem;
+            font-size: 14.4px;
             transition: 0.2s;
-            padding: 0.3rem 0;
+            padding: 4.8px 0;
             border-bottom: 2px solid transparent;
         }
 
@@ -70,7 +70,7 @@
             background: var(--bg-surface);
             border: 1px solid var(--border-light);
             border-radius: 60px;
-            padding: 0.5rem 1.2rem;
+            padding: 8px 19.2px;
             cursor: pointer;
             font-weight: 700;
             display: flex;
@@ -80,52 +80,52 @@
             white-space: nowrap;
         }
 
-        /* Hero section */
-        .hero-section {
+
+        . {
             background-image: url('../image/panda.jpg');
             background-size: cover;
             background-position: center 50%;
             background-repeat: no-repeat;
             border-radius: 32px;
-            padding: 2.8rem 1rem;
+            padding: 44.8px 16px;
         }
 
-        .hero-section::before {
+        card1::before {
             background: rgba(0, 0, 0, 0.55);
             border-radius: 32px;}
 
-        .hero-section h2,
-        .hero-section p {
+        card1 h2,
+        card1 p {
             position: relative;
             z-index: 2;
             color: white;
             text-shadow: 0 1px 5px rgba(0,0,0,0.5);
         }
 
-        body.dark .hero-section::before {
+        body.dark card1::before {
             background: rgba(0, 0, 0, 0.65);
         }
 
-        .hero-section h2 {
-            font-size: 2rem;
-            margin-bottom: 0.75rem;
+        card1 h2 {
+            font-size: 32px;
+            margin-bottom: 12px;
             font-weight: 800;
         }
 
-        .hero-section p {
+        card1 p {
             max-width: 720px;
             margin: 0 auto;
         }
 
-        /* Cards Grid */
+
         .cards-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 2rem;
-            margin: 2.5rem 0 3rem;
+            gap: 32px;
+            margin: 40px 0 48px;
         }
 
-        .animal-card {
+        .card {
             background: var(--bg-card);
             border-radius: 32px;
             overflow: hidden;
@@ -136,7 +136,7 @@
             flex-direction: column;
         }
 
-        .animal-card:hover {
+        .card:hover {
             transform: translateY(-6px);
             box-shadow: 0 20px 30px -12px rgba(0, 0, 0, 0.2);
         }
@@ -159,20 +159,20 @@
         }
 
         .card-content {
-            padding: 1.5rem 1.5rem 1.8rem;
+            padding: 24px 24px 28.8px;
             flex: 1;
         }
 
         .animal-name {
-            font-size: 1.7rem;
+            font-size: 27.2px;
             font-weight: 800;
-            margin-bottom: 0.75rem;
+            margin-bottom: 12px;
         }
 
         .description {
             color: var(--text-secondary);
-            font-size: 0.95rem;
-            margin-bottom: 1.3rem;
+            font-size: 15.2px;
+            margin-bottom: 20.8px;
             line-height: 1.6;
         }
 
@@ -184,11 +184,11 @@
             color: var(--accent);
             text-decoration: none;
             transition: 0.2s;
-            font-size: 0.9rem;
+            font-size: 14.4px;
         }
 
         .read-more i {
-            font-size: 0.8rem;
+            font-size: 12.8px;
             transition: transform 0.2s;
         }
 
@@ -197,31 +197,31 @@
             color: var(--accent-hover);
         }
 
-        /* Poll section */
+
         .poll-section {
             background: var(--bg-surface);
             border-radius: 32px;
-            padding: 1.8rem;
-            margin: 2rem 0 1.5rem;
+            padding: 28.8px;
+            margin: 32px 0 24px;
             border: 1px solid var(--border-light);
             box-shadow: var(--shadow-sm);
         }
 
         .poll-section h3 {
-            font-size: 1.5rem;
+            font-size: 24px;
             display: flex;
             align-items: center;
             justify-content: center;
             gap: 12px;
-            margin-bottom: 1rem;
+            margin-bottom: 16px;
         }
 
         .poll-options {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 1rem;
-            margin: 1rem 0 1rem;
+            gap: 16px;
+            margin: 16px 0 16px;
         }
 
         .poll-options label {
@@ -229,7 +229,7 @@
             align-items: center;
             gap: 8px;
             background: var(--bg-primary);
-            padding: 0.5rem 1.2rem;
+            padding: 8px 19.2px;
             border-radius: 60px;
             border: 1px solid var(--border-light);
             cursor: pointer;
@@ -241,12 +241,12 @@
             border: none;
             color: white;
             font-weight: 700;
-            padding: 0.6rem 1.8rem;
+            padding: 9.6px 28.8px;
             border-radius: 40px;
-            margin-top: 0.5rem;
+            margin-top: 8px;
             cursor: pointer;
             transition: 0.2s;
-            font-size: 1rem;
+            font-size: 16px;
         }
 
         .vote-btn:hover {
@@ -254,62 +254,62 @@
             transform: scale(0.97);
         }
 
-        /* Most voted animal section */
+
         .most-voted {
             background: linear-gradient(135deg, var(--bg-surface), var(--bg-primary));
             border-radius: 32px;
-            padding: 1.5rem;
-            margin: 1rem 0 2rem;
+            padding: 24px;
+            margin: 16px 0 32px;
             border: 2px solid var(--accent);
             text-align: center;
             box-shadow: var(--shadow-sm);
         }
 
         .most-voted h4 {
-            font-size: 1.7rem;
+            font-size: 27.2px;
             font-weight: 800;
             color: var(--accent);
             display: flex;
             align-items: center;
             justify-content: center;
             gap: 12px;
-            margin-bottom: 0.5rem;
+            margin-bottom: 8px;
         }
 
         .most-voted p {
-            font-size: 1.3rem;
+            font-size: 20.8px;
             font-weight: 700;
             background: var(--accent);
             display: inline-block;
-            padding: 0.3rem 1.5rem;
+            padding: 4.8px 24px;
             border-radius: 60px;
             color: white;
-            margin-top: 0.5rem;
+            margin-top: 8px;
         }
 
-        /* Footer */
+
         .site-footer {
             background: var(--footer-bg);
             border-top: 1px solid var(--border-light);
-            padding: 2rem 0 1.5rem;
-            margin-top: 2rem;
+            padding: 32px 0 24px;
+            margin-top: 32px;
         }
 
         .footer-grid {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 2rem;
+            gap: 32px;
         }
 
         
         .copyright {
             text-align: center;
-            padding-top: 1.8rem;
-            font-size: 0.8rem;
+            padding-top: 28.8px;
+            font-size: 12.8px;
             color: var(--text-secondary);
             border-top: 1px solid var(--border-light);
-            margin-top: 1.5rem;
+            margin-top: 24px;
         }
 
         @media (max-width: 850px) {
@@ -335,14 +335,14 @@
                 padding: 0 16px;
             }
             .card-content {
-                padding: 1rem;
+                padding: 16px;
             }
             .animal-name {
-                font-size: 1.45rem;
+                font-size: 23.2px;
             }
         }
 
-/**/
+
 .newsletter {
     position: relative;
     background: linear-gradient(180deg, #f5f4ef, #102013);
@@ -362,14 +362,14 @@
 
 .newsletter-text h3 {
     color: #ffffff;
-    font-size: 2rem;
+    font-size: 32px;
     font-weight: 900;
     margin-bottom: 10px;
 }
 
 .newsletter-text p {
     color: rgba(255,255,255,0.82);
-    font-size: 1rem;
+    font-size: 16px;
     margin-bottom: 22px;
 }
 
@@ -389,7 +389,7 @@
     border-radius: 999px 0 0 999px;
     border: none;
     outline: none;
-    font-size: 1rem;
+    font-size: 16px;
     color: #44514a;
 }
 
@@ -400,7 +400,7 @@
     border-radius: 0 999px 999px 0;
     color: white;
     font-weight: 800;
-    font-size: 1rem;
+    font-size: 16px;
     min-width: 188px;
     gap: 10px;
 }
@@ -415,7 +415,7 @@
     text-align: center;
     padding: 0;
 } 
-/* Header */
+
 header {
     background: linear-gradient(180deg, rgba(180, 213, 181, 0.95), rgb(255, 255, 255));
     width: 100%;
@@ -435,7 +435,7 @@ header {
     align-items: center;
     color: rgb(25, 44, 27);
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 19.2px;
     gap: 10px;
 }
 
@@ -462,7 +462,7 @@ nav ul li {
 nav ul li a {
     color: rgb(25, 44, 27);
     text-decoration: none;
-    font-size: 0.9rem;
+    font-size: 14.4px;
     opacity: 0.95;
 }
 
