@@ -67,7 +67,10 @@ nav ul li a {
     font-size: 0.95rem;
     font-weight: bold;
 }
-
+nav ul li a:hover{
+    cursor: pointer;
+    color: #edc9af;
+}
 .header{
     background-image:url(../image/siberian-tiger.jpg); 
     background-size: cover;
