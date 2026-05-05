@@ -11,15 +11,17 @@
     --card-bg: #ffffff;
     --nav-bg: #ffffff;
     --logo: #704629;
+    --text-shadow:0 0 5px rgba(255,255,255,0.8);
 }
 
 [data-theme="dark"] {
-    --text-shadow:0 0 5px rgba(255,255,255,0.8);
+    
     --bg-body: #121212;
     --body-text: #ffffff;
     --card-bg: #1e1e1e;
     --nav-bg: #1a1a1a;
     --logo:#edc9af;
+    --text-shadow: none;
 }
 
 body {
