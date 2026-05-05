@@ -78,6 +78,7 @@ body, .container, .hero-section, .cards-grid, .card-content, .poll-section, foot
     align-items: center;
     color: var(--text-primary);
     white-space: nowrap;
+    margin: 5px 5px 5px 5px
 }
 
 
@@ -252,7 +253,7 @@ body.dark .hero-section::before {
     transform: scale(0.97);
 }
 
-/* Most voted animal section */
+
 .most-voted {
     background: linear-gradient(135deg, var(--bg-surface), var(--bg-primary));
     border-radius: 32px;
@@ -370,10 +371,12 @@ header {
 nav ul {
     display: flex;
     list-style: none;
+    justify-content: center;
 }
 
 nav ul li {
     margin: 0 10px;
+    justify-content: center;
 }
 
 nav ul li a {
