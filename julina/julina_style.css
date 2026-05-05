@@ -80,12 +80,12 @@ nav ul li a.active {
 }
 
 .hero h1 {
-    font-size: 2.5rem;
+    font-size: 40px;
     color: #444;
 }
 
 .hero p {
-    font-size: 1.1rem;
+    font-size: 17.6px;
     color: #666;
 }
 
@@ -162,14 +162,14 @@ nav ul li a.active {
 
 .newsletter-text h3 {
     color: rgb(19, 19, 19);
-    font-size: 2rem;
+    font-size: 32px;
     font-weight: 900;
     margin-bottom: 10px;
 }
 
 .newsletter-text p {
     color: rgb(19, 19, 19);
-    font-size: 1rem;
+    font-size: 16px;
     margin-bottom: 22px;
 }
 
@@ -189,7 +189,7 @@ nav ul li a.active {
     border-radius: 999px 0 0 999px;
     border: none;
     outline: none;
-    font-size: 1rem;
+    font-size: 16px;
     color: #44514a;
 }
 
@@ -200,7 +200,7 @@ nav ul li a.active {
     border-radius: 0 999px 999px 0;
     color: white;
     font-weight: 800;
-    font-size: 1rem;
+    font-size: 16px;
     min-width: 188px;
     gap: 10px;
 }
