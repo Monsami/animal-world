@@ -1,8 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap');
 
-.main {
-  padding: 20px;
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
+:root {
+    --bg-body: #e6fbff;
+    --body-text: #06222e;
+    --card-bg: #ffffff;
+    --nav-bg: #ffffff;
+    --logo: #005f73;
+    --main-color: #0077b6;
+    --accent: #00b4d8;
+}
+
+[data-theme="dark"] {
+    --bg-body: #041a26;
+    --body-text: #eaf6ff;
+    --card-bg: #0b2a3a;
+    --nav-bg: #061722;
+    --logo:#90e0ef;
+    --main-color: #00b4d8;
+    --accent: #48cae4;
+}
+
+body {
+    font-family: 'Cairo', sans-serif; 
+    background-color: var(--bg-body);
+    color: var(--body-text);
+    transition: 0.4s;
+    direction: rtl;
+}
 
 .nav-bar {
     display: flex;
@@ -10,185 +40,184 @@
     align-items: center;
     padding: 10px 5%;
     background-color: var(--nav-bg);
+    border-bottom: 2px solid var(--main-color);
 }
 
 .logo {
-    font-family: 'Cairo', sans-serif;
-    font-weight: 700; 
     font-size: 28px;   
     color: var(--logo); 
-    display: flex;
-    align-items: center;
-    transition: all 0.3s ease;
-    cursor: pointer;
+    font-weight: 700;
 }
 
 nav ul {
     display: flex;
     list-style: none;
-    margin: 0;
-    padding: 0;
 }
 
-nav ul li { margin: 0 15px; }
+nav ul li {
+    margin: 0 12px;
+}
 
 nav ul li a {
     color: var(--body-text); 
     text-decoration: none;
-    font-size: 0.95rem;
     font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--main-color);
 }
 
 .header{
-    background-image:url(../image/siberian-tiger.jpg); 
+    background-image: url(../image/ocean.jpg);
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
     height: 70vh;
-    width: 100%;
     position: relative; 
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    text-align: center;
+    justify-content: flex-start;
+    padding-right: 10%;
     color: white;
 }
 
+.header::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background: rgba(2, 20, 35, 0.65);
+}
+
 .header .content{
-    color: var(--body-text);
-    width: 100%;
-    height: 100%;
-    display: flex;
-    text-align: right;
-    align-items: flex-start;
-    flex-direction: column;
-    justify-content: right; 
-    padding-top: 80px;
-    padding-right: 10%;
-    direction: rtl;
+    position: relative;
+    z-index: 2;
 }
 
 .header h1 { 
-    color: var(--body-text);
     font-size: 3rem;
     margin-bottom: 10px;
-    font-weight: bold; 
-    }
-    
-/* ===== العنوان ===== */
-.topbar {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 10px;
 }
 
-.topbar h2 {
-  margin: 20px;
-  font-size: 26px;
-  color: #1f2937;
+.main-button {
+    display: inline-block;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(45deg, var(--main-color), var(--accent));
+    padding: 12px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
 }
 
-/* ===== الهيرو ===== */
-.hero {
-  margin: 0 20px 25px;
-  padding: 40px;
-  text-align: center;
-  font-size: 22px;
-  color: white;
-  background: linear-gradient(135deg, #0ea5e9, #2563eb);
-  border-radius: 14px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+.main-button:hover {
+    transform: translateY(-3px);
+    opacity: 0.9;
 }
 
-/* ===== الجريد ===== */
-.grid {
-  padding: 20px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 22px;
+.animals-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    padding: 40px 5%;
 }
 
-/* ===== الكارد ===== */
 .card {
-  background: #fff;
-  border-radius: 16px;
-  overflow: hidden;
-  transition: all 0.3s ease;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.07);
-  position: relative;
+    background: var(--card-bg); 
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 6px 25px rgba(0,0,0,0.25);
+    text-align: center;
+    transition: 0.3s;
 }
 
-/* تأثير شيك */
-.card:hover {
-  transform: translateY(-6px) scale(1.01);
+.card:hover { 
+    transform: translateY(-8px);
 }
 
-/* الصورة */
-.card img {
-  width: 100%;
-  height: 190px;
-  object-fit: cover;
+.card img { 
+    width: 100%; 
+    height: 200px; 
+    object-fit: cover; 
 }
 
-/* النص */
-.card h4 {
-  margin: 12px;
-  font-size: 18px;
-  color: #111827;
+.card h3 { 
+    margin: 15px 0; 
 }
 
-.card p {
-  margin: 0 12px 10px;
-  font-size: 14px;
-  color: #6b7280;
+.cards-button {
+    display: inline-block;
+    font-weight: bold;
+    color: white;
+    background: var(--main-color);
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s;
 }
 
-/* النجوم */
-.stars {
-  margin: 0 12px 15px;
-  color: #fbbf24;
-  font-size: 15px;
+.cards-button:hover{
+    background: var(--accent);
 }
 
-/* لمسة بسيطة عند الهوفر */
-.card::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to top, rgba(0,0,0,0.05), transparent);
-  opacity: 0;
-  transition: 0.3s;
+.switch {
+    position: relative;
+    width: 44px;
+    height: 22px;
 }
 
-.card:hover::after {
-  opacity: 1;
+.switch input { opacity: 0; }
+
+.slider {
+    position: absolute;
+    inset: 0;
+    background-color: #7aa6b8;
+    border-radius: 34px;
+    transition: .4s;
 }
 
+.slider:before {
+    content: "";
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    left: 3px;
+    bottom: 3px;
+    background: white;
+    border-radius: 50%;
+    transition: .4s;
+}
 
+input:checked + .slider {
+    background: var(--main-color);
+}
+
+input:checked + .slider:before {
+    transform: translateX(22px);
+}
 
 footer{
-    background-color:var(--bg-body);
+    background-color: var(--bg-body);
     color: var(--body-text);
     padding: 60px 20px;
     text-align: center;
-    direction: rtl;
 }
 
 .sign{
     display: flex;
     justify-content: center;
     gap: 10px;
-    margin: 20px ;
+    margin: 20px;
 }
+
 .sign input{
     padding: 12px 20px;
     border-radius: 50px;
-
+    border: 1px solid var(--main-color);
 }
+
 .sign button {
-    background-color:#edc9af;
-    border-bottom: 4px solid #db9f77 ; 
+    background: var(--main-color);
     color: white;
     border: none;
     padding: 10px 20px;
@@ -196,16 +225,12 @@ footer{
     cursor: pointer;
     transition: 0.3s;
 }
+
 .sign button:hover{
-    background-color: #c6906c;
-    transform: translateY(2px);
-    border-bottom-width: 2px;
+    background: var(--accent);
 }
+
 hr{
     margin: 24px auto;
     width: 60%;
 }
-h2{
-    margin-bottom: 10px;
-}
-
