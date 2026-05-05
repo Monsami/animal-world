@@ -33,70 +33,54 @@
     </header>
 
 
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>اكتشف أسرار وعجائب <span>عالم الطيور</span></h1>
-                <p>عالم مذهل مليء بالألوان، الذكاء، والقدرات التي ستدهشك!</p>
-                <a href="#about" class="btn">اكتشف المزيد</a>
+    <section class="hero-section">    
+    <h1>عجائب الطيور</h1>
+    <p>متع نظرك بأجمل الطيور واغربها في عالمنا المذهل</p>
+    </section>
+    <section id="birds-grid" class="bird-cards-container">
+    </section>
+    </div>
+    <div class="info-section">
+    <div class="info-content">
+        <div class="map-image">
+            <img src="world.jpeg" alt="migration map" class="mig-map">
+        </div>
+            <div class="info-text">
+            <h3>مقالات عن هجرة الطيور</h3>
+            <p>هِجْرَة الطّيُور هي حركةٌ موسميةٌ مُنتظمة، عادةً ما تكون باتجاه الشمال والجنوب على طول مسار الطائِر، وتكون بين مناطق التكاثر ومناطق التشتية (إمضاء الشتاء). تُهاجر أنواعٌ عديدة من الطيور، وذلك على الرغم من أنَّ هجرة الحيوانات عمومًا تنطوي على مخاطر عاليةٍ من الافتراس والوفاة، خصوصًا الناجمة عن الصيد البشري لها والذي يرتبطُ بالحاجة الأساسية لتوفير الطعام. تحدث هجرة الطيور غالبًا في نصف الأرض الشمالي، حيثُ تُجبر الطُيور على سلك مساراتٍ مُحددة بحواجز طبيعية مثل البحر الأبيض المتوسط أو البحر الكاريبي.
+
+ </p>
             </div>
         </div>
-    </section>
-
-    <section id="about" class="about-section">
-        <div class="container">
-            <div class="about-text">
-                <h2>هل تعلم؟</h2>
-                <p>الطيور من أكثر الكائنات تنوعاً على كوكب الأرض، توجد أكثر من 10,000 نوع مختلف، وتتميز بقدرات مذهلة في الطيران، والهجرة، والتكيف مع البيئة.</p>
-                <a href="#" class="btn-outline">اقرأ المزيد</a>
-            </div>
-            <div class="about-image">
-                <img src="../image/kingfisher.jpg" alt="Kingfisher">
-            </div>
-            <div class="clear"></div>
-        </div>
-    </section>
-
-
-    <section class="cards-section">
-        <div class="container">
-            <h2 class="section-title">عجائب الطيور</h2>
-            
-            <div class="card">
-                <img src="../image/falcon.jpg" alt="Falcon">
-                <div class="card-info">
-                    <h3>أسرع طائر</h3>
-                    <p>الصقر الجوال: سرعته تصل إلى 390 كم/س</p>
+    </div>
+        <div class="sounds-conainer">
+            <h2 class="section-title">اغرب اصوات الطيور</h2>
+            <div class="sounds-grid">
+                <div class="sound-item">                    
+                <audio id="Crow-audio" src="Crow.mp3"></audio>                
+                <div class="sound-info">
+                    <span>Crow</span>
+                    <p> صوت الغراب</p>
                 </div>
-            </div>
-
-            <div class="card">
-                <img src="../image/crow.jpg" alt="Crow">
-                <div class="card-info">
-                    <h3>أذكى طائر</h3>
-                    <p>الغراب: يحل مشاكل ويستخدم أدوات!</p>
+                <button class="circle-btn" onclick="let a=document.getElementById('Crow-audio');a.paused ? a.play(): a.pause()">&#9654/||</button>
                 </div>
-            </div>
-
-            <div class="card">
-                <img src="../image/parrot.jpg" alt="Parrot">
-                <div class="card-info">
-                    <h3>أكثر طائر ملون</h3>
-                    <p>الببغاء: يتميز بريش بألوان زاهية جداً</p>
+                <div class="sound-item">                    
+                <audio id="lyre-audio" src="sound3.mp3"></audio>                
+                <div class="sound-info">
+                    <span>lyrebird</span>
+                    <p>طائر القيثارة</p>
                 </div>
-            </div>
-
-            <div class="card">
-                <img src="../image/penguin.jpg" alt="Penguin">
-                <div class="card-info">
-                    <h3>أقوى طائر في البرد</h3>
-                    <p>البطريق: يعيش في القطب المتجمد</p>
+                <button class="circle-btn" onclick="let a=document.getElementById('lyre-audio');a.paused ? a.play(): a.pause()">&#9654/||</button>
                 </div>
-            </div>
-
-            <div class="clear"></div>
-        </div>
-    </section>
+                <div class="sound-item">                    
+                <audio id="kooka-audio" src="sound2.mp3"></audio>                
+                <div class="sound-info">
+                    <span>kookaburra</span>
+                    <p>ضحكة الكوكابورا</p>
+                </div>
+                <button class="circle-btn" onclick="let a=document.getElementById('kooka-audio');a.paused ? a.play(): a.pause()">&#9654/||</button>
+                </div>
+            </div>  <script src="main.js"></script>
 
     <footer>
         <div class="footer">
