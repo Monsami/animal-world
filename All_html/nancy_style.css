@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap');
-
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 :root {
     --bg-body: #ffffff;
-    --body-text: #885739;
+    --body-text: #000000;
     --card-bg: #ffffff;
     --nav-bg: #ffffff;
     --logo: #704629;
@@ -61,7 +65,7 @@ nav ul li a {
 }
 
 .header{
-     background-image:url(../image/siberian-tiger.jpg); 
+    background-image:url(../image/siberian-tiger.jpg); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -92,9 +96,9 @@ nav ul li a {
 
 .header h1 { 
     color: var(--body-text);
-     font-size: 3rem;
-     margin-bottom: 10px;
-     font-weight: bold; 
+    font-size: 3rem;
+    margin-bottom: 10px;
+    font-weight: bold; 
     }
 
 .main-button {
