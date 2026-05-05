@@ -1,12 +1,79 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <title>مدونة الحياة البرية</title>
-    <link rel="stylesheet" href="blog_style.css">
+<meta charset="UTF-8">
+<title>مدونة الحياة البرية</title>
+
+<style>
+body{
+    margin:0;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background:#eef2f3;
+}
+
+/* العنوان */
+.title{
+    text-align:center;
+    padding:30px;
+}
+
+/* الكروت */
+.blog{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    padding:20px;
+}
+
+.card{
+    background:white;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+}
+
+.card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+
+.card h3{
+    margin:10px;
+    color:#1b5e20;
+}
+
+.card p{
+    margin:10px;
+    color:#555;
+}
+
+.card a{
+    display:block;
+    text-align:center;
+    margin:10px;
+    padding:8px;
+    background:#1565c0;
+    color:white;
+    text-decoration:none;
+    border-radius:6px;
+}
+
+.card a:hover{
+    background:#0d47a1;
+}
+</style>
+
 </head>
+
 <body>
 
+<!-- NAV زي ما هو بدون أي تعديل -->
 <header>
    <div class="nav-bar">
     <div class="logo">
@@ -15,14 +82,14 @@
 
     <nav>
       <ul>
-        <li><a href="./index.html" class="active" target="_self">الرئيسية</a></li>
-        <li><a href="./malk.html" target="contentFrame">الثدييات</a></li>
-        <li><a href="./nada.html" target="contentFrame">الطيور</a></li>
-        <li><a href="./mina.html" target="contentFrame">أعماق البحار</a></li>
-        <li><a href="./nancy.html" target="contentFrame">المهددة بالانقراض</a></li>
-        <li><a href="./julina.html" target="contentFrame">المعرض</a></li>
-        <li><a href="./blog.html" target="contentFrame">المدونة</a></li>
-        <li><a href="./contact.html" target="contentFrame">اتصل بنا</a></li>
+        <li><a href="./index.html" class="active">الرئيسية</a></li>
+        <li><a href="./malk.html">الثدييات</a></li>
+        <li><a href="./nada.html">الطيور</a></li>
+        <li><a href="./mina.html">أعماق البحار</a></li>
+        <li><a href="./nancy.html">المهددة بالانقراض</a></li>
+        <li><a href="./julina.html">المعرض</a></li>
+        <li><a href="./blog.html">المدونة</a></li>
+        <li><a href="./contact.html">اتصل بنا</a></li>
       </ul>
     </nav>
 
@@ -42,64 +109,57 @@
 
 <section class="blog">
 
-    <div class="card">
-        <img src="https://images.unsplash.com/photo-1546182990-dffeafbe841d" alt="">
-        <h3>حياة الأسود في الغابة</h3>
-        <p>تعرف على سلوك الأسود وطريقة عيشها في الحياة البرية.</p>
-        <a href="https://ar.wikipedia.org/wiki/أسد" target="_blank" class="cards-button">اقرأ المزيد</a>
-    </div>
+<!-- الأسد -->
+<div class="card">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Lion_waiting_in_Namibia.jpg">
+    <h3>الأسد</h3>
+    <p>ملك الغابة وأحد أقوى الحيوانات المفترسة.</p>
+    <a href="https://ar.wikipedia.org/wiki/أسد" target="_blank">اقرأ المزيد</a>
+</div>
 
-    <div class="card">
-        <img src="https://images.unsplash.com/photo-1546182990-dffeafbe841d" alt="">
-        <h3>حياة الأسود في الغابة</h3>
-        <p>تعرف على سلوك الأسود وطريقة عيشها في الحياة البرية.</p>
-        <a href="https://ar.wikipedia.org/wiki/أسد" target="_blank" class="cards-button">اقرأ المزيد</a>
-    </div>
+<!-- الحمار الوحشي -->
+<div class="card">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Plains_Zebra_Equus_quagga.jpg">
+    <h3>الحمار الوحشي</h3>
+    <p>يتميز بخطوط سوداء وبيضاء مميزة.</p>
+    <a href="https://ar.wikipedia.org/wiki/حمار_وحشي" target="_blank">اقرأ المزيد</a>
+</div>
 
-    <div class="card">
-        <img src="https://images.unsplash.com/photo-1546182990-dffeafbe841d" alt="">
-        <h3>حياة الأسود في الغابة</h3>
-        <p>تعرف على سلوك الأسود وطريقة عيشها في الحياة البرية.</p>
-        <a href="https://ar.wikipedia.org/wiki/أسد" target="_blank" class="cards-button">اقرأ المزيد</a>
-    </div>
+<!-- الأخطبوط -->
+<div class="card">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Octopus2.jpg">
+    <h3>الأخطبوط</h3>
+    <p>من أذكى كائنات البحار وله ثمانية أذرع.</p>
+    <a href="https://ar.wikipedia.org/wiki/أخطبوط" target="_blank">اقرأ المزيد</a>
+</div>
 
-    <div class="card">
-        <img src="https://images.unsplash.com/photo-1546182990-dffeafbe841d" alt="">
-        <h3>حياة الأسود في الغابة</h3>
-        <p>تعرف على سلوك الأسود وطريقة عيشها في الحياة البرية.</p>
-        <a href="https://ar.wikipedia.org/wiki/أسد" target="_blank" class="cards-button">اقرأ المزيد</a>
-    </div>
+<!-- الفيل -->
+<div class="card">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/37/African_Bush_Elephant.jpg">
+    <h3>الفيل</h3>
+    <p>أكبر الحيوانات البرية على الأرض.</p>
+    <a href="https://ar.wikipedia.org/wiki/فيل" target="_blank">اقرأ المزيد</a>
+</div>
 
-    <div class="card">
-        <img src="https://images.unsplash.com/photo-1546182990-dffeafbe841d" alt="">
-        <h3>حياة الأسود في الغابة</h3>
-        <p>تعرف على سلوك الأسود وطريقة عيشها في الحياة البرية.</p>
-        <a href="https://ar.wikipedia.org/wiki/أسد" target="_blank" class="cards-button">اقرأ المزيد</a>
-    </div>
+<!-- القرش -->
+<div class="card">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/56/White_shark.jpg">
+    <h3>القرش الأبيض</h3>
+    <p>أحد أخطر مفترسات المحيطات.</p>
+    <a href="https://ar.wikipedia.org/wiki/قرش" target="_blank">اقرأ المزيد</a>
+</div>
 
-    <div class="card">
-        <img src="https://images.unsplash.com/photo-1501706362039-c6e80948f5b1" alt="">
-        <h3>الطيور المهاجرة</h3>
-        <p>رحلة الطيور عبر القارات ولماذا تهاجر كل عام.</p>
-        <a href="https://ar.wikipedia.org/wiki/هجرة_الطيور" target="_blank" class="cards-button">اقرأ المزيد</a>
-    </div>
-
-    <div class="card">
-        <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a" alt="">
-        <h3>الحياة تحت الماء</h3>
-        <p>عالم البحار مليء بالكائنات الغريبة والجميلة.</p>
-        <a href="https://ar.wikipedia.org/wiki/بحر" target="_blank" class="cards-button">اقرأ المزيد</a>
-    </div>
-
-    <div class="card">
-        <img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131" alt="">
-        <h3>الحيوانات الأليفة</h3>
-        <p>كيف تعتني بحيوانك الأليف بطريقة صحيحة.</p>
-        <a href="https://ar.wikipedia.org/wiki/حيوان_أليف" target="_blank" class="cards-button">اقرأ المزيد</a>
-    </div>
+<!-- الطيور -->
+<div class="card">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Canada_Goose_in_flight.jpg">
+    <h3>الطيور المهاجرة</h3>
+    <p>تقطع آلاف الكيلومترات في رحلتها السنوية.</p>
+    <a href="https://ar.wikipedia.org/wiki/هجرة_الطيور" target="_blank">اقرأ المزيد</a>
+</div>
 
 </section>
 
+<!-- FOOTER زي ما هو بدون أي تغيير -->
 <footer>
     <div class="footer">
         <h2>اشترك و تلقى كل جديد عن جهود حماية الحيوانات المهددة بالانقراض.</h2>
@@ -111,6 +171,7 @@
     <hr>
     <p>© 2026 عالم الحيوان. جميع الحقوق محفوظة.</p>
 </footer>
+
 <script>
 const toggle = document.getElementById("theme-toggle");
 const html = document.documentElement;
@@ -131,5 +192,6 @@ toggle.addEventListener("change", () => {
     }
 });
 </script>
+
 </body>
 </html>
