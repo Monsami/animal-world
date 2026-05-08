@@ -217,7 +217,7 @@ main {
     display: block;
     width: 50px;
     height: 26px;
-    vertical-align: middle;
+
     top: 2px;
     bottom: 3px;
 }
@@ -331,6 +331,7 @@ body.dark .card1::before {
     transition: transform 0.2s, box-shadow 0.2s;
     display: flex;
     flex-direction: column;
+    border: #d60c0c00 5px solid;
 }
 
 .card:hover {
