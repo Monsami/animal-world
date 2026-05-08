@@ -17,22 +17,29 @@
         <div class="logo">
           <span>عالم الحيوان</span>
         </div>
-           <div class="container header-wrapper">
+        <div class="container header-wrapper">
            <nav>
-         <ul>
-            <li><a href="./index.html" class="active" target="_self">الرئيسية</a></li>
-            <li><a href="./malk.html" target="contentFrame">الثدييات</a></li>
-            <li><a href="./nada.html" target="contentFrame">الطيور</a></li>
-            <li><a href="./mina.html" target="contentFrame">أعماق البحار</a></li>
-            <li><a href="./nancy.html" target="contentFrame">المهددة بالانقراض</a></li>
-            <li><a href="./julina.html" target="contentFrame">المعرض</a></li>
-            <li><a href="./blog.html" target="contentFrame">المدونة</a></li>
-            <li><a href="./contact.html" target="contentFrame">اتصل بنا</a></li>
-          </ul>
-        </nav>
-                <button class="theme-toggle" id="darkmodeToggle" aria-label="التبديل بين الوضع المظلم والفاتح">
-                <i class="fas fa-moon"></i> <span id="themeText">الوضع المظلم</span>
-            </button>
+                <ul>
+                    <li><a href="./index.html" class="active" target="_self">الرئيسية</a></li>
+                    <li><a href="./malk.html" target="contentFrame">الثدييات</a></li>
+                    <li><a href="./nada.html" target="contentFrame">الطيور</a></li>
+                    <li><a href="./mina.html" target="contentFrame">أعماق البحار</a></li>
+                    <li><a href="./nancy.html" target="contentFrame">المهددة بالانقراض</a></li>
+                    <li><a href="./julina.html" target="contentFrame">المعرض</a></li>
+                    <li><a href="./blog.html" target="contentFrame">المدونة</a></li>
+                    <li><a href="./contact.html" target="contentFrame">اتصل بنا</a></li>
+                </ul>
+                
+            </nav>
+            <div class="mode-switch">
+                    <label class="switch">
+                        <input type="checkbox" id="theme-toggle">
+                        <span class="slider round"></span>
+                    </label>
+            </div>
+
+            
+        
         </div>
            
     </header>
@@ -177,7 +184,7 @@
 
     <footer>
         <div class="footer">
-            <h3>اشترك لتصلك أحدث الأخبار</h3>
+            <h4>اشترك لتصلك أحدث الأخبار</h4>
           <p>
             كن أول من يعرف عن المقالات الجديدة، الصور المذهلة، وأخبار الحفاظ على
             الحياة البرية.
@@ -194,48 +201,26 @@
     </footer>
 
     <script>
-        (function() {
-            const toggleBtn = document.getElementById('darkmodeToggle');
-            const themeTextSpan = document.getElementById('themeText');
-            const rootElement = document.body;
-            const storedTheme = localStorage.getItem('mammalsTheme');
-            if (storedTheme === 'dark') {
-                rootElement.classList.add('dark');
-                if(themeTextSpan) themeTextSpan.innerText = 'الوضع الفاتح';
-                if(toggleBtn) toggleBtn.innerHTML = '<i class="fas fa-sun"></i> <span id="themeText">الوضع الفاتح</span>';
-            } else if (storedTheme === 'light') {
-                rootElement.classList.remove('dark');
-                if(themeTextSpan) themeTextSpan.innerText = 'الوضع المظلم';
-                if(toggleBtn) toggleBtn.innerHTML = '<i class="fas fa-moon"></i> <span id="themeText">الوضع المظلم</span>';
-            } else {
-                const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-                if (prefersDark) {
-                    rootElement.classList.add('dark');
-                    if(themeTextSpan) themeTextSpan.innerText = 'الوضع الفاتح';
-                    if(toggleBtn) toggleBtn.innerHTML = '<i class="fas fa-sun"></i> <span id="themeText">الوضع الفاتح</span>';
-                    localStorage.setItem('mammalsTheme', 'dark');
-                } else {
-                    rootElement.classList.remove('dark');
-                    localStorage.setItem('mammalsTheme', 'light');
-                }
-            }
-            if (toggleBtn) {
-                toggleBtn.addEventListener('click', () => {
-                    const isDark = rootElement.classList.contains('dark');
-                    if (isDark) {
-                        rootElement.classList.remove('dark');
-                        localStorage.setItem('mammalsTheme', 'light');
-                        toggleBtn.innerHTML = '<i class="fas fa-moon"></i> <span id="themeText">الوضع المظلم</span>';
-                        if(themeTextSpan) themeTextSpan.innerText = 'الوضع المظلم';
-                    } else {
-                        rootElement.classList.add('dark');
-                        localStorage.setItem('mammalsTheme', 'dark');
-                        toggleBtn.innerHTML = '<i class="fas fa-sun"></i> <span id="themeText">الوضع الفاتح</span>';
-                        if(themeTextSpan) themeTextSpan.innerText = 'الوضع الفاتح';
-                    }
-                });
-            }
-        })();
+       
+       
+    const toggleInput = document.getElementById('theme-toggle');
+    const htmlElement = document.documentElement;
+
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+        htmlElement.setAttribute('data-theme', 'dark');
+        toggleInput.checked = true;
+    }
+    toggleInput.addEventListener('change', () => {
+        if (toggleInput.checked) {
+            htmlElement.setAttribute('data-theme', 'dark');
+            localStorage.setItem('theme', 'dark');
+        } else {
+            htmlElement.setAttribute('data-theme', 'light');
+            localStorage.setItem('theme', 'light');
+        }
+    });
+
 
         const voteBtn = document.getElementById('votePollBtn');
         const pollFeedback = document.getElementById('pollFeedback');
