@@ -120,7 +120,7 @@ nav ul li a {
 }
 
 .card:hover .overlay {
-    opacity: 1;
+    opacity: 0.5;
 }
 
 .video-wide {
@@ -131,7 +131,7 @@ nav ul li a {
 footer {
     background-color: var(--footer-bg);
     color: var(--text);
-    padding: 60px 20px;
+    padding: 20px 20px;
     text-align: center;
 }
 
@@ -154,48 +154,82 @@ footer {
     border-radius: 50px;
     cursor: pointer;
 }
+.sign button:hover {
+    background-color: #d4a373;
+}
 
-.classic-btn {
-    padding: 6px 14px;
-    border: 1px solid #333;
-    background-color: #f5f5f5;
-    color: #111;
-    font-size: 14px;
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider {
+    position: absolute;
     cursor: pointer;
-    border-radius: 6px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 24px;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+input:checked + .slider {
+    background-color: #525252;
+}
+input:checked + .slider:before {
+    transform: translateX(26px);
 }
 
-body.dark .classic-btn {
-    background-color: #1f2a36;
-    color: #fff;
-    border: 1px solid #aaa;
-}
 
 </style>
 </head>
 
 <body>
 
-<header>
-    <div class="nav-bar">
-        <div class="logo">عالم الحيوان</div>
-
-        <nav>
-            <ul>
-                <li><a href="../index.html">الرئيسية</a></li>
-                <li><a href="./malk.html">الثدييات</a></li>
-                <li><a href="./nada.html">الطيور</a></li>
-                <li><a href="./mina.html">أعماق البحار</a></li>
-                <li><a href="./nancy.html">المهددة بالانقراض</a></li>
-                <li><a href="./julina.html">المعرض</a></li>
-                <li><a href="./blog.html">المدونة</a></li>
-                <li><a href="./contact.html">اتصل بنا</a></li>
-            </ul>
+    <header>
+       <div class="nav-bar">
+        <div class="logo">
+          <span>عالم الحيوان</span>
+        </div>
+           <nav>
+         <ul>
+            <li><a href="../index.html" class="active" target="_self">الرئيسية</a></li>
+            <li><a href="./malk.html" target="contentFrame">الثدييات</a></li>
+            <li><a href="./nada.html" target="contentFrame">الطيور</a></li>
+            <li><a href="./mina.html" target="contentFrame">أعماق البحار</a></li>
+            <li><a href="./nancy.html" target="contentFrame">المهددة بالانقراض</a></li>
+            <li><a href="./julina.html" target="contentFrame">المعرض</a></li>
+            <li><a href="./blog.html" target="contentFrame">المدونة</a></li>
+            <li><a href="./contact.html" target="contentFrame">اتصل بنا</a></li>
+          </ul>
         </nav>
 
-        <button class="classic-btn" onclick="toggleDark()">تبديل الوضع</button>
-    </div>
-</header>
+        <div class="mode-switch">
+            <label class="switch">
+                <input type="checkbox" id="theme-toggle" onclick="toggleDark()">
+                <span class="slider round"></span>
+    </label>
+</div>
+    </header>
 
 <main class="container">
 
@@ -253,9 +287,7 @@ body.dark .classic-btn {
         <input type="email" placeholder="ادخل بريدك">
         <button>اشترك</button>
     </form>
-
     <hr>
-
     <p>© 2026 عالم الحيوان</p>
 </footer>
 
