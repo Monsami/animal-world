@@ -9,9 +9,12 @@
     --bg-color: #f5f4ef;
     --text-color: #000000;
     --header-bg: linear-gradient(180deg, rgba(180, 213, 181, 0.95), #f5f4ef);
-    --logo-color: rgb(25, 44, 27);
-    --nav-link-color: rgb(25, 44, 27);
-    --active-link-color: #a8d04f;
+    --logo-color: #8ec641;
+    --nav-link-color: #000000;
+    --active-link-color: #8ec641;
+    --body-text: #000000;
+    --bg-body: #f4f2ea;
+    --nav-bg: #ffffff;
     --hero-overlay-bg: linear-gradient(180deg, rgba(12, 31, 20, 0.38), rgba(12, 31, 20, 0.72));
     --section-title-color: #3b4f40;
     --featured-bg: #fffefb;
@@ -33,6 +36,7 @@ html[data-theme="dark"] {
     --logo-color: #ffffff;
     --nav-link-color: #ffffff;
     --active-link-color: #a8d04f;
+    --nav-bg: #000000;
     --hero-overlay-bg: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8));
     --section-title-color: #ffffff;
     --featured-bg: #1e1e1e;
@@ -63,7 +67,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 14px 30px;
     background-color: var(--nav-bg);
 }
 
@@ -78,6 +82,15 @@ body {
     cursor: pointer;
 }
 
+nav ul li a {
+    color: var(--nav-link-color);
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: bold;
+    letter-spacing: 0.03em;
+    transition: color 0.3s ease;
+}
+
 nav ul {
     display: flex;
     list-style: none;
@@ -85,18 +98,25 @@ nav ul {
     padding: 0;
 }
 
-nav ul li { margin: 0 15px; }
+nav ul li { margin: 0 20px; }
 
 nav ul li a {
-    color: var(--body-text); 
+    color: var(--nav-link-color);
     text-decoration: none;
-    font-size: 0.95rem;
+    font-size: 1.4rem;
     font-weight: bold;
+    opacity: 0.95;
+    letter-spacing: 0.03em;
+    transition: color 0.3s ease;
 }
-nav ul li a:hover{
+nav ul li a:hover {
     cursor: pointer;
-    color: #edc9af;
+    color: var(--active-link-color);
 }
+nav ul li a.active {
+    color: var(--active-link-color);
+}
+
 .header{
     background-image:url(../image/background.jpeg); 
     background-size: cover;
@@ -186,7 +206,7 @@ input:checked + .slider:before {
     align-items: center;
     color: var(--logo-color);
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 28px;
     gap: 10px;
 }
 
@@ -207,20 +227,20 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 10px;
+    margin: 0 20px;
 }
 
 nav ul li a {
     color: var(--nav-link-color);
     text-decoration: none;
-    font-size: 0.9rem;
+    font-size: 1.4rem;
+    font-weight: bold;
     opacity: 0.95;
+    transition: color 0.3s ease;
 }
 
 nav ul li a.active {
     color: var(--active-link-color);
-    border-bottom: 2px solid var(--active-link-color);
-    padding-bottom: 4px;
 }
 
 
