@@ -109,7 +109,7 @@ header {
     grid-template-columns: 1fr auto 1fr;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 5%;
+    padding: 10px 20px;
     border-bottom: 2px solid var(--accent);
     gap: 30px;
     display: grid;
@@ -290,14 +290,7 @@ input:checked + .slider:before {
             z-index: -1;
 }
 
-    
-.card1 h2,
-.card1 p {
-            position: relative;
-            z-index: 2;
-            color: white;
-            text-shadow: 0 1px 4px rgba(0,0,0,0.4);
-        }
+
 
         
 body.dark .card1::before {
@@ -308,11 +301,19 @@ body.dark .card1::before {
             font-size: 32px;
             margin-bottom: 12px;
             font-weight: 800;
+            position: relative;
+            z-index: 2;
+            color: white;
+            text-shadow: 0 1px 4px rgba(0,0,0,0.4);
         }
 
 .card1 p {
             max-width: 720px;
             margin: 0 auto;
+            position: relative;
+            z-index: 2;
+            color: white;
+            text-shadow: 0 1px 4px rgba(0,0,0,0.4);
         }
 
 .cards-grid {
