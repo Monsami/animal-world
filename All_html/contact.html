@@ -4,113 +4,101 @@
 <meta charset="UTF-8">
 <title>اتصل بنا - حيواناتي</title>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
 <style>
-:root{
-  --bg:#f5f5f5;
-  --card:#ffffff;
-  --text:#222;
+
+html {
+  scroll-behavior: smooth;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg-body: #fdfaf7;
+  --body-text: #2d241e;
+  --card-bg: #ffffff;
+  --nav-bg: #ffffff;
+  --logo: #704629;
+  --accent:#d4a373;
+  --accent-hover:#bc8a5f;
+  --border-color:#eaddcf;
   --muted:#666;
-  --nav-bg:#8fa089;
-  --logo:#ffffff;
-  --accent:#3d6b35;
-  --footer-bg:#f5f5f5;
-  --border:#ddd;
+  --footer-bg:#f1ece7;
 }
 
-body.dark{
-  --bg:#121212;
-  --card:#1e1e1e;
-  --text:#f1f1f1;
+[data-theme="dark"] {
+  --bg-body: #1a1a1a;
+  --body-text: #fdfaf7;
+  --card-bg: #262626;
+  --nav-bg: #121212;
+  --logo:#edc9af;
+  --accent:#edc9af;
+  --accent-hover:#d4a373;
+  --border-color:#404040;
   --muted:#b5b5b5;
-  --nav-bg:#1f2a24;
-  --logo:#ffffff;
-  --accent:#6fbf73;
   --footer-bg:#121212;
-  --border:#333;
 }
 
-body{
-  margin:0;
-  font-family:Arial;
-  background:var(--bg);
-  color:var(--text);
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background-color: var(--bg-body);
+  color: var(--body-text);
+  transition: 0.4s;
+  direction: rtl;
+  padding-top: 70px;
 }
 
-.nav-bar{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:10px 20px;
-  background:var(--nav-bg);
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: var(--nav-bg);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
-.logo{
-  font-size:28px;
-  font-weight:bold;
-  color:var(--logo);
+.logo {
+  font-weight: 700;
+  font-size: 28px;
+  color: var(--logo);
 }
 
-nav ul{
-  display:flex;
-  list-style:none;
-  margin:0;
-  padding:0;
+nav ul {
+  display: flex;
+  list-style: none;
 }
 
-nav ul li{margin:0 15px;}
+nav ul li { margin: 0 10px; }
 
-nav ul li a{
-  color:var(--logo);
-  text-decoration:none;
-  font-weight:bold;
-}
-
-nav ul li a:hover{
-  color:#edc9af;
-}
-
-.theme-toggle{
-  display:flex;
-  align-items:center;
-  gap:8px;
-  background:var(--card);
-  color:var(--text);
-  border:1px solid var(--border);
-  padding:8px 14px;
-  border-radius:25px;
-  cursor:pointer;
-  transition:0.3s;
-}
-
-.theme-toggle:hover{
-  background:var(--accent);
-  color:#fff;
-}
-
-.theme-toggle i{
-  transition:0.3s;
-}
-
-.theme-toggle:hover i{
-  transform:rotate(20deg);
+nav ul li a {
+  color: var(--body-text);
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .green-banner{
   background:var(--accent);
   color:white;
   text-align:center;
-  padding:45px 0;
+  padding: 80px 20px;
 }
 
 .main-wrapper{
   display:flex;
   max-width:1100px;
   margin:40px auto;
-  background:var(--card);
+  background:var(--card-bg);
   padding:40px;
-  gap:60px;
+  gap:40px;
+  border-radius:10px;
 }
 
 .left-info{flex:1;}
@@ -120,10 +108,10 @@ input,textarea{
   width:100%;
   padding:12px;
   margin-bottom:15px;
-  border:1px solid var(--border);
+  border:1px solid var(--border-color);
   border-radius:6px;
-  background:var(--card);
-  color:var(--text);
+  background:var(--card-bg);
+  color:var(--body-text);
 }
 
 .send-btn{
@@ -136,28 +124,14 @@ input,textarea{
   cursor:pointer;
 }
 
-.left-info p{color:var(--muted);}
-
-.socials a{
-  display:inline-flex;
-  width:35px;
-  height:35px;
-  justify-content:center;
-  align-items:center;
-  border-radius:50%;
-  background:var(--accent);
-  color:white;
-  margin-left:6px;
-}
-
 .faq-area{
   max-width:1100px;
-  margin:0 auto 60px;
+  margin:20px auto 60px;
 }
 
 .faq-item{
-  background:var(--card);
-  border:1px solid var(--border);
+  background:var(--card-bg);
+  border:1px solid var(--border-color);
   padding:15px;
   margin-bottom:10px;
   border-radius:6px;
@@ -172,14 +146,9 @@ input,textarea{
 
 footer{
   background:var(--footer-bg);
-  color:var(--text);
-  padding:50px 20px;
+  color:var(--body-text);
+  padding:40px 20px;
   text-align:center;
-}
-
-.footer-container{
-  max-width:900px;
-  margin:auto;
 }
 
 .sign{
@@ -187,74 +156,62 @@ footer{
   justify-content:center;
   gap:10px;
   margin:20px 0;
-  flex-wrap:wrap;
 }
 
 .sign input{
-  padding:12px 20px;
+  padding:12px;
   border-radius:25px;
-  border:1px solid var(--border);
-  background:var(--card);
-  color:var(--text);
-  width:200px;
+  border:1px solid var(--border-color);
 }
 
 .sign button{
   background:var(--accent);
   border:none;
   color:white;
-  padding: 12px 20px;
+  padding:12px 20px;
   border-radius:25px;
   cursor:pointer;
-  transition:0.3s;
-}
-
-.sign button:hover{
-  background:#2e5a28;
-}
-
-.footer-links{
-  margin:20px 0;
-}
-
-.footer-links a{
-  margin:0 10px;
-  color:var(--text);
-  text-decoration:none;
-  font-size:14px;
-  transition:0.3s;
-}
-
-.footer-links a:hover{
-  color:var(--accent);
-}
-
-.socials{
-  margin:15px 0;
 }
 
 .socials a{
   display:inline-flex;
-  justify-content:center;
-  align-items:center;
   width:35px;
   height:35px;
+  justify-content:center;
+  align-items:center;
   border-radius:50%;
   background:var(--accent);
   color:white;
-  margin:0 5px;
+  margin:5px;
+  text-decoration:none;
+}
+
+.switch {
+  position: relative;
+  width: 50px;
+  height: 24px;
+}
+
+.switch input { display:none; }
+
+.slider {
+  position:absolute;
+  inset:0;
+  background:#ccc;
+  border-radius:24px;
+  cursor:pointer;
+}
+
+.slider:before{
+  content:"";
+  position:absolute;
+  height:18px;
+  width:18px;
+  left:3px;
+  bottom:3px;
+  background:white;
+  border-radius:50%;
   transition:0.3s;
-}
-
-.socials a:hover{
-  transform:translateY(-3px);
-}
-
-hr{
-  width:60%;
-  margin:20px auto;
-  border:none;
-  border-top:1px solid var(--border);
 }
 
 </style>
@@ -263,33 +220,23 @@ hr{
 <body>
 
 <header>
-<div class="nav-bar">
-  <div class="logo">عالم الحيوان</div>
+  <div class="nav-bar">
+    <div class="logo">عالم الحيوان</div>
 
-  <nav>
-         <ul>
-         <ul>
-            <li><a href="../index.html" class="active" target="_self">الرئيسية</a></li>
-            <li><a href="./malk.html">الثدييات</a></li>
-            <li><a href="./nada.html">الطيور</a></li>
-            <li><a href="./mina.html">أعماق البحار</a></li>
-            <li><a href="./nancy.html">المهددة بالانقراض</a></li>
-            <li><a href="./julina.html">المعرض</a></li>
-            <li><a href="./blog.html">المدونة</a></li>
-            <li><a href="./contact.html">اتصل بنا</a></li>
-            <li><a href="./login.html">تسجيل الدخول</a></li>
-            <li><a href="./sign.html">إنشاء حساب  </a></li>
-          </ul>
-  </nav>
+    <nav>
+      <ul>
+        <li><a href="../index.html">الرئيسية</a></li>
+        <li><a href="./contact.html">اتصل بنا</a></li>
+      </ul>
+    </nav>
 
-  <button class="theme-toggle" id="darkmodeToggle">
-    <i class="fas fa-moon"></i>
-    <span id="themeText">الوضع المظلم</span>
-  </button>
-</div>
+    <label class="switch">
+      <input type="checkbox" id="theme-toggle">
+      <span class="slider"></span>
+    </label>
+  </div>
 </header>
 
-<main>
 <div class="green-banner">
   <h1>اتصل بنا</h1>
 </div>
@@ -298,20 +245,23 @@ hr{
   <div class="left-info">
     <h2>تواصل معنا</h2>
     <p>نحن هنا للإجابة على جميع استفساراتك</p>
-    <div class="item">📞 +966 55 123 4567</div>
-    <div class="item">📧 info@haywanati.com</div>
+    <div>📞 +966 55 123 4567</div>
+    <div>📧 info@haywanati.com</div>
+
     <div class="socials">
-      <a href="#"><i class="fab fa-facebook-f"></i></a>
-      <a href="#"><i class="fab fa-twitter"></i></a>
-      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#">F</a>
+      <a href="#">T</a>
+      <a href="#">I</a>
     </div>
   </div>
 
   <div class="right-form">
-    <input type="text" placeholder="الاسم">
-    <input type="email" placeholder="البريد الإلكتروني">
-    <textarea rows="5" placeholder="رسالتك"></textarea>
-    <button class="send-btn">إرسال</button>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="الاسم" required>
+      <input type="email" id="email" placeholder="البريد الإلكتروني" required>
+      <textarea id="message" rows="5" placeholder="رسالتك" required></textarea>
+      <button class="send-btn">إرسال</button>
+    </form>
   </div>
 </div>
 
@@ -322,62 +272,41 @@ hr{
     <span>كيف يمكنني التواصل معكم؟</span>
     <div class="faq-answer">يمكنك استخدام النموذج أو الاتصال مباشرة.</div>
   </div>
-
-  <div class="faq-item">
-    <span>هل تقدمون دعمًا للحيوانات المهددة بالانقراض؟</span>
-    <div class="faq-answer">نعم، لدينا قسم خاص للتوعية والدعم.</div>
-  </div>
 </div>
-</main>
 
 <footer>
-<h2>اشترك و تلقى كل جديد عن جهود حماية الحيوانات المهددة بالانقراض.</h2>
-
-<form class="sign" id="sign-form">
-  <input type="email" placeholder="ادخل بريدك الالكتروني" required>
-  <button type="submit">اشترك الآن</button>
-</form>
-
-<hr>
-<p>© 2026 عالم الحيوان. جميع الحقوق محفوظة.</p>
+  <h3>اشترك</h3>
+  <form class="sign">
+    <input type="email" placeholder="بريدك">
+    <button>اشتراك</button>
+  </form>
+  <p>© 2026 عالم الحيوان</p>
 </footer>
 
 <script>
-const toggleBtn=document.getElementById("darkmodeToggle");
-const icon=toggleBtn.querySelector("i");
-const text=document.getElementById("themeText");
 
-if(localStorage.getItem("theme")==="dark"){
-document.body.classList.add("dark");
-icon.className="fas fa-sun";
-text.textContent="الوضع الفاتح";
-}
+const toggle = document.getElementById("theme-toggle");
 
-toggleBtn.onclick=()=>{
-document.body.classList.toggle("dark");
-
-if(document.body.classList.contains("dark")){
-localStorage.setItem("theme","dark");
-icon.className="fas fa-sun";
-text.textContent="الوضع الفاتح";
-}else{
-localStorage.setItem("theme","light");
-icon.className="fas fa-moon";
-text.textContent="الوضع المظلم";
-}
-};
-
-document.querySelectorAll('.faq-item').forEach(item=>{
-item.onclick=()=>{
-let ans=item.querySelector('.faq-answer');
-ans.style.display=ans.style.display==='block'?'none':'block';
-};
+toggle.addEventListener("change", () => {
+  if(toggle.checked){
+    document.documentElement.setAttribute("data-theme","dark");
+  } else {
+    document.documentElement.setAttribute("data-theme","light");
+  }
 });
 
-document.querySelector('.send-btn').onclick=(e)=>{
-e.preventDefault();
-alert("تم إرسال رسالتك بنجاح");
-};
+document.querySelectorAll('.faq-item').forEach(item=>{
+  item.onclick = ()=>{
+    const ans = item.querySelector('.faq-answer');
+    ans.style.display = ans.style.display === "block" ? "none" : "block";
+  }
+});
+
+document.getElementById("contactForm").addEventListener("submit",(e)=>{
+  e.preventDefault();
+  alert("تم إرسال رسالتك بنجاح");
+});
+
 </script>
 
 </body>
