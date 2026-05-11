@@ -32,7 +32,7 @@
 } 
 
 body {
-    font-family: 'Segoe UI', Tahoma, sans-serif;
+    font-family: 'Cairo',  sans-serif;
     margin: 0;
     background-color: var(--bg-body);
     color: var(--body-text);
