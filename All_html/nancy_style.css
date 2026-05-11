@@ -56,7 +56,7 @@ body {
 }
 
 .logo {
-    font-family: 'Segoe UI', Tahoma, sans-serif;
+    font-family: 'cairo' , sans-serif;
     font-weight: 700; 
     font-size: 28px;   
     color: var(--logo); 
