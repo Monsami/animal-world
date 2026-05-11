@@ -8,24 +8,24 @@
 </head>
 <body>
     <header>
-       <div class="nav-bar">
+        <div class="nav-bar">
         <div class="logo">
-          <span>عالم الحيوان</span>
+            <span>عالم الحيوان</span>
         </div>
-           <nav>
-         <ul>
-            <li><a href="../index.html" class="active" target="_self">الرئيسية</a></li>
-            <li><a href="./malk.html" target="contentFrame">الثدييات</a></li>
-            <li><a href="./nada.html" target="contentFrame">الطيور</a></li>
-            <li><a href="./mina.html" target="contentFrame">أعماق البحار</a></li>
-            <li><a href="./nancy.html" target="contentFrame">المهددة بالانقراض</a></li>
-            <li><a href="./julina.html" target="contentFrame">المعرض</a></li>
-            <li><a href="./blog.html" target="contentFrame">المدونة</a></li>
-            <li><a href="./contact.html" target="contentFrame">اتصل بنا</a></li>
-          </ul>
+        <nav>
+            <ul>
+                <li><a href="../index.html" class="active" target="_self">الرئيسية</a></li>
+                <li><a href="./malk.html" target="contentFrame">الثدييات</a></li>
+                <li><a href="./nada.html" target="contentFrame">الطيور</a></li>
+                <li><a href="./mina.html" target="contentFrame">أعماق البحار</a></li>
+                <li><a href="./nancy.html" target="contentFrame">المهددة بالانقراض</a></li>
+                <li><a href="./julina.html" target="contentFrame">المعرض</a></li>
+                <li><a href="./blog.html" target="contentFrame">المدونة</a></li>
+                <li><a href="./contact.html" target="contentFrame">اتصل بنا</a></li>
+            </ul>
         </nav>
 <div class="mode-switch">
-     <label class="switch">
+    <label class="switch">
         <input type="checkbox" id="theme-toggle">
         <span class="slider round"></span>
     </label>
@@ -61,7 +61,7 @@
             <div class="info-text">
             <h3>مقالات عن هجرة الطيور</h3>
             <p>هِجْرَة الطّيُور هي حركةٌ موسميةٌ مُنتظمة، عادةً ما تكون باتجاه الشمال والجنوب على طول مسار الطائِر، وتكون بين مناطق التكاثر ومناطق التشتية (إمضاء الشتاء). تُهاجر أنواعٌ عديدة من الطيور، وذلك على الرغم من أنَّ هجرة الحيوانات عمومًا تنطوي على مخاطر عاليةٍ من الافتراس والوفاة، خصوصًا الناجمة عن الصيد البشري لها والذي يرتبطُ بالحاجة الأساسية لتوفير الطعام. تحدث هجرة الطيور غالبًا في نصف الأرض الشمالي، حيثُ تُجبر الطُيور على سلك مساراتٍ مُحددة بحواجز طبيعية مثل البحر الأبيض المتوسط أو البحر الكاريبي.
- </p>
+</p>
             </div>
     </div>
         </div>
@@ -99,7 +99,7 @@
         <div class="footer">
             <h2>اشترك و تلقى كل جديد عن جهود حماية الحيوانات المهددة بالانقراض.</h2>
           
-            <form class="sign">
+            <form class="sign" id="sign-form">
                 <input type="email" placeholder="ادخل بريدك الالكتروني" required>
                 <button type="submit">اشترك الآن</button>
             </form>
@@ -109,8 +109,18 @@
             © 2026 عالم الحيوان. جميع الحقوق محفوظة.
         </p>
     </footer>
-            <script>
-                
+    <script>
+        const signForm = document.getElementById('sign-form');
+        signForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const emailInput = signForm.querySelector('input[type="email"]');
+        const email = emailInput.value.trim();
+        if (email) {
+            alert(`شكراً لاشتراكك! تم تسجيل بريدك الإلكتروني: ${email}`);
+            emailInput.value = '';
+                }
+    });
+
 const raptors = [
     { name: "صقر", img: "../image/123.jpeg", wiki: "https://ar.wikipedia.org/wiki/صقر" },
     { name: "نسر", img: "../image/ne.jpeg", wiki: "https://ar.wikipedia.org/wiki/نسر" },
@@ -161,6 +171,7 @@ displayCategory(waterbirds, 'waterbirds-grid');
             localStorage.setItem('theme', 'light');
         }
     });
-            </script>
+
+</script>
 </body>
 </html>

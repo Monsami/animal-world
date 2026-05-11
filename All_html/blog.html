@@ -9,11 +9,11 @@
 <style>
 
 :root{
-    --bg-body:#eef2f3;
+    --bg-body:#ffffff;
     --card-bg:#ffffff;
     --body-text:#222;
-    --nav-bg:#7f927f;
-    --logo:#ffffff;
+    --nav-bg:#f5f5f5;
+    --logo:#222;
     --border-color:#ddd;
     --accent:#3d6b35;
     --accent-hover:#2e5a28;
@@ -73,41 +73,52 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-    color:#edc9af;
+    color:#3d6b35;
 }
 
-/* زرار الدارك مود */
-.theme-toggle{
-  display:flex;
-  align-items:center;
-  gap:8px;
-  background:var(--card-bg);
-  color:var(--body-text);
-  border:1px solid var(--border-color);
-  padding:8px 14px;
-  border-radius:25px;
-  cursor:pointer;
-  font-size:14px;
-  transition:0.3s;
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 44px;
+    height: 22px;
 }
 
-.theme-toggle i{
-  transition:0.3s;
+.switch input { opacity: 0; width: 0; height: 0; }
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
 }
 
-.theme-toggle:hover{
-  background:var(--accent);
-  color:white;
-  border-color:var(--accent);
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px; width: 16px;
+    left: 3px; bottom: 3px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
 }
 
-.theme-toggle:hover i{
-  transform:rotate(20deg);
-}
+input:checked + .slider { background-color: #3d6b35; }
+input:checked + .slider:before { transform: translateX(22px); }
 
 .blog{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    grid-template-columns:
+        repeat(
+            auto-fit,
+            minmax(
+                250px,
+                1fr
+            )
+        );
+
     gap:20px;
     padding:20px;
 }
@@ -118,6 +129,7 @@ nav ul li a:hover{
     overflow:hidden;
     box-shadow:0 4px 10px rgba(0,0,0,0.1);
     transition:0.3s;
+    border:1px solid var(--border-color);
 }
 
 .card:hover{
@@ -200,27 +212,29 @@ hr{
 
 <header>
 <div class="nav-bar">
-
-    <div class="logo">عالم الحيوان</div>
+    <div class="logo">
+      <span>عالم الحيوان</span>
+    </div>
 
     <nav>
-      <ul>
-        <li><a href="../index.html">الرئيسية</a></li>
-        <li><a href="./malk.html">الثدييات</a></li>
-        <li><a href="./nada.html">الطيور</a></li>
-        <li><a href="./mina.html">أعماق البحار</a></li>
-        <li><a href="./nancy.html">المهددة بالانقراض</a></li>
-        <li><a href="./julina.html">المعرض</a></li>
-        <li><a href="./blog.html">المدونة</a></li>
-        <li><a href="./contact.html">اتصل بنا</a></li>
-      </ul>
+     <ul>
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="./All_html/nada.html">الثدييات</a></li>
+        <li><a href="./All_html/malk.html">الطيور</a></li>
+        <li><a href="./All_html/mina.html">أعماق البحار</a></li>
+        <li><a href="./All_html/nancy.html">المهددة بالانقراض</a></li>
+        <li><a href="./All_html/julina.html">المعرض</a></li>
+        <li><a href="./All_html/blog.html">المدونة</a></li>
+        <li><a href="./All_html/contact.html">اتصل بنا</a></li>
+     </ul>
     </nav>
 
-    <button class="theme-toggle" id="darkmodeToggle">
-        <i class="fas fa-moon"></i>
-        <span id="themeText">الوضع المظلم</span>
-    </button>
-
+    <div class="mode-switch">
+        <label class="switch">
+            <input type="checkbox" id="theme-toggle">
+            <span class="slider round"></span>
+        </label>
+    </div>
 </div>
 </header>
 
@@ -232,7 +246,7 @@ hr{
 <section class="blog">
 
 <div class="card">
-<img src="../image/lion.jpg"   >
+<img src="../image/lion.jpg">
 <h3>الأسد</h3>
 <p>ملك الغابة وأحد أقوى الحيوانات المفترسة.</p>
 <a href="https://ar.wikipedia.org/wiki/أسد" target="_blank">اقرأ المزيد</a>
@@ -252,46 +266,80 @@ hr{
 <a href="https://ar.wikipedia.org/wiki/أخطبوط" target="_blank">اقرأ المزيد</a>
 </div>
 
+<div class="card">
+<img src="../image/tiger.jpg">
+<h3>النمر</h3>
+<p>حيوان قوي وسريع من أقوى المفترسات.</p>
+<a href="https://ar.wikipedia.org/wiki/نمر" target="_blank">اقرأ المزيد</a>
+</div>
+
+<div class="card">
+<img src="../image/panda.jpg">
+<h3>الباندا</h3>
+<p>حيوان هادئ يعيش على الخيزران.</p>
+<a href="https://ar.wikipedia.org/wiki/باندا_عملاقة" target="_blank">اقرأ المزيد</a>
+</div>
+
+<div class="card">
+<img src="../image/elephant.jpg">
+<h3>الفيل</h3>
+<p>أكبر حيوان بري وله ذاكرة قوية جدًا.</p>
+<a href="https://ar.wikipedia.org/wiki/فيل" target="_blank">اقرأ المزيد</a>
+</div>
+
+<div class="card">
+<img src="../image/elephant.jpg">
+<h3>الفيل</h3>
+<p>أكبر حيوان بري وله ذاكرة قوية جدًا.</p>
+<a href="https://ar.wikipedia.org/wiki/فيل" target="_blank">اقرأ المزيد</a>
+</div>
+
+<div class="card">
+<img src="../image/elephant.jpg">
+<h3>الفيل</h3>
+<p>أكبر حيوان بري وله ذاكرة قوية جدًا.</p>
+<a href="https://ar.wikipedia.org/wiki/فيل" target="_blank">اقرأ المزيد</a>
+</div>
 </section>
 
 <footer>
 <h2>اشترك و تلقى كل جديد</h2>
-<form class="sign">
-<input type="email" placeholder="ادخل بريدك">
-<button>اشترك</button>
+<form class="sign" id="sign-form">
+    <input type="email" placeholder="ادخل بريدك الالكتروني" required>
+    <button type="submit">اشترك الآن</button>
 </form>
 <hr>
-        <p >
-            © 2026 عالم الحيوان. جميع الحقوق محفوظة.
-        </p>
+<p>© 2026 عالم الحيوان. جميع الحقوق محفوظة.</p>
 </footer>
 
-<script>
-const btn = document.getElementById("darkmodeToggle");
-const html = document.documentElement;
-const icon = btn.querySelector("i");
-const text = document.getElementById("themeText");
+        <script>
+            const toggleInput = document.getElementById('theme-toggle');
+    const htmlElement = document.documentElement;
 
-if(localStorage.getItem("theme")==="dark"){
-  html.setAttribute("data-theme","dark");
-  icon.className="fas fa-sun";
-  text.textContent="الوضع الفاتح";
-}
-
-btn.onclick=()=>{
-  if(html.getAttribute("data-theme")==="dark"){
-    html.setAttribute("data-theme","light");
-    localStorage.setItem("theme","light");
-    icon.className="fas fa-moon";
-    text.textContent="الوضع المظلم";
-  }else{
-    html.setAttribute("data-theme","dark");
-    localStorage.setItem("theme","dark");
-    icon.className="fas fa-sun";
-    text.textContent="الوضع الفاتح";
-  }
-};
-</script>
-
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+        htmlElement.setAttribute('data-theme', 'dark');
+        toggleInput.checked = true;
+    }
+    toggleInput.addEventListener('change', () => {
+        if (toggleInput.checked) {
+            htmlElement.setAttribute('data-theme', 'dark');
+            localStorage.setItem('theme', 'dark');
+        } else {
+            htmlElement.setAttribute('data-theme', 'light');
+            localStorage.setItem('theme', 'light');
+        }
+    });
+    const signForm = document.getElementById('sign-form');
+    signForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const emailInput = signForm.querySelector('input[type="email"]');
+        const email = emailInput.value.trim();
+        if (email) {
+            alert(`شكراً لاشتراكك! تم تسجيل بريدك الإلكتروني: ${email}`);
+            emailInput.value = '';
+        }
+    });
+        </script>
 </body>
 </html>

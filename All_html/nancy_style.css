@@ -264,8 +264,8 @@ footer{
 .sign input{
     padding: 12px 20px;
     border-radius: 50px;
-     background-color: var(--card-bg);
-    color: var(--body-text)
+    background-color: var(--card-bg);
+    color: var(--body-text);
     border-top: 1px solid var(--border-color);
 }
 .sign button {
