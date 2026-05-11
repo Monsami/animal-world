@@ -23,6 +23,50 @@ body{
     transition:0.4s;
     padding:20px;
 }
+    .nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+    background-color: var(--nav-bg);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.logo {
+    font-family: 'Cairo', sans-serif;
+    font-weight: 700; 
+    font-size: 28px;   
+    color: var(--logo); 
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li { margin: 0 15px; }
+
+nav ul li a {
+    color: var(--body-text); 
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    cursor: pointer;
+    color: #edc9af;
+}
 
 header{
     position:fixed;
@@ -221,7 +265,10 @@ button:hover{
             <li><a href="./All_html/sign.html">إنشاء حساب  </a></li>
           </ul>
         </nav>
-    <h1>Sign Up</h1>
+        <div>
+             <h1>Sign Up</h1>
+        </div>
+   
     <div class="mode-switch">
         <label class="switch">
             <input type="checkbox" id="theme-toggle">
@@ -257,6 +304,7 @@ button:hover{
         </p>
     </div>
 </form>
+     
 
 <script>
 const form = document.getElementById("signupForm");
