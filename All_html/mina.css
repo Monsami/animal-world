@@ -40,7 +40,6 @@ body {
     align-items: center;
     padding: 10px 20px;
     background-color: var(--nav-bg);
-    border-bottom: 2px solid var(--main-color);
 }
 
 .logo {
@@ -218,7 +217,7 @@ input:checked + .slider:before {
 footer{
     background-color: var(--bg-body);
     color: var(--body-text);
-    padding: 60px 20px;
+    padding: 30px 20px;
     text-align: center;
 }
 

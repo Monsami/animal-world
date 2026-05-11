@@ -27,7 +27,7 @@
     --accent-hover:#d4a373;
     --border-color:#404040;
 }
- [data-theme= "dark"] .card{
+[data-theme= "dark"] .card{
     flex-direction: row-reverse;
 } 
 

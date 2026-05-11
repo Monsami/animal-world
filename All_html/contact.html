@@ -21,9 +21,9 @@ html {
   --body-text: #2d241e;
   --card-bg: #ffffff;
   --nav-bg: #ffffff;
-  --logo: #704629;
-  --accent:#d4a373;
-  --accent-hover:#bc8a5f;
+  --logo: #2d7029;
+  --accent:#2d7029;
+  --accent-hover:#2d7029;
   --border-color:#eaddcf;
   --muted:#666;
   --footer-bg:#f1ece7;
@@ -224,10 +224,18 @@ footer{
     <div class="logo">عالم الحيوان</div>
 
     <nav>
-      <ul>
-        <li><a href="../index.html">الرئيسية</a></li>
-        <li><a href="./contact.html">اتصل بنا</a></li>
-      </ul>
+         <ul>
+            <li><a href="../index.html" class="active" target="_self">الرئيسية</a></li>
+            <li><a href="./malk.html">الثدييات</a></li>
+            <li><a href="./nada.html">الطيور</a></li>
+            <li><a href="./mina.html">أعماق البحار</a></li>
+            <li><a href="./nancy.html">المهددة بالانقراض</a></li>
+            <li><a href="./julina.html">المعرض</a></li>
+            <li><a href="./blog.html">المدونة</a></li>
+            <li><a href="./contact.html">اتصل بنا</a></li>
+            <li><a href="./login.html">تسجيل الدخول</a></li>
+            <li><a href="./sign.html">إنشاء حساب  </a></li>
+          </ul>
     </nav>
 
     <label class="switch">
@@ -246,20 +254,15 @@ footer{
     <h2>تواصل معنا</h2>
     <p>نحن هنا للإجابة على جميع استفساراتك</p>
     <div>📞 +966 55 123 4567</div>
-    <div>📧 info@haywanati.com</div>
-
-    <div class="socials">
-      <a href="#">F</a>
-      <a href="#">T</a>
-      <a href="#">I</a>
-    </div>
+    <div>📧 info@animals world.com</div>
+    <div>📍 الرياض، المملكة العربية السعودية</div>
   </div>
 
   <div class="right-form">
     <form id="contactForm">
       <input type="text" id="name" placeholder="الاسم" required>
       <input type="email" id="email" placeholder="البريد الإلكتروني" required>
-      <textarea id="message" rows="5" placeholder="رسالتك" required></textarea>
+      <textarea id="message" rows="5" placeholder="شارك رأيك" required></textarea>
       <button class="send-btn">إرسال</button>
     </form>
   </div>
@@ -280,6 +283,7 @@ footer{
     <input type="email" placeholder="بريدك">
     <button>اشتراك</button>
   </form>
+  <hr>
   <p>© 2026 عالم الحيوان</p>
 </footer>
 

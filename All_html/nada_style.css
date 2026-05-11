@@ -13,10 +13,10 @@ body{
     --body-text: #2d241e;
     --card-bg: #ffffff;
     --nav-bg: #ffffff;
-    --logo: #704629;
-    --accent:#d4a373;
-    --accent-hover:#bc8a5f;
-    --border-color:#eaddcf;
+    --logo: #2d4030;
+    --accent:#2d4030;
+    --accent-hover:#2d4030;
+    --border-color:#404040;
 }
 
 [data-theme="dark"] {
@@ -25,9 +25,9 @@ body{
     --body-text: #ffffff;
     --card-bg: #262626;
     --nav-bg: #121212;
-    --logo:#edc9af;
-    --accent:#edc9af;
-    --accent-hover:#d4a373;
+    --logo:#ffffff;
+    --accent:#2d4030;
+    --accent-hover:#2d4030;
     --border-color:#404040;
 }
 .nav-bar {
@@ -66,7 +66,7 @@ nav ul li a {
 }
 nav ul li a:hover{
     cursor: pointer;
-    color: #edc9af;
+    color: #bbedaf;/*تعديل اللون*/
 }
 .header{
     background-image:url(../image/background.jpeg); 
@@ -229,6 +229,7 @@ nav ul li a:hover{
     margin-top: 1.5;
     text-align: right;
     direction: rtl;
+    color: var(--body-text);
 }
 .map-image{
     flex: 1.5;
@@ -272,13 +273,13 @@ nav ul li a:hover{
 .sound-info span {
     display: block;
     font-weight: bold;
-    color: #333;
+    color: var(--body-text);
     font-size: 18px;
 }
 
 .sound-info p {
     margin: 5px 0 0;
-    color: #777;
+    color: var(--body-text);
     font-size: 14px;
 }
 
@@ -344,7 +345,7 @@ nav ul li a:hover{
     transition: .4s;
     border-radius: 50%;
 }
-input:checked + .slider { background-color: #edc9af; }
+input:checked + .slider { background-color: var(--border-color); }
 input:checked + .slider:before { transform: translateX(26px); }
 
 
@@ -393,5 +394,6 @@ hr{
 }
 h2{
     margin:  10px 20px;
+    color: var(--body-text);
 }
 
