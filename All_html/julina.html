@@ -131,7 +131,7 @@ nav ul li a {
 footer {
     background-color: var(--footer-bg);
     color: var(--text);
-    padding: 30px 20px;
+    padding: 20px 20px;
     text-align: center;
 }
 
@@ -148,14 +148,14 @@ footer {
 }
 
 .sign button {
-    background-color: #edc9af;
+    background-color: var(--accent);
     border: none;
     padding: 10px 20px;
     border-radius: 50px;
     cursor: pointer;
 }
 .sign button:hover {
-    background-color: #d4a373;
+    background-color: var(--logo);
 }
 
 .switch {
@@ -238,61 +238,57 @@ input:checked + .slider:before {
     <section class="animal-section">
         <h2 class="album-title">ثدييات</h2>
         <div class="gallery-grid">
-
             <div class="card"><img src="../image/panda.jpg"><div class="overlay"></div></div>
             <div class="card"><img src="../image/zebra.jpg"><div class="overlay"></div></div>
             <div class="card"><img src="../image/lion.jpg"><div class="overlay"></div></div>
-
-            <div class="card video-wide">
-                <iframe src="https://www.youtube.com/embed/ilS55P22lhE" allowfullscreen></iframe>
-            </div>
-
+            <div class="card"><img src="../image/ارنب.jpg"><div class="overlay"></div></div>       
+            <div class="card"><img src="../image/نمر.jpg"><div class="overlay"></div></div>      
+            <div class="card"><img src="../image/فيل.jpg"><div class="overlay"></div></div> 
         </div>
     </section>
 
     <section class="animal-section">
         <h2 class="album-title">طيور</h2>
         <div class="gallery-grid">
-
             <div class="card"><img src="../image/929529b1b2d704ff49ee729e9f49b245.jpg"><div class="overlay"></div></div>
             <div class="card"><img src="../image/canary.jpeg"><div class="overlay"></div></div>
             <div class="card"><img src="../image/toucan.jpeg"><div class="overlay"></div></div>
-
-            <div class="card video-wide">
-                <iframe src="https://www.youtube.com/embed/V6C6nH2c0w8" allowfullscreen></iframe>
-            </div>
-
+            <div class="card"><img src="../image/ببغاء.jpg"><div class="overlay"></div></div> 
+            <div class="card"><img src="../image/بومة.jpg"><div class="overlay"></div></div> 
+            <div class="card"><img src="../image/نسر.jpg"><div class="overlay"></div></div> 
         </div>
     </section>
 
     <section class="animal-section">
         <h2 class="album-title">حيوانات الماء</h2>
         <div class="gallery-grid">
-
             <div class="card"><img src="../image/اخطبوط.jpg"><div class="overlay"></div></div>
             <div class="card"><img src="../image/dolfin.jpg"><div class="overlay"></div></div>
             <div class="card"><img src="../image/sea turtle.jpeg"><div class="overlay"></div></div>
-
-            <div class="card video-wide">
-                <iframe src="https://www.youtube.com/embed/9UG7F6oplhU" allowfullscreen></iframe>
-            </div>
-
+            <div class="card"><img src="../image/السمكه الذهبية.jpg"><div class="overlay"></div></div> 
+            <div class="card"><img src="../image/قرش.jpg"><div class="overlay"></div></div> 
+            <div class="card"><img src="../image/فرس البحر.jpg"><div class="overlay"></div></div> 
         </div>
     </section>
 
 </main>
 
-<footer>
-    <h3>اشترك لتصلك أحدث الأخبار</h3>
-
-    <form class="sign" id="sign-form">
-        <input type="email" placeholder="ادخل بريدك" required>
-        <button type="submit">اشترك</button>
-    </form>
-    <hr>
-    <p>© 2026 عالم الحيوان</p>
-</footer>
-
+    <footer>
+        <div class="footer">
+            <h3>اشترك و تلقي احدث الصور عن عالم الحيوان</h3>
+          <p>
+            كن أول من يعرف عن المقالات الجديدة، الصور المذهلة، وأخبار  عن عالم الحيوان.
+          </p>
+            <form class="sign" id="sign-form">
+                <input type="email" placeholder="ادخل بريدك الالكتروني" required>
+                <button type="submit">اشترك الآن</button>
+            </form>
+        </div>
+        <hr>
+        <p class="footer-note">
+            © 2026 عالم الحيوان. جميع الحقوق محفوظة.
+        </p>
+    </footer>
 <script>
 const toggleInput = document.getElementById('theme-toggle');
 

@@ -10,7 +10,21 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family: 'Segoe UI', Tahoma, sans-serif;
+    font-family:'Segoe UI',Tahoma,sans-serif;
+}
+
+:root{
+    --logo-color:#84bd3f;
+    --bg-light:linear-gradient(135deg,#edf7e7,#dcecff);
+    --text-light:#1f2937;
+    --form-light:#ffffff;
+    --primary:#84bd3f;
+    --primary-hover:#6fa52f;
+    --secondary:#64748b;
+    --secondary-hover:#475569;
+    --input-bg:#f8fafc;
+    --input-border:#cbd5e1;
+    --header-bg:#1f3d1b;
 }
 
 body{
@@ -18,8 +32,8 @@ body{
     display:flex;
     justify-content:center;
     align-items:center;
-    background:linear-gradient(135deg,#dbeafe,#f5f5f5);
-    color:#333;
+    background:var(--bg-light);
+    color:var(--text-light);
     transition:0.4s;
     padding:20px;
 }
@@ -29,18 +43,20 @@ header{
     top:0;
     left:0;
     width:100%;
-    background:#007BFF;
+    background:var(--header-bg);
     color:#fff;
     padding:18px 20px;
     display:flex;
     justify-content:center;
     align-items:center;
-    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+    box-shadow:0 4px 15px rgba(0,0,0,0.15);
     z-index:1000;
 }
 
 header h1{
     font-size:26px;
+    letter-spacing:1px;
+    color:#fff;
 }
 
 .mode-switch{
@@ -51,8 +67,8 @@ header h1{
 .switch{
     position:relative;
     display:inline-block;
-    width:50px;
-    height:24px;
+    width:52px;
+    height:26px;
 }
 
 .switch input{
@@ -65,7 +81,7 @@ header h1{
     position:absolute;
     cursor:pointer;
     inset:0;
-    background:#ccc;
+    background:#cbd5e1;
     transition:.4s;
     border-radius:34px;
 }
@@ -73,8 +89,8 @@ header h1{
 .slider::before{
     content:"";
     position:absolute;
-    width:18px;
-    height:18px;
+    width:20px;
+    height:20px;
     right:3px;
     bottom:3px;
     background:#fff;
@@ -83,7 +99,7 @@ header h1{
 }
 
 input:checked + .slider{
-    background:#edc9af;
+    background:var(--logo-color);
 }
 
 input:checked + .slider::before{
@@ -93,50 +109,55 @@ input:checked + .slider::before{
 form{
     width:100%;
     max-width:420px;
-    background:#fff;
-    padding:35px 30px;
-    border-radius:18px;
-    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+    background:var(--form-light);
+    padding:38px 32px;
+    border-radius:22px;
+    box-shadow:0 12px 35px rgba(0,0,0,0.12);
     margin-top:90px;
     transition:0.4s;
 }
 
 form h2{
     text-align:center;
-    margin-bottom:25px;
-    color:#007BFF;
+    margin-bottom:28px;
+    color:var(--primary);
+    font-size:30px;
 }
 
 label{
     display:block;
     margin-bottom:8px;
-    font-weight:bold;
+    font-weight:600;
+    color:#334155;
 }
 
 input[type="text"],
 input[type="email"],
 input[type="password"]{
     width:100%;
-    padding:13px;
+    padding:14px;
     margin-bottom:18px;
-    border:1px solid #ccc;
-    border-radius:10px;
+    border:1px solid var(--input-border);
+    border-radius:12px;
     outline:none;
     transition:0.3s;
     font-size:15px;
+    background:var(--input-bg);
+    color:#111827;
 }
 
 input:focus{
-    border-color:#007BFF;
-    box-shadow:0 0 8px rgba(0,123,255,0.2);
+    border-color:var(--logo-color);
+    box-shadow:0 0 10px rgba(132,189,63,0.25);
+    background:#fff;
 }
 
 button{
     width:100%;
-    padding:13px;
+    padding:14px;
     border:none;
-    border-radius:10px;
-    background:#007BFF;
+    border-radius:12px;
+    background:var(--primary);
     color:#fff;
     font-size:16px;
     font-weight:bold;
@@ -146,60 +167,104 @@ button{
 }
 
 button:hover{
-    background:#0056b3;
+    background:var(--primary-hover);
     transform:translateY(-2px);
 }
 
 .skip-btn{
     width:100%;
-    padding:13px;
+    padding:14px;
     border:none;
-    border-radius:10px;
-    background:#6b7280;
+    border-radius:12px;
+    background:var(--secondary);
     color:#fff;
     font-size:15px;
     cursor:pointer;
     margin-top:10px;
+    transition:0.3s;
 }
 
 .skip-btn:hover{
-    background:#4b5563;
+    background:var(--secondary-hover);
 }
 
 .links{
     text-align:center;
-    margin-top:18px;
+    margin-top:20px;
     font-size:14px;
+    color:#475569;
 }
 
 .links a{
-    color:#007BFF;
+    color:var(--logo-color);
     text-decoration:none;
     font-weight:bold;
+    transition:0.3s;
+}
+
+.links a:hover{
+    color:#93a57e;
+    text-decoration:underline;
 }
 
 .dark-mode{
-    background:linear-gradient(135deg,#1e293b,#111827);
+    background:#1a1a1a;
     color:#f5f5f5;
 }
 
 .dark-mode form{
-    background:#1f2937;
-    box-shadow:0 10px 30px rgba(0,0,0,0.4);
+    background:#1a1a1a;
+    box-shadow:0 12px 35px rgba(0,0,0,0.45);
+}
+
+.dark-mode form h2{
+    color:var(--logo-color);
+}
+
+.dark-mode label{
+    color:#e2e8f0;
 }
 
 .dark-mode input{
-    background:#374151;
-    border:1px solid #4b5563;
+    background:#334155;
+    border:1px solid #475569;
     color:#fff;
 }
 
+.dark-mode input:focus{
+    border-color:var(--logo-color);
+    box-shadow:0 0 10px rgba(132,189,63,0.3);
+    background:#3b475c;
+}
+
 .dark-mode button{
-    background:#10b981;
+    background:var(--logo-color);
+    color:#111827;
 }
 
 .dark-mode button:hover{
-    background:#059669;
+    background:#6fa52f;
+    color:#fff;
+}
+
+.dark-mode .skip-btn{
+    background:#475569;
+}
+
+.dark-mode .skip-btn:hover{
+    background:#334155;
+}
+
+.dark-mode .links{
+    color:#cbd5e1;
+}
+
+.dark-mode .links a{
+    color:#a3e635;
+}
+
+.dark-mode header{
+    background:#1a1a1a;
 }
 </style>
 </head>
@@ -207,7 +272,7 @@ button:hover{
 <body>
 
 <header>
-    <h1>إنشاء حساب</h1>
+    <h1>إنشاء حساب جديد لاستكشاف عالم الحيوان</h1>
 
     <div class="mode-switch">
         <label class="switch">
@@ -218,7 +283,7 @@ button:hover{
 </header>
 
 <form id="signupForm">
-    <h2>إنشاء حساب جديد</h2>
+    <h2>إنشاء حساب جديد </h2>
 
     <label>الاسم الكامل</label>
     <input type="text" id="fullname" placeholder="اكتب اسمك الكامل" required>

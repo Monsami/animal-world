@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap');
+
 *{
     
     box-sizing: border-box;
@@ -32,13 +32,13 @@
 } 
 
 body {
-    font-family: 'Cairo',  sans-serif;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
     margin: 0;
     background-color: var(--bg-body);
     color: var(--body-text);
     transition: 0.4s;
     direction: rtl;
-    padding-top: 70px;
+    padding-top: 50px;
 }
 
 .nav-bar {
@@ -56,7 +56,7 @@ body {
 }
 
 .logo {
-    font-family: 'cairo' , sans-serif;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
     font-weight: 700; 
     font-size: 28px;   
     color: var(--logo); 
@@ -264,7 +264,7 @@ footer{
     padding: 12px 20px;
     border-radius: 50px;
      background-color: var(--card-bg);
-    color: var(--body-text)
+    color: var(--body-text);
     border-top: 1px solid var(--border-color);
 }
 .sign button {
