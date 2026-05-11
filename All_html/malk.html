@@ -64,7 +64,7 @@ body, .container, .card1, .cards-grid, .card-content, .poll-section, footer {
     text-align: center;
 }
 
-.nav ul, .footer-col ul {
+.nav ul {
     justify-content: center;
     align-items: center;
 }
@@ -100,15 +100,13 @@ header {
     /*justify-self: center*/
     display: flex;
     align-items: center;
-    gap: 50px;
+    gap: 25px;
 }
 
 .mode-switch {
     display: flex;
     justify-self: end;
-    padding-right: 200px;
-    margin-right: 20px;
-    padding: 20px;
+    padding-top: 15px;
     height: 30px;
     position: right;
     line-height: 0;
@@ -116,15 +114,12 @@ header {
 
 .nav-bar {
     display: flex;
-    grid-template-columns: 1fr auto 1fr;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 10px 1%;
     border-bottom: 2px solid var(--accent);
-    gap: 30px;
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
-    align-items: center;
+    gap: 5px;
+    /*align-items: center;*/
     padding-bottom :10px;
     vertical-align: middle;
 
@@ -145,19 +140,19 @@ header {
     font-weight: bold;
     font-size: 28px; 
     font-family: 'Cairo', sans-serif;
-    padding-left: 90px;
+    margin-left: auto;
+
    
 }
 
 nav ul {
     display: flex;
-    flex-direction: row !important;
     list-style: none;
     justify-content: space-between;
     font-family: 'Cairo', sans-serif; 
     text-decoration: none;
     color: var(--nav-text);
-    font-weight: 700;
+    font-weight: 500;
     font-size: 16px;
     padding: 0;
     margin-bottom: 10px;
@@ -168,13 +163,12 @@ nav ul {
 
 nav ul li {
     color: var(--accent-hover);
-    font-family: cairo;
     justify-content: center;
     align-items: center;
     font-family: 'Cairo', sans-serif;
     transition: 0.2s;
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 500;
     margin: 0 12px;
     white-space: nowrap;
 }
@@ -225,7 +219,6 @@ main {
     display: block;
     width: 50px;
     height: 26px;
-
     top: 2px;
     bottom: 3px;
 }
@@ -238,7 +231,6 @@ main {
 
 .slider {
     position: relative;
-    
     inset: 0;
     cursor: pointer;
     background: linear-gradient(145deg, #000000, #032f42);
@@ -453,6 +445,10 @@ hr{
 h4{
     margin-bottom: 10px;
 }
+
+  
+
+
 
     </style>
 </head>
